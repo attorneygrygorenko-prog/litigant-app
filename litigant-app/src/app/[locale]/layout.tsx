@@ -1,0 +1,80 @@
+import type { ReactNode } from 'react';
+import type { Metadata } from 'next';
+import Script from 'next/script';
+import { NextIntlClientProvider } from 'next-intl';
+import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
+import { notFound } from 'next/navigation';
+
+import { routing, type Locale } from '@/i18n/routing';
+import { OG_LOCALE, SITE_URL, alternates } from '@/lib/seo';
+import { buildJsonLd } from '@/lib/jsonld';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import HtmlLang from '@/components/HtmlLang';
+
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
+
+export async function generateMetadata({
+  params: { locale }
+}: {
+  params: { locale: Locale };
+}): Promise<Metadata> {
+  if (!routing.locales.includes(locale)) notFound();
+  const t = await getTranslations({ locale, namespace: 'meta' });
+
+  return {
+    metadataBase: new URL(SITE_URL),
+    title: t('title'),
+    description: t('description'),
+    keywords: t('keywords'),
+    alternates: {
+      canonical: `${SITE_URL}/${locale}`,
+      ...alternates('/')
+    },
+    openGraph: {
+      title: t('ogTitle'),
+      description: t('ogDescription'),
+      url: `${SITE_URL}/${locale}`,
+      type: 'website',
+      locale: OG_LOCALE[locale],
+      alternateLocale: Object.values(OG_LOCALE).filter((l) => l !== OG_LOCALE[locale])
+    },
+    twitter: {
+      card: 'summary',
+      title: t('ogTitle'),
+      description: t('ogDescription')
+    },
+    robots: { index: true, follow: true }
+  };
+}
+
+export default async function LocaleLayout({
+  children,
+  params: { locale }
+}: {
+  children: ReactNode;
+  params: { locale: Locale };
+}) {
+  if (!routing.locales.includes(locale)) notFound();
+  setRequestLocale(locale);
+
+  const messages = await getMessages();
+  const jsonLd = buildJsonLd(locale);
+
+  return (
+    <NextIntlClientProvider messages={messages} locale={locale}>
+      <HtmlLang locale={locale} />
+      <Script
+        id="ld-json"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <Header />
+      <main>{children}</main>
+      <Footer />
+    </NextIntlClientProvider>
+  );
+}

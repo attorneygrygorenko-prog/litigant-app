@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(awk NR==501 || NR==663 || NR==871 || NR==909 || NR==1071 || NR==1279 {print NR\": \"length\\($0\\)\" chars\"} *)",
+      "Bash(awk 'NR==501' /Users/litigant/litigant-site/litigent-website.html)",
+      "Bash(npm install *)",
+      "Bash(npx tsc *)",
+      "Bash(NEXT_PUBLIC_SITE_URL=https://litigant.legal npm run build)",
+      "Bash(curl -s -o /dev/null -w \"GET / -> HTTP %{http_code}, redirect: %{redirect_url}\\\\n\" http://localhost:3000/)",
+      "Bash(curl -s -o /dev/null -w \"GET /ua -> HTTP %{http_code}\\\\n\" http://localhost:3000/ua)",
+      "Bash(curl -s -o /dev/null -w \"GET /en -> HTTP %{http_code}\\\\n\" http://localhost:3000/en)",
+      "Bash(curl -s -o /dev/null -w \"GET /ro -> HTTP %{http_code}\\\\n\" http://localhost:3000/ro)",
+      "Bash(curl -s -o /dev/null -w \"GET /pro-nas -> HTTP %{http_code}, redirect: %{redirect_url}\\\\n\" http://localhost:3000/pro-nas)",
+      "Bash(npm run *)"
+    ]
+  }
+}

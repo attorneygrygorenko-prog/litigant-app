@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Litigant Law Office">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0D1B3E"/>
+      <stop offset="1" stop-color="#142251"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#g)"/>
+  <g fill="none" stroke="#B8941E" stroke-width="2" opacity="0.55">
+    <line x1="120" y1="338" x2="232" y2="338"/>
+    <line x1="968" y1="338" x2="1080" y2="338"/>
+  </g>
+  <text x="600" y="332" text-anchor="middle"
+        font-family="'Cormorant Garamond', Georgia, serif"
+        font-size="118" font-weight="700" letter-spacing="22"
+        fill="#FFFFFF">LITIGANT</text>
+  <text x="600" y="392" text-anchor="middle"
+        font-family="'Jost', system-ui, sans-serif"
+        font-size="20" font-weight="500" letter-spacing="11"
+        fill="#D4B44A" text-transform="uppercase">LAW OFFICE</text>
+  <text x="600" y="610" text-anchor="middle"
+        font-family="'Jost', system-ui, sans-serif"
+        font-size="16" font-weight="400" letter-spacing="8"
+        fill="rgba(255,255,255,0.45)">KYIV · ODESA · CHIȘINĂU</text>
+</svg>

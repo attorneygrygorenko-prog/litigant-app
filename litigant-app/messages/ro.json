@@ -1,0 +1,287 @@
+{
+  "meta": {
+    "title": "Litigant Law Office — Avocat B2B | White-Collar Crime, Faliment, GR | Iurii Grygorenko",
+    "description": "Litigant Law Office — biroul de avocați al lui Iurii Grygorenko. Apărarea afacerilor: White-Collar Crime, inginerie anti-raider, faliment, GR-Litigation. Birouri în Kyiv și Odesa. Consultație după analiza cazului.",
+    "keywords": "avocat B2B Kiev, white collar crime avocat, faliment restructurare, GR lobbying Ucraina, birou avocatură Litigant Chișinău",
+    "ogTitle": "Litigant Law Office — Avocat B2B | Iurii Grygorenko",
+    "ogDescription": "Apărarea afacerilor: White-Collar Crime, inginerie anti-raider, faliment, GR-Litigation. Birouri în Kyiv și Odesa."
+  },
+  "nav": {
+    "home": "Acasă",
+    "about": "Despre noi",
+    "services": "Practici",
+    "blog": "Analiză",
+    "contacts": "Contacte",
+    "submitCase": "Depune cazul",
+    "submitCaseFull": "Depune cazul spre analiză",
+    "lawOffice": "Birou de avocați",
+    "menu": "Meniu",
+    "close": "Închide"
+  },
+  "home": {
+    "heroTag": "Litigant Law Office · Chișinău · Kyiv · Odesa",
+    "heroTitle": "Litigant.",
+    "heroSubtitle": "Arhitectura securității juridice pentru B2B.",
+    "heroText": "Nu oferim servicii juridice. Proiectăm condițiile în care afacerea dvs. devine intangibilă.",
+    "ctaSubmit": "Depune cazul spre analiză",
+    "ctaVectors": "Trei vectori de forță",
+    "stat1Label": "Ani de practică",
+    "stat2Label": "Dimensiuni de influență",
+    "stat3Label": "Țări",
+    "vec1Label": "Avocatură",
+    "vec1Title": "Dominanță procesuală",
+    "vec1Text": "Protecția activelor și White-Collar Crime. Conflicte corporative și litigii cu statul.",
+    "vec2Label": "Arbitraj",
+    "vec2Title": "Gestionarea activelor în criză",
+    "vec2Text": "Management anticriză și restabilirea solvabilității. Protecția creditorilor și debitorilor.",
+    "vec3Label": "Lobby",
+    "vec3Title": "Schimbarea regulilor jocului",
+    "vec3Text": "Protejarea intereselor de afaceri la nivelul formării legislației și mediului de reglementare.",
+    "manifesto": "Nu oferim servicii. Devenim parte din sistemul clientului pentru a depăși provocările critice.",
+    "practicesLabel": "Practici cheie",
+    "practicesTitle": "Trei vectori de forță",
+    "practicesIntro": "Specializare focalizată — acolo unde complexitatea necesită experiență și viziune strategică.",
+    "prac1Title": "Conflicte corporative",
+    "prac1Text": "Inginerie anti-raider, White-Collar Crime, apărarea proprietarilor și managementului în proceduri penale.",
+    "prac2Title": "Litigii cu statul",
+    "prac2Text": "GR-Litigation. Contestarea deciziilor autorităților, apărare fiscală, litigii vamale. Schimbarea mediului de reglementare prin mecanisme juridice.",
+    "prac3Title": "Arbitraj și restructurare",
+    "prac3Text": "Management anticriză, faliment și restructurare a datoriilor, administrator arbitral, protecția activelor în proceduri de insolvență.",
+    "prac4Title": "Lobby și GR",
+    "prac4Text": "Protejarea intereselor de afaceri la nivel legislativ. Reprezentare în fața autorităților. Coordonare juridică internațională (Moldova).",
+    "learnMore": "Mai mult",
+    "principlesLabel": "Principii",
+    "principlesTitle": "De ce Litigant",
+    "why1Title": "Analiză înainte de start",
+    "why1Text": "Fiecare caz trece printr-o analiză preliminară detaliată. Acceptăm doar acolo unde există perspective reale de rezultat.",
+    "why2Title": "Exclusiv B2B",
+    "why2Text": "Proprietari de afaceri, C-level, conflicte corporative, active în pericol. Nu cabinet de masă — parteneriat strategic.",
+    "why3Title": "Trei dimensiuni",
+    "why3Text": "Singura practică care acoperă avocatura, arbitrajul și lobby-ul fără conflict de interese.",
+    "why4Title": "Confidențialitate",
+    "why4Text": "Secretul profesional — condiție de lucru, nu opțiune. Canale securizate. Discreție totală.",
+    "processLabel": "Proces",
+    "processTitle": "Cum să începeți",
+    "proc1Title": "Cerere",
+    "proc1Text": "Formularul de pre-analiză a cazului. Descrieți provocarea și amploarea activului în pericol.",
+    "proc2Title": "Analiză internă",
+    "proc2Text": "Cererea trece printr-o analiză internă privind conformitatea cu practica și perspectivele de colaborare.",
+    "proc3Title": "Răspuns 24h",
+    "proc3Text": "Vă informăm în termen de 24 de ore. Dacă există temeiuri — programăm prima întâlnire.",
+    "proc4Title": "Strategie",
+    "proc4Text": "Prima întâlnire — analiză aprofundată a situației. Urmează — strategie și plan de acțiune.",
+    "ctaBandTitle": "Începe cu analiza",
+    "ctaBandText": "Dacă amploarea provocării corespunde practicii noastre — merită să discutăm. Răspuns în 24 de ore."
+  },
+  "about": {
+    "breadcrumb": "Despre noi",
+    "title": "Iurii Grygorenko",
+    "lead": "Avocat, administrator arbitral, subiect de lobby. Unul dintre puținii practicieni din Ucraina a căror activitate acoperă toate trei dimensiuni ale influenței juridice.",
+    "badgeYears": "Ani",
+    "badgeCommittee": "Comitet",
+    "badgeLicence": "Licență",
+    "role": "Avocat · Administrator arbitral · Subiect de lobby",
+    "para1": "Iurii Grygorenko și-a început cariera în proceduri penale — acolo unde miza este cea mai mare. A parcurs drumul de la apărarea în cazuri penale complexe până la formarea cadrului juridic la nivelul comitetelor UNBA și reprezentarea internațională.",
+    "para2": "Practica sa acoperă trei dimensiuni distincte: avocatură (protecția activelor și White-Collar Crime), arbitraj (management anticriză și faliment) și lobby (schimbarea mediului de reglementare). Precizie în detalii — ca un Breitling.",
+    "para3": "Fiecare caz trece printr-o analiză personală. Nu toate cazurile sunt acceptate — și aceasta este o poziție de principiu.",
+    "cred1Title": "Secretar al Comitetului UNBA",
+    "cred1Text": "pentru chestiuni de faliment",
+    "cred2Title": "Vicepreședinte al Comitetului UNBA",
+    "cred2Text": "pentru asigurarea expertizei activității de avocat",
+    "cred3Title": "Reprezentant UNBA în Moldova",
+    "cred3Text": "Chișinău",
+    "cred4Title": "Certificat de avocat",
+    "cred4Text": "Nr. 002787 · Baroul Avocaților din reg. Odesa · 16.03.2016",
+    "tagCorporate": "Conflicte corporative",
+    "tagBankruptcy": "Faliment",
+    "tagMaritime": "Drept maritim",
+    "approachLabel": "Abordare",
+    "approachTitle": "B2B. Fără compromisuri.",
+    "approachH3": "Avocatul la care ajungi — nu pe care îl cauți",
+    "approachP1": "Litigant nu practică recepție în masă. Fiecare caz este un proiect strategic separat. Clienții sunt proprietari de afaceri și C-level care se confruntă cu provocări juridice sistemice: raider, urmărire penală, falimentul activelor, conflict cu regulatorul.",
+    "approachP2": "Litigant Law Office — birou de avocați cu specializare îngustă și prezență internațională: Chișinău, Kyiv, Odesa.",
+    "noTitle": "Când spunem «nu»",
+    "no1": "Litigii de consum și cauze civile minore",
+    "no2": "Cazuri fără perspective juridice reale",
+    "no3": "Clientul nu este pregătit să acționeze sistemic",
+    "no4": "Conflict de interese cu clienții existenți",
+    "no5": "Când ajutorul nu mai este posibil — doar minimizarea",
+    "regLabel": "Informații de înregistrare",
+    "regText": "AB LITIGANT · Certificat nr. 002787\nBaroul Avocaților din reg. Odesa · 16.03.2016 · Decizia nr. 44",
+    "faqTitle": "Despre birou — întrebări frecvente",
+    "faqLabel": "FAQ",
+    "faq": [
+      {
+        "q": "Cine este avocatul Iurii Grygorenko?",
+        "a": "Iurii Grygorenko este avocat (Certificat de Avocat nr. 002787, eliberat de Baroul Avocaților din regiunea Odesa la 16.03.2016, Decizia nr. 44), administrator arbitral și subiect de lobby. Secretar al Comitetului UNBA pentru Faliment, Vicepreședinte al Comitetului UNBA pentru Asigurarea Expertizei Activității de Avocat, Reprezentant oficial al UNBA în Republica Moldova. Și-a început practica în proceduri penale — White-Collar Crime, unde miza este maximă. Concentrare exclusiv B2B: proprietari de afaceri, conducere C-level, conflicte corporative, active în pericol. Conduce cazuri în Kyiv și Odesa, coordonând consilieri internaționali din Chișinău. Combină trei dimensiuni ale influenței juridice — avocatura, arbitrajul, lobby — fără conflicte de interese."
+      },
+      {
+        "q": "Ce este Litigant Law Office?",
+        "a": "Litigant Law Office (AB LITIGANT) este un birou de avocați ucrainean cu specializare îngustă B2B: White-Collar Crime, conflicte corporative, faliment și restructurare, GR-Litigation, lobby. Fondat în 2016, sediul principal în Kyiv (str. Antonovycha 23), cu un oficiu suplimentar în Odesa (str. Buhaiivska 21). Prin statutul fondatorului ca reprezentant oficial UNBA în Moldova, biroul oferă coordonare juridică internațională din Chișinău. Litigant nu practică recepție în masă: fiecare caz începe cu o pre-analiză și este acceptat doar dacă există perspective juridice reale și nu există conflict de interese cu clienții existenți. Principiul de lucru — parteneriat strategic, nu un model de furnizor de servicii."
+      },
+      {
+        "q": "Ce tipuri de cazuri acceptă Litigant?",
+        "a": "Litigant acceptă cazuri exclusiv în format B2B: proprietari de afaceri, conducere C-level, grupuri corporative. Profilul cazului: o provocare juridică sistemică de minim 10 milioane UAH sau un activ strategic în pericol. Materiile tipice — atacuri raider asupra afacerilor, proceduri penale împotriva proprietarilor (evaziune fiscală, fraudă, spălare de bani), războaie corporative între participanți, falimentul întreprinderilor mari, litigii cu autoritatea fiscală/vamă/Comitetul Antimonopol, proiecte GR pentru reforma reglementărilor. NU acceptăm: litigii de consum, cauze civile minore, cazuri fără perspective juridice, situații în care 'nimic nu poate fi remediat, doar minimizate daunele'. Fiecare cerere trece printr-o conformitate internă — răspuns în 24 de ore."
+      }
+    ]
+  },
+  "services": {
+    "breadcrumb": "Practici",
+    "title": "Practici cheie",
+    "lead": "Patru domenii — fiecare necesită echipă, analiză și abordare strategică.",
+    "block1Title": "Conflicte corporative",
+    "block1Text": "Protecția activelor și afacerilor împotriva raidurilor, preluărilor ostile și războaielor corporative. White-Collar Crime — unde proprietarii și managementul au nevoie de apărare strategică.",
+    "block1Items": [
+      ["Inginerie anti-raider", "Protecție sistemică a activelor și structurilor"],
+      ["White-Collar Crime", "Apărarea proprietarilor și managementului în proceduri penale"],
+      ["Litigii corporative", "Conflicte între participanți, protecția drepturilor corporative"],
+      ["Apărare în timpul percheziților 24/7", "Însoțire procesuală a acțiunilor de investigație"]
+    ],
+    "block2Title": "Litigii cu statul",
+    "block2Text": "GR-Litigation. Contestarea deciziilor autorităților — de la serviciul fiscal și vamă la AMCU și regulatori. Protejarea intereselor prin mecanisme juridice de schimbare a mediului de reglementare.",
+    "block2Items": [
+      ["GR-Litigation", "Contestarea deciziilor autorităților în instanță"],
+      ["Apărare fiscală", "Litigii cu serviciul fiscal, dispute vamale, contestarea controalelor"],
+      ["Contestație administrativă", "Apărare extrajudiciară și judiciară față de stat"],
+      ["Achiziții publice", "Licitații, AMCU, protecție împotriva deciziilor ilegale"]
+    ],
+    "block3Title": "Arbitraj și restructurare",
+    "block3Text": "Management anticriză și protecția activelor în proceduri de insolvență. Iurii Grygorenko este administrator arbitral și Secretar al Comitetului UNBA pentru faliment.",
+    "block3Items": [
+      ["Administrare arbitrală", "Servicii de administrator arbitral în proceduri de faliment"],
+      ["Protecția creditorilor", "Reprezentarea și protejarea intereselor creditorilor"],
+      ["Restructurarea datoriilor", "Planuri de restructurare, negocieri, acorduri de pace"],
+      ["Apărarea debitorilor", "Însoțire juridică în proceduri de insolvență"]
+    ],
+    "block4Title": "Lobby și GR",
+    "block4Text": "Protejarea intereselor de afaceri la nivel de formare a legislației. Reprezentarea UNBA în Moldova deschide oportunități de coordonare juridică internațională.",
+    "block4Items": [
+      ["Inițiative legislative", "Elaborarea și promovarea modificărilor legislative"],
+      ["GR în fața autorităților", "Reprezentare la nivelul comitetelor și regulatorilor"],
+      ["Strategie de reglementare", "Analiza și planificarea activității cu mediul de reglementare"],
+      ["Reprezentare internațională", "UNBA · Moldova (Chișinău) · coordonarea consilierilor străini"]
+    ],
+    "discussCase": "Discutați cazul",
+    "discussProject": "Discutați proiectul",
+    "faqTitle": "Întrebări frecvente",
+    "faqLabel": "FAQ",
+    "faq": [
+      {
+        "q": "Ce este White-Collar Crime în Ucraina și cum să te aperi?",
+        "a": "White-Collar Crime în Ucraina înseamnă proceduri penale economice împotriva proprietarilor de afaceri și conducerii executive — evaziune fiscală (art. 212 Cod Penal), antreprenoriat fictiv, fraudă, spălare de bani, abuz de putere. Apărarea eficientă necesită angajarea unui avocat imediat după prima acțiune de investigație: percheziție, citație, înștiințare de bănuială. Strategia Litigant: răspuns procesual 24/7 în timpul percheziției, evaluarea juridică a cazului în faza preliminară, construirea poziției de apărare pe toate instanțele — de la judecătoria locală la Curtea Supremă. Principiul: respingerea acuzațiilor în faza fără expunere publică, nu doar câștigarea procesului. Litigant intervine la primul semnal — citație, percheziție, blocarea conturilor."
+      },
+      {
+        "q": "Cum funcționează apărarea anti-raider a afacerii?",
+        "a": "Ingineria anti-raider înseamnă construirea de bariere juridice sistemice care fac preluarea ostilă inutilă din punct de vedere economic. Stratul preventiv: audit al structurii corporative, identificarea vulnerabilităților (acte constitutive, registre, acorduri între acționari, gajuri pe activele cheie), restructurarea proprietății prin holdinguri și trusturi, duplicarea documentației critice în depozite securizate. Stratul reactiv când atacul a început: ordonanțe judecătorești de blocare a acțiunilor de înregistrare ilegale, proceduri penale împotriva participanților conform art. 206 Cod Penal (împiedicarea activității economice legale), urmărirea beneficiarilor prin cereri internaționale. Litigant gestionează aceste cazuri integral — de la nivelul registrului de stat până la Curtea Supremă a Ucrainei."
+      },
+      {
+        "q": "Când este nevoie de un administrator arbitral?",
+        "a": "Administratorul arbitral este numit de instanță în procedurile de faliment și îndeplinește una din trei funcții: administrator al proprietății în etapa administrării activelor, manager de redresare la aprobarea planului de restructurare a insolvenței, sau lichidator în procedura de lichidare. Creditorii doresc un profesionist independent care va efectua inventarierea activelor, va contesta tranzacțiile suspecte ale debitorului din ultimii trei ani (art. 42 din Codul de Faliment al Ucrainei), va recupera creanțele și va asigura satisfacerea egală a cererilor. Iurii Grygorenko este atât administrator arbitral, cât și Secretar al Comitetului UNBA pentru Faliment — un rol dublu care asigură precizie tehnică și conștientizarea jurisprudenței actuale."
+      },
+      {
+        "q": "Ce este GR-Litigation?",
+        "a": "GR-Litigation (Government Relations Litigation) este o strategie juridică ce combină contestarea judiciară a deciziilor autorităților de stat cu activitatea paralelă pentru schimbarea mediului de reglementare, pentru a preveni repetarea problemei. Exemplu clasic: autoritatea fiscală impune milioane în TVA pentru operațiuni presupus fictive — Litigant contestă decizia în instanța administrativă (tactică), inițiind în paralel modificări ale actului fiscal secundar care a permis astfel de evaluări (strategie). Alt exemplu: contestarea unei hotărâri AMC cu lobby paralel pentru modificarea metodologiei de analiză a pieței. Aceasta este muncă nu doar pe un caz, ci și pe viitor — astfel încât afacerea să nu revină la aceeași problemă peste un an."
+      },
+      {
+        "q": "Cum să contestați o decizie a autorității fiscale?",
+        "a": "Contestarea deciziilor autorității fiscale ucrainene are două etape: contestația administrativă (plângere la organul fiscal superior în termen de 10 zile lucrătoare de la primirea deciziei-notificare) și contestația judiciară în instanța administrativă districtuală. Greșeli frecvente ale afacerilor: ratarea termenului de 10 zile (apoi rămâne doar instanța), calificarea juridică incorectă (ex. contestare pe fond în loc de încălcări procedurale), lipsa probelor expert pentru tranzacții (mărfuri, transport, financiare). Litigant construiește apărarea pe două straturi: încălcări procedurale în timpul controlului (numire, notificare, întocmirea actului) și argumente substanțiale privind realitatea operațiunilor. Strategic, poziția trebuie să fie pregătită ÎNAINTE de sosirea deciziei — în etapa de control."
+      }
+    ]
+  },
+  "blog": {
+    "breadcrumb": "Analiză",
+    "title": "Centrul analitic",
+    "lead": "Monitorizarea legislației și articole de expertiză pe practicile cheie.",
+    "items": [
+      {
+        "cat": "Faliment",
+        "title": "Restructurarea datoriilor 2025: noua practică judiciară",
+        "text": "Analiza schimbărilor în abordările instanțelor comerciale privind planurile de restructurare conform Codului de proceduri de faliment.",
+        "src": "LinkedIn",
+        "url": "https://www.linkedin.com/in/litigant"
+      },
+      {
+        "cat": "White-Collar Crime",
+        "title": "Apărarea afacerii: tactici în timpul percheziției",
+        "text": "Privire practică asupra drepturilor procedurale și algoritmul de acțiune al proprietarului în timpul acțiunilor investigative.",
+        "src": "LinkedIn",
+        "url": "https://www.linkedin.com/in/litigant"
+      },
+      {
+        "cat": "Drept fiscal",
+        "title": "Contestarea deciziilor fiscale: unde pierd afacerile",
+        "text": "Analiza sistemică a greșelilor tipice în contestarea deciziilor autorității fiscale în instanțele administrative.",
+        "src": "Ekonomichna Pravda",
+        "url": "https://www.epravda.com.ua"
+      },
+      {
+        "cat": "GR · Lobby",
+        "title": "Etica lobby-ului în Ucraina: unde este limita",
+        "text": "Analiza mediului de reglementare GR și riscurile pentru afaceri și proprietari.",
+        "src": "LinkedIn",
+        "url": "https://www.linkedin.com/in/litigant"
+      },
+      {
+        "cat": "Conflicte corporative",
+        "title": "Raiderul 2025: scheme noi și protecție",
+        "text": "Privire de ansamblu asupra mecanismelor actuale de preluare corporativă și a metodelor preventive de protejare a activelor.",
+        "src": "Forbes Ukraine",
+        "url": "https://forbes.ua"
+      },
+      {
+        "cat": "Faliment · Energie",
+        "title": "Riscurile de faliment în sectorul energetic",
+        "text": "Analiza riscurilor sistemice de insolvență în industrie și strategii de protecție a activelor creditorilor.",
+        "src": "Yur-Gazeta",
+        "url": "https://yur-gazeta.com"
+      }
+    ],
+    "author": "Iurii Grygorenko"
+  },
+  "contacts": {
+    "breadcrumb": "Contacte",
+    "title": "Depune cazul spre analiză",
+    "lead": "Formularul de pre-analiză a cazului. Cererea dvs. trece printr-o analiză internă. Răspuns în 24 de ore.",
+    "kyivLabel": "Kyiv — sediul principal",
+    "kyivAddress": "01004, Kyiv\nstr. Antonovycha, 23, lit. B",
+    "odesaLabel": "Odesa — oficiu",
+    "odesaAddress": "65005, Odesa\nstr. Buhaiivska, 21, of. 701",
+    "chisinauLabel": "Chișinău · Reprezentare internațională",
+    "chisinauText": "Reprezentant UNBA în Republica Moldova\nCoordonarea consilierilor străini și cooperare juridică internațională",
+    "messengersLabel": "Mesagerie",
+    "formTitle": "Formularul de pre-analiză a cazului",
+    "formSub": "Exclusiv C-level și proprietari de afaceri. Cererea dvs. trece printr-o analiză internă — răspuns în 24 de ore.",
+    "fName": "Persoana de contact",
+    "fNamePh": "Nume și prenume",
+    "fPosition": "Funcție",
+    "fPositionPh": "CEO / Proprietar / CFO",
+    "fCompany": "Denumirea companiei",
+    "fCompanyPh": "SRL / SA / Grup",
+    "fIndustry": "Industrie",
+    "fIndustries": ["Energie", "Retail și FMCG", "Logistică și transport", "Finanțe și sector bancar", "Agribusiness", "Construcții și dezvoltare", "IT și tehnologie", "Producție", "Altele"],
+    "fChallenge": "Esența provocării",
+    "fChallengePh": "Descrieți situația, riscurile cheie și urgența",
+    "fAsset": "Valoarea estimată a activului în pericol",
+    "fAssetOptions": ["de la 10 mil UAH", "de la 50 mil UAH", "de la 100 mil UAH", "de la 1 mil $", "de la 10 mil $", "Activ strategic"],
+    "fContact": "Telefon sau email",
+    "fContactPh": "+38 0XX XXX XX XX",
+    "fSelect": "— alegeți —",
+    "fSubmit": "Depune cazul spre pre-analiză",
+    "fSending": "Se trimite...",
+    "fOk": "Cererea dvs. a fost acceptată pentru efectuarea conformității primare. Așteptați răspuns în termen de 24 de ore.",
+    "fErr": "Eroare. Vă rugăm să sunați direct."
+  },
+  "footer": {
+    "desc": "Arhitectura securității juridice pentru B2B. Chișinău · Kyiv · Odesa.",
+    "reg": "Certificat nr. 002787 · Baroul Avocaților din reg. Odesa",
+    "practicesTitle": "Practici",
+    "bureauTitle": "Birou",
+    "contactsTitle": "Contacte",
+    "founder": "Iurii Grygorenko",
+    "cities": "Kyiv · Odesa · Chișinău",
+    "copyright": "© 2025 Litigant Law Office · Iurii Grygorenko",
+    "privacy": "Confidențialitate",
+    "stateDisputes": "Litigii cu statul",
+    "arbitration": "Arbitraj"
+  }
+}

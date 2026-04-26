@@ -1,0 +1,287 @@
+{
+  "meta": {
+    "title": "Litigant Law Office — B2B Attorney Kyiv | White-Collar Crime, Bankruptcy, GR | Iurii Grygorenko",
+    "description": "Litigant Law Office — Iurii Grygorenko's law firm. Business defence: White-Collar Crime, anti-raiding engineering, bankruptcy, GR-Litigation. Offices in Kyiv and Odesa. Engagement after case analysis.",
+    "keywords": "B2B attorney Kyiv, white collar crime lawyer, business defence criminal proceedings, anti-raiding engineering, bankruptcy restructuring, GR lobbying Ukraine, Odesa attorney",
+    "ogTitle": "Litigant Law Office — B2B Attorney | Iurii Grygorenko",
+    "ogDescription": "Business defence: White-Collar Crime, anti-raiding engineering, bankruptcy, GR-Litigation. Offices in Kyiv and Odesa."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Practices",
+    "blog": "Insights",
+    "contacts": "Contacts",
+    "submitCase": "Submit case",
+    "submitCaseFull": "Submit a case for review",
+    "lawOffice": "Law Office",
+    "menu": "Menu",
+    "close": "Close"
+  },
+  "home": {
+    "heroTag": "Litigant Law Office · Kyiv · Odesa · Chișinău",
+    "heroTitle": "Litigant.",
+    "heroSubtitle": "Architecture of legal security for B2B.",
+    "heroText": "We do not provide legal services. We engineer the conditions under which your business becomes untouchable.",
+    "ctaSubmit": "Submit a case for review",
+    "ctaVectors": "Three vectors",
+    "stat1Label": "Years practice",
+    "stat2Label": "Dimensions",
+    "stat3Label": "Countries",
+    "vec1Label": "Advocacy",
+    "vec1Title": "Procedural dominance",
+    "vec1Text": "Asset protection and White-Collar Crime. Corporate conflicts and disputes with the state.",
+    "vec2Label": "Arbitration",
+    "vec2Title": "Crisis asset management",
+    "vec2Text": "Crisis management and solvency restoration. Protecting creditors and debtors.",
+    "vec3Label": "Lobbying",
+    "vec3Title": "Changing the rules",
+    "vec3Text": "Protecting business interests at the level of legislation formation and regulatory environment.",
+    "manifesto": "We do not provide services. We become part of the client's system to overcome critical challenges.",
+    "practicesLabel": "Core practices",
+    "practicesTitle": "Three vectors of strength",
+    "practicesIntro": "Focused specialisation — where complexity demands experience and strategic vision.",
+    "prac1Title": "Corporate conflicts",
+    "prac1Text": "Anti-raiding engineering, White-Collar Crime, defence of owners and management in criminal proceedings.",
+    "prac2Title": "Disputes with the state",
+    "prac2Text": "GR-Litigation. Challenging state decisions, tax defence, customs disputes. Changing the regulatory environment through legal mechanisms.",
+    "prac3Title": "Arbitration & restructuring",
+    "prac3Text": "Crisis management, bankruptcy and debt restructuring, arbitration management, asset protection in insolvency proceedings.",
+    "prac4Title": "Lobbying & GR",
+    "prac4Text": "Protecting business interests at the legislative formation level. Representation before state authorities. International legal coordination (Moldova).",
+    "learnMore": "Learn more",
+    "principlesLabel": "Principles",
+    "principlesTitle": "Why Litigant",
+    "why1Title": "Analysis first",
+    "why1Text": "Every matter undergoes thorough preliminary analysis. We engage only where a genuine path to outcome exists.",
+    "why2Title": "B2B only",
+    "why2Text": "Business owners, C-level, corporate conflicts, assets at risk. Not mass intake — strategic partnership.",
+    "why3Title": "Three dimensions",
+    "why3Text": "A single practice spanning advocacy, arbitration and lobbying without conflict of interest.",
+    "why4Title": "Confidentiality",
+    "why4Text": "Attorney-client privilege is a condition of engagement, not an option. Secure channels. Complete discretion.",
+    "processLabel": "Process",
+    "processTitle": "How to begin",
+    "proc1Title": "Application",
+    "proc1Text": "Case pre-analysis form. Describe the challenge and the scale of the asset at risk.",
+    "proc2Title": "Internal review",
+    "proc2Text": "The application undergoes internal review for practice fit and engagement prospects.",
+    "proc3Title": "Response 24h",
+    "proc3Text": "We respond within 24 hours. If grounds exist — we schedule an initial meeting.",
+    "proc4Title": "Strategy",
+    "proc4Text": "First meeting is an in-depth situation analysis. Then — strategy and action plan.",
+    "ctaBandTitle": "It begins with analysis",
+    "ctaBandText": "If the scale of the challenge matches our practice — it makes sense to talk. Response within 24 hours."
+  },
+  "about": {
+    "breadcrumb": "About",
+    "title": "Iurii Grygorenko",
+    "lead": "Attorney, arbitration manager, lobbying subject. Among a handful of practitioners in Ukraine whose work spans all three dimensions of legal influence.",
+    "badgeYears": "Years",
+    "badgeCommittee": "Committee",
+    "badgeLicence": "Licence",
+    "role": "Attorney · Arbitration manager · Lobbying subject",
+    "para1": "Iurii Grygorenko began his career in criminal proceedings — where stakes are highest. He progressed from defence in complex criminal matters to shaping the legal framework at UBA committee level and international representation.",
+    "para2": "His practice spans three distinct dimensions: advocacy (asset protection and White-Collar Crime), arbitration (crisis management and bankruptcy) and lobbying (changing the regulatory environment). Precision in every detail — like a Breitling.",
+    "para3": "Every case undergoes personal analysis. Not all matters are accepted — and this is a matter of principle.",
+    "cred1Title": "Secretary, UBA Committee",
+    "cred1Text": "on bankruptcy",
+    "cred2Title": "Deputy Head, UBA Committee",
+    "cred2Text": "on expert support for legal practice",
+    "cred3Title": "UBA Representative in Moldova",
+    "cred3Text": "Chișinău",
+    "cred4Title": "Bar certificate",
+    "cred4Text": "No. 002787 · Bar Council of Odesa Region · 16.03.2016",
+    "tagCorporate": "Corporate conflicts",
+    "tagBankruptcy": "Bankruptcy",
+    "tagMaritime": "Maritime law",
+    "approachLabel": "Approach",
+    "approachTitle": "B2B. Without compromise.",
+    "approachH3": "An advocate reached — not searched for",
+    "approachP1": "Litigant does not handle mass intake. Every case is a distinct strategic project. Clients are business owners and C-level facing systemic legal challenges: raiding, criminal prosecution, asset bankruptcy, conflict with the regulator.",
+    "approachP2": "Litigant Law Office — a law firm with narrow specialisation and international presence: Kyiv, Odesa, Chișinău.",
+    "noTitle": "When we say \"no\"",
+    "no1": "Consumer disputes and minor civil matters",
+    "no2": "Cases without genuine legal prospects",
+    "no3": "The client is not prepared to act systematically",
+    "no4": "Conflict of interest with existing clients",
+    "no5": "When help is no longer possible — only mitigation",
+    "regLabel": "Registration",
+    "regText": "AB LITIGANT · Certificate No. 002787\nBar Council of Odesa Region · 16.03.2016 · Resolution No. 44",
+    "faqTitle": "About the firm — FAQ",
+    "faqLabel": "FAQ",
+    "faq": [
+      {
+        "q": "Who is Iurii Grygorenko, attorney?",
+        "a": "Iurii Grygorenko is an attorney (Bar Certificate No. 002787, issued by the Bar Council of Odesa Region on 16.03.2016, Resolution No. 44), arbitration manager and lobbying subject. He serves as Secretary of the UBA Committee on Bankruptcy, Deputy Head of the UBA Committee on Expert Support for Legal Practice, and the official Representative of the Ukrainian National Bar Association in the Republic of Moldova. He began his practice in criminal proceedings — White-Collar Crime, where the stakes are highest. Focus: B2B clients only — business owners, C-level executives, corporate conflicts, assets at risk. Cases handled in Kyiv and Odesa, with international coordination from Chișinău. Combines three dimensions of legal influence — advocacy, arbitration, lobbying — without conflict of interest."
+      },
+      {
+        "q": "What is Litigant Law Office?",
+        "a": "Litigant Law Office (AB LITIGANT) is a Ukrainian law firm with narrow B2B specialisation: White-Collar Crime, corporate conflicts, bankruptcy and restructuring, GR-Litigation, lobbying. Founded in 2016, headquartered in Kyiv (23 Antonovycha St) with an additional office in Odesa (21 Buhaiivska St). Through the founder's status as official UBA representative in Moldova, the firm provides international legal coordination from Chișinău. Litigant does not handle mass intake: every case begins with a pre-analysis and is accepted only if there is a genuine legal prospect and no conflict of interest with existing clients. The working principle is strategic partnership, not a service-provider model."
+      },
+      {
+        "q": "What kind of cases does Litigant accept?",
+        "a": "Litigant accepts cases exclusively in B2B format: business owners, C-level management, corporate groups. Case profile: a systemic legal challenge of at least UAH 10 million scale or a strategic asset at risk. Typical matters — raiding attacks on businesses, criminal proceedings against owners (tax evasion, fraud, money laundering), corporate wars between participants, bankruptcy of large enterprises, disputes with the tax authority, customs, Antimonopoly Committee, GR projects on regulatory reform. We do NOT accept: consumer disputes, minor civil matters, cases without legal prospects, situations where 'nothing can be fixed, only damage minimised'. Every application undergoes internal compliance — response within 24 hours."
+      }
+    ]
+  },
+  "services": {
+    "breadcrumb": "Practices",
+    "title": "Core practices",
+    "lead": "Four areas — each requiring a team, analytics and a strategic approach.",
+    "block1Title": "Corporate conflicts",
+    "block1Text": "Protecting assets and businesses from raiding, hostile takeovers and corporate warfare. White-Collar Crime — where owners and management require strategic defence.",
+    "block1Items": [
+      ["Anti-raiding engineering", "Systemic protection of assets and structures"],
+      ["White-Collar Crime", "Defence of owners and management in criminal proceedings"],
+      ["Corporate disputes", "Disputes between participants, protection of corporate rights"],
+      ["Defence during searches 24/7", "Procedural support during investigative actions"]
+    ],
+    "block2Title": "Disputes with the state",
+    "block2Text": "GR-Litigation. Challenging state authority decisions — from the tax service and customs to AMCU and regulators. Protecting interests through legal mechanisms to change the regulatory environment.",
+    "block2Items": [
+      ["GR-Litigation", "Challenging state authority decisions in court"],
+      ["Tax defence", "Disputes with the tax authority, customs disputes"],
+      ["Administrative appeals", "Out-of-court and judicial protection against the state"],
+      ["Public procurement", "Tenders, AMCU, protection from unlawful decisions"]
+    ],
+    "block3Title": "Arbitration & restructuring",
+    "block3Text": "Crisis management and asset protection in insolvency proceedings. Iurii Grygorenko is an arbitration manager and Secretary of the UBA Bankruptcy Committee.",
+    "block3Items": [
+      ["Arbitration management", "Arbitration manager services in bankruptcy proceedings"],
+      ["Creditor protection", "Representation and protection of creditor interests"],
+      ["Debt restructuring", "Restructuring plans, negotiations, settlement agreements"],
+      ["Debtor defence", "Legal support in insolvency proceedings"]
+    ],
+    "block4Title": "Lobbying & GR",
+    "block4Text": "Protecting business interests at the level of legislation formation. UBA representation in Moldova opens opportunities for international legal coordination.",
+    "block4Items": [
+      ["Legislative initiatives", "Developing and advancing legislative changes"],
+      ["GR before state authorities", "Representation at committee and regulatory level"],
+      ["Regulatory strategy", "Analysis and planning of regulatory engagement"],
+      ["International representation", "UBA · Moldova · foreign counsel coordination"]
+    ],
+    "discussCase": "Discuss a case",
+    "discussProject": "Discuss a project",
+    "faqTitle": "Frequently asked questions",
+    "faqLabel": "FAQ",
+    "faq": [
+      {
+        "q": "What is White-Collar Crime in Ukraine and how to defend against it?",
+        "a": "White-Collar Crime in Ukraine refers to economic criminal proceedings against business owners and senior management — tax evasion (Article 212 of the Criminal Code), fictitious entrepreneurship, fraud, money laundering, abuse of power. Effective defence requires engaging counsel immediately after the first investigative action: a search, a witness summons, or a notice of suspicion. Litigant's strategy: 24/7 procedural response during search and seizure, legal assessment of the case at the pre-trial stage, building a defence position across all instances — from local court to Supreme Court. The principle is to dismiss the charges at the stage where there is no public exposure, not just to win at trial."
+      },
+      {
+        "q": "How does anti-raiding business defence work?",
+        "a": "Anti-raiding engineering means building systemic legal barriers that make a hostile takeover economically pointless. Preventive layer: corporate structure audit, identifying weaknesses (charter documents, registers, shareholder agreements, security over key assets), restructuring ownership through holdings and trusts, duplicating critical documentation in secure storage. Reactive layer once an attack begins: judicial injunctions blocking unlawful registration actions, criminal proceedings against participants under Article 206 of the Criminal Code (obstruction of lawful business activity), tracing beneficiaries via international requests. Litigant handles these cases end-to-end — from registry-level actions to the Supreme Court, with a focus on stopping the attack and recovering assets if already seized."
+      },
+      {
+        "q": "When is an arbitration manager needed?",
+        "a": "An arbitration manager is appointed by the court in bankruptcy proceedings and performs one of three functions: property administrator at the asset administration stage, rehabilitation manager when an insolvency restructuring plan is approved, or liquidator in the liquidation procedure. Creditors want an independent professional who will conduct asset inventory, challenge suspicious transactions of the debtor over the past three years (Article 42 of the Bankruptcy Code of Ukraine), recover receivables, and ensure equal satisfaction of claims. Iurii Grygorenko is both an arbitration manager and Secretary of the UBA Bankruptcy Committee — a dual role that ensures technical precision and current Supreme Court jurisprudence awareness."
+      },
+      {
+        "q": "What is GR-Litigation?",
+        "a": "GR-Litigation (Government Relations Litigation) is a legal strategy that combines judicial appeals against state authority decisions with parallel work on the regulatory environment to prevent the problem from recurring. Classic example: the tax authority charges millions in VAT for allegedly fictitious operations — Litigant challenges the decision in administrative court (tactics) while simultaneously initiating amendments to the secondary tax act that enabled such assessments in the first place (strategy). Another example: appealing an Antimonopoly Committee ruling while lobbying changes to the market analysis methodology. This is work not only on one case, but on the future — so the business does not return to the same problem next year."
+      },
+      {
+        "q": "How to challenge a tax authority decision?",
+        "a": "Challenging Ukrainian tax authority decisions has two stages: administrative appeal (a complaint to the higher-level tax body within 10 working days of receiving the tax notification-decision) and judicial appeal in the district administrative court. Common business mistakes: missing the 10-day deadline (then court is the only option left), incorrect legal qualification (e.g., appealing on substance instead of procedural violations), lack of expert evidence on transactions (commodity, transport, financial). Litigant builds defence on two layers: procedural violations during the audit (assignment, notification, act execution) and substantive arguments on the reality of operations. Strategically, the position must be ready BEFORE the decision arrives — at the audit stage."
+      }
+    ]
+  },
+  "blog": {
+    "breadcrumb": "Insights",
+    "title": "Analytical centre",
+    "lead": "Legislation monitoring and expert long reads on core practice areas.",
+    "items": [
+      {
+        "cat": "Bankruptcy",
+        "title": "Debt restructuring 2025: new court practice",
+        "text": "Analysis of changes in commercial courts' approaches to restructuring plans under the Ukrainian Bankruptcy Code.",
+        "src": "LinkedIn",
+        "url": "https://www.linkedin.com/in/litigant"
+      },
+      {
+        "cat": "White-Collar Crime",
+        "title": "Business defence: tactics during a search",
+        "text": "Practical overview of procedural rights and the owner's action algorithm during investigative actions.",
+        "src": "LinkedIn",
+        "url": "https://www.linkedin.com/in/litigant"
+      },
+      {
+        "cat": "Tax law",
+        "title": "Challenging tax decisions: where businesses lose",
+        "text": "Systematic analysis of typical mistakes in challenging tax authority decisions in administrative courts.",
+        "src": "Ekonomichna Pravda",
+        "url": "https://www.epravda.com.ua"
+      },
+      {
+        "cat": "GR · Lobbying",
+        "title": "Ethics of lobbying in Ukraine: where the line is",
+        "text": "Analysis of the GR regulatory environment and risks for businesses and owners.",
+        "src": "LinkedIn",
+        "url": "https://www.linkedin.com/in/litigant"
+      },
+      {
+        "cat": "Corporate conflicts",
+        "title": "Raiding 2025: new schemes and protection",
+        "text": "Overview of current corporate takeover mechanisms and preventive protection methods.",
+        "src": "Forbes Ukraine",
+        "url": "https://forbes.ua"
+      },
+      {
+        "cat": "Bankruptcy · Energy",
+        "title": "Bankruptcy risks in the energy sector",
+        "text": "Analysis of systemic insolvency risks in the sector and creditor asset protection strategies.",
+        "src": "Yur-Gazeta",
+        "url": "https://yur-gazeta.com"
+      }
+    ],
+    "author": "Iurii Grygorenko"
+  },
+  "contacts": {
+    "breadcrumb": "Contacts",
+    "title": "Submit a case for review",
+    "lead": "Case pre-analysis form. Your application undergoes internal review. Response within 24 hours.",
+    "kyivLabel": "Kyiv — main office",
+    "kyivAddress": "01004, Kyiv\n23 Antonovycha St, bldg B",
+    "odesaLabel": "Odesa — office",
+    "odesaAddress": "65005, Odesa\n21 Buhaiivska St, office 701",
+    "chisinauLabel": "Chișinău · International representation",
+    "chisinauText": "UBA Representative in Moldova\nForeign counsel coordination and international legal cooperation",
+    "messengersLabel": "Messengers",
+    "formTitle": "Case pre-analysis form",
+    "formSub": "C-level and business owners only. Your application undergoes internal review — response within 24 hours.",
+    "fName": "Contact person",
+    "fNamePh": "Full name",
+    "fPosition": "Position",
+    "fPositionPh": "CEO / Owner / CFO",
+    "fCompany": "Company name",
+    "fCompanyPh": "LLC / JSC / Group",
+    "fIndustry": "Industry",
+    "fIndustries": ["Energy", "Retail & FMCG", "Logistics & Transport", "Finance & Banking", "Agribusiness", "Construction & Development", "IT & Technology", "Manufacturing", "Other"],
+    "fChallenge": "Nature of the challenge",
+    "fChallengePh": "Describe the situation, key risks and urgency",
+    "fAsset": "Estimated value of asset at risk",
+    "fAssetOptions": ["from UAH 10M", "from UAH 50M", "from UAH 100M", "from $1M", "from $10M", "Strategic asset"],
+    "fContact": "Phone or email",
+    "fContactPh": "+38 0XX XXX XX XX",
+    "fSelect": "— select —",
+    "fSubmit": "Submit case for pre-analysis",
+    "fSending": "Sending...",
+    "fOk": "Your application has been accepted for initial compliance review. Expect a response within 24 hours.",
+    "fErr": "Error. Please call directly."
+  },
+  "footer": {
+    "desc": "Architecture of legal security for B2B. Kyiv · Odesa · Chișinău.",
+    "reg": "Certificate No. 002787 · Bar Council of Odesa Region",
+    "practicesTitle": "Practices",
+    "bureauTitle": "Bureau",
+    "contactsTitle": "Contacts",
+    "founder": "Iurii Grygorenko",
+    "cities": "Kyiv · Odesa · Chișinău",
+    "copyright": "© 2025 Litigant Law Office · Iurii Grygorenko",
+    "privacy": "Privacy",
+    "stateDisputes": "State disputes",
+    "arbitration": "Arbitration"
+  }
+}
