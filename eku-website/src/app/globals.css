@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #08070a;
+  --color-bg-elev: #0f0d12;
+  --color-bg-elev-2: #16131a;
+  --color-fg: #f4ecd8;
+  --color-fg-muted: #9b9486;
+  --color-fg-dim: #635d52;
+  --color-border: #221d28;
+  --color-border-strong: #34293a;
+  --color-gold: #d4af37;
+  --color-gold-soft: #b8941f;
+  --color-gold-bright: #f0cc55;
+  --color-danger: #c44a4a;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-playfair), ui-serif, Georgia, serif;
+}
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  html, body {
+    background: var(--color-bg);
+    color: var(--color-fg);
+  }
+
+  body {
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    background-image:
+      radial-gradient(1200px 600px at 80% -10%, rgba(212, 175, 55, 0.08), transparent 60%),
+      radial-gradient(900px 500px at -10% 30%, rgba(212, 175, 55, 0.04), transparent 60%);
+    background-attachment: fixed;
+  }
+
+  ::selection {
+    background: rgba(212, 175, 55, 0.3);
+    color: #fff;
+  }
+}
+
+@layer utilities {
+  .glass {
+    background: rgba(22, 19, 26, 0.6);
+    backdrop-filter: blur(12px) saturate(140%);
+    -webkit-backdrop-filter: blur(12px) saturate(140%);
+    border: 1px solid var(--color-border);
+  }
+
+  .glass-strong {
+    background: rgba(15, 13, 18, 0.85);
+    backdrop-filter: blur(16px) saturate(160%);
+    -webkit-backdrop-filter: blur(16px) saturate(160%);
+    border: 1px solid var(--color-border-strong);
+  }
+
+  .text-gradient-gold {
+    background: linear-gradient(135deg, #f0cc55 0%, #d4af37 50%, #a07a1a 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+
+  .border-hairline {
+    border-color: rgba(212, 175, 55, 0.2);
+  }
+}
