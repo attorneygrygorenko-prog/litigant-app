@@ -71,8 +71,8 @@
   .bar.up { box-shadow: 0 2px 28px rgba(13,27,62,.07); }
   .bar-in { height: 70px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
   .logo { display: flex; align-items: center; gap: 11px; cursor: pointer; flex-shrink: 0; }
-  .logo-sq { width: 36px; height: 36px; background: var(--n); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-  .logo-sq img { width: 28px; height: 28px; object-fit: contain; }
+  .logo-sq { width: 64px; height: 64px; background: var(--n); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .logo-sq img { width: 60px; height: 60px; object-fit: contain; }
   .logo-text { display: flex; flex-direction: column; }
   .logo-name { font-family: var(--serif); font-size: 20px; font-weight: 700; letter-spacing: .15em; color: var(--n); line-height: 1; text-transform: uppercase; }
   .logo-sub { font-family: var(--sans); font-size: 7px; font-weight: 400; letter-spacing: .32em; text-transform: uppercase; color: var(--g); margin-top: 4px; }

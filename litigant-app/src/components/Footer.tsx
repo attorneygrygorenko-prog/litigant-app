@@ -15,7 +15,7 @@ export default function Footer() {
           <div className="foot-brand">
             <Link href="/" className="logo">
               <div className="logo-sq" style={{ background: 'rgba(255,255,255,.08)' }}>
-                <Image src="/images/logo.png" alt="Litigant Law Office" width={28} height={28} />
+                <Image src="/images/logo.png" alt="Litigant Law Office" width={60} height={60} />
               </div>
               <div className="logo-text">
                 <span className="logo-name">LITIGANT</span>

@@ -42,7 +42,7 @@ export default function Header() {
         <div className="wrap bar-in">
           <Link href="/" className="logo">
             <div className="logo-sq">
-              <Image src="/images/logo.png" alt="Litigant Law Office logo" width={28} height={28} />
+              <Image src="/images/logo.png" alt="Litigant Law Office logo" width={60} height={60} />
             </div>
             <div className="logo-text">
               <span className="logo-name">LITIGANT</span>
