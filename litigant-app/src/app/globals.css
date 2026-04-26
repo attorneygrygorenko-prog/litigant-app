@@ -69,10 +69,10 @@
   /* bar */
   .bar { position: sticky; top: 0; z-index: 900; background: var(--w); border-bottom: 1px solid var(--b); transition: box-shadow .3s; }
   .bar.up { box-shadow: 0 2px 28px rgba(13,27,62,.07); }
-  .bar-in { height: 70px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+  .bar-in { height: 92px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
   .logo { display: flex; align-items: center; gap: 11px; cursor: pointer; flex-shrink: 0; }
-  .logo-sq { width: 64px; height: 64px; background: var(--n); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-  .logo-sq img { width: 60px; height: 60px; object-fit: contain; }
+  .logo-sq { width: 80px; height: 80px; background: var(--n); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .logo-sq img { width: 76px; height: 76px; object-fit: contain; }
   .logo-text { display: flex; flex-direction: column; }
   .logo-name { font-family: var(--serif); font-size: 20px; font-weight: 700; letter-spacing: .15em; color: var(--n); line-height: 1; text-transform: uppercase; }
   .logo-sub { font-family: var(--sans); font-size: 7px; font-weight: 400; letter-spacing: .32em; text-transform: uppercase; color: var(--g); margin-top: 4px; }
@@ -90,7 +90,7 @@
   .ham span { display: block; width: 22px; height: 1px; background: var(--n); }
   .mob { display: none; position: fixed; inset: 0; z-index: 1000; background: var(--n); flex-direction: column; padding: 0 40px calc(40px + env(safe-area-inset-bottom)); overflow-y: auto; }
   .mob.open { display: flex; }
-  .mob-header { height: 70px; display: flex; align-items: center; justify-content: space-between; flex-shrink: 0; border-bottom: 1px solid rgba(255,255,255,.1); margin-bottom: 8px; }
+  .mob-header { height: 92px; display: flex; align-items: center; justify-content: space-between; flex-shrink: 0; border-bottom: 1px solid rgba(255,255,255,.1); margin-bottom: 8px; }
   .mob .nl { font-family: var(--serif); font-size: 26px; font-weight: 600; color: rgba(255,255,255,.75); padding: 18px 0; border-bottom: 1px solid rgba(255,255,255,.1); letter-spacing: .01em; display: block; width: 100%; }
   .mob .nl:hover, .mob .nl.on { color: var(--w); }
   .mob .nl.on::after { display: none; }
@@ -344,7 +344,7 @@
   .form-wrap { padding: 28px 20px; }
   .sh h2 { margin-bottom: 8px; }
   .proc-g { gap: 0; }
-  .bar-in { height: 64px; }
+  .bar-in { height: 80px; }
   .mob .nl { font-size: 22px; padding: 16px 0; }
   .about-g { gap: 32px; }
   .cred-grid { gap: 1px; }
@@ -358,7 +358,7 @@
 
   /* Respect iPhone notch and home indicator inside the slide-in menu */
   .mob { padding-top: env(safe-area-inset-top); }
-  .mob-header { height: 64px; }
+  .mob-header { height: 80px; }
 
   /* Prevent body scroll-bleed behind open mobile menu (set programmatically too) */
   body.menu-open { overflow: hidden; touch-action: none; }
