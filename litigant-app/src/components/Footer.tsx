@@ -14,7 +14,7 @@ export default function Footer() {
         <div className="foot-g">
           <div className="foot-brand">
             <Link href="/" className="logo">
-              <div className="logo-sq" style={{ background: 'rgba(255,255,255,.08)' }}>
+              <div className="logo-sq">
                 <Image src="/images/logo.png" alt="Litigant Law Office" width={76} height={76} />
               </div>
               <div className="logo-text">
