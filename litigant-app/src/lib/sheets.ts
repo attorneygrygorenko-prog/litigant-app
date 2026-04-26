@@ -49,7 +49,7 @@ export async function appendLead(row: LeadRow) {
   await sheets.spreadsheets.values.append({
     spreadsheetId,
     range,
-    valueInputOption: 'USER_ENTERED',
+    valueInputOption: 'RAW',
     insertDataOption: 'INSERT_ROWS',
     requestBody: { values }
   });
