@@ -162,6 +162,18 @@ export default function ServicesPage({ params: { locale } }: { params: { locale:
           </div>
         </div>
       </section>
+
+      <section className="etym-block">
+        <div className="wrap">
+          <div className="etym-grid">
+            <div>
+              <span className="etym-label">{t('etymLabel')}</span>
+              <h2 className="etym-title">{t('etymTitle')}</h2>
+            </div>
+            <p className="etym-prose">{t('etymProse')}</p>
+          </div>
+        </div>
+      </section>
     </>
   );
 }

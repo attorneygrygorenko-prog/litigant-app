@@ -302,7 +302,9 @@
 
 @media (max-width: 1080px) {
   :root { --pad: 72px; }
-  .hero-g, .about-g, .cg, .cg.w, .contact-g, .foot-g { grid-template-columns: 1fr; }
+  .hero-g, .about-g, .cg, .cg.w, .contact-g, .foot-g, .etym-grid { grid-template-columns: 1fr; }
+  .etym-block { padding: 56px 0; }
+  .etym-grid { gap: 24px; }
   .vec-block { display: none; }
   .why-g { grid-template-columns: 1fr 1fr; gap: 32px; }
   .proc-g { grid-template-columns: 1fr 1fr; }
@@ -371,6 +373,19 @@
 }
 
 @layer components {
+  /* Litigant etymology placements */
+  .hero-etym { font-family: var(--serif); font-size: 13px; color: rgba(255,255,255,.45); font-style: italic; letter-spacing: .06em; margin-top: -16px; }
+
+  .about-etym-aside { border-left: 2px solid var(--g); padding: 20px 28px; background: var(--f); font-family: var(--serif); font-size: clamp(16px,1.8vw,19px); font-style: italic; color: var(--n); margin: 32px 0; }
+
+  .etym-block { padding: 80px 0; border-top: 1px solid var(--b); }
+  .etym-grid { display: grid; grid-template-columns: 1fr 2fr; gap: 64px; align-items: start; }
+  .etym-label { font-family: var(--sans); font-size: 9px; font-weight: 600; letter-spacing: .28em; text-transform: uppercase; color: var(--g); display: block; margin-bottom: 16px; }
+  .etym-title { font-family: var(--serif); font-size: clamp(48px,6vw,72px); font-weight: 600; color: var(--n); letter-spacing: .1em; line-height: 1; }
+  .etym-prose { font-family: var(--sans); font-size: 15.5px; line-height: 1.78; color: #4A4845; font-weight: 400; }
+
+  .foot-etym { font-size: 11px; color: rgba(255,255,255,.22); font-style: italic; margin-top: 8px; }
+
   /* Cookie banner (en/ro only) */
   .cookie-banner { position: fixed; bottom: 16px; left: 16px; right: 16px; max-width: 720px; margin: 0 auto; z-index: 1000; background: var(--n); color: var(--w); padding: 18px 22px; display: flex; align-items: center; gap: 18px; flex-wrap: wrap; box-shadow: 0 12px 36px rgba(0,0,0,.18); }
   .cookie-text { flex: 1; font-family: var(--sans); font-size: 13px; line-height: 1.65; color: rgba(255,255,255,.78); margin: 0; min-width: 240px; }

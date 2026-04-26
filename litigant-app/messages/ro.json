@@ -23,6 +23,7 @@
     "heroTitle": "Litigant.",
     "heroSubtitle": "Arhitectura securității juridice pentru B2B.",
     "heroText": "Nu oferim servicii juridice. Proiectăm condițiile în care afacerea dvs. devine intangibilă.",
+    "heroEtymology": "din lat. litigare — cel care mișcă cauza",
     "ctaSubmit": "Depune cazul spre analiză",
     "ctaVectors": "Trei vectori de forță",
     "stat1Label": "Ani de practică",
@@ -86,6 +87,7 @@
     "badgeLicence": "Licență",
     "role": "Avocat · Administrator arbitral · Subiect de lobby",
     "para1": "Iurii Grygorenko și-a început cariera în proceduri penale — acolo unde miza este cea mai mare. A parcurs drumul de la apărarea în cazuri penale complexe până la formarea cadrului juridic la nivelul comitetelor UNBA și reprezentarea internațională.",
+    "etymQuote": "Litigant — latină litigare, „a înainta cauza”. Rolul nostru nu este să însoțim procesul, ci să îi controlăm direcția. Acolo unde există strategie — există rezultat.",
     "para2": "Practica sa acoperă trei dimensiuni distincte: avocatură (protecția activelor și White-Collar Crime), arbitraj (management anticriză și faliment) și lobby (schimbarea mediului de reglementare). Precizie în detalii — ca un Breitling.",
     "para3": "Fiecare caz trece printr-o analiză personală. Nu toate cazurile sunt acceptate — și aceasta este o poziție de principiu.",
     "cred1Title": "Secretar al Comitetului UNBA",
@@ -138,6 +140,9 @@
     "lead": "Patru domenii — fiecare necesită echipă, analiză și abordare strategică.",
     "ctaQuestion": "Aveți întrebări despre acest domeniu?",
     "ctaAction": "Depune cazul spre analiză →",
+    "etymLabel": "litigare, lat.",
+    "etymTitle": "LITIGANT",
+    "etymProse": "Cuvântul Litigant provine din latinescul litigare — „a conduce o cauză, a o înainta”. Nu este doar un termen juridic. Este o poziție. Litigant — cel care acționează, nu cel care așteaptă. Cel care modelează cursul evenimentelor, nu reacționează la ele. Aceasta este înțelegerea noastră a rolului avocatului: nu ca executant al actelor procedurale, ci ca arhitect al strategiei juridice care determină rezultatul înainte ca dosarul să ajungă în instanță.",
     "block1Title": "White-Collar Crime: apărarea afacerii și managementului în proceduri penale economice",
     "block1Text": "Protecția activelor și afacerilor împotriva raidurilor, preluărilor ostile și războaielor corporative. White-Collar Crime — unde proprietarii și managementul au nevoie de apărare strategică.",
     "block1Items": [
@@ -321,6 +326,7 @@
   },
   "footer": {
     "desc": "Arhitectura securității juridice pentru B2B. Chișinău · Kyiv · Odesa.",
+    "etymology": "Litigant — din lat. litigare: a înainta cauza.",
     "reg": "Certificat nr. 002787 · Baroul Avocaților din reg. Odesa",
     "practicesTitle": "Practici",
     "bureauTitle": "Birou",

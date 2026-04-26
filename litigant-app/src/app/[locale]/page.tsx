@@ -47,6 +47,7 @@ export default function HomePage({ params: { locale } }: { params: { locale: Loc
             </h1>
             <div className="hero-line"><span /><span /></div>
             <p className="hero-text">{t('heroText')}</p>
+            <p className="hero-etym">{t('heroEtymology')}</p>
             <div className="hero-cta">
               <Link href="/kontakty" className="btn btn-g">{t('ctaSubmit')}</Link>
               <Link href="/ekspertyza" className="btn btn-w">{t('ctaVectors')}</Link>

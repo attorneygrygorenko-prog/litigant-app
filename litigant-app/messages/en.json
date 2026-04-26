@@ -23,6 +23,7 @@
     "heroTitle": "Litigant.",
     "heroSubtitle": "Architecture of legal security for B2B.",
     "heroText": "We do not provide legal services. We engineer the conditions under which your business becomes untouchable.",
+    "heroEtymology": "from Lat. litigare — one who drives the case",
     "ctaSubmit": "Submit a case for review",
     "ctaVectors": "Three vectors",
     "stat1Label": "Years practice",
@@ -86,6 +87,7 @@
     "badgeLicence": "Licence",
     "role": "Attorney · Arbitration manager · Lobbying subject",
     "para1": "Iurii Grygorenko began his career in criminal proceedings — where stakes are highest. He progressed from defence in complex criminal matters to shaping the legal framework at UBA committee level and international representation.",
+    "etymQuote": "Litigant — Latin litigare, “to drive the case forward”. Our role is not to accompany the process, but to control its direction. Where there is strategy — there is outcome.",
     "para2": "His practice spans three distinct dimensions: advocacy (asset protection and White-Collar Crime), arbitration (crisis management and bankruptcy) and lobbying (changing the regulatory environment). Precision in every detail — like a Breitling.",
     "para3": "Every case undergoes personal analysis. Not all matters are accepted — and this is a matter of principle.",
     "cred1Title": "Secretary, UBA Committee",
@@ -138,6 +140,9 @@
     "lead": "Four areas — each requiring a team, analytics and a strategic approach.",
     "ctaQuestion": "Questions about this area?",
     "ctaAction": "Submit a case for review →",
+    "etymLabel": "litigare, lat.",
+    "etymTitle": "LITIGANT",
+    "etymProse": "The word Litigant derives from the Latin litigare — “to conduct a case, to drive it forward”. This is not merely a legal term. It is a position. Litigant — one who acts, not one who waits. One who shapes the course of events, not reacts to them. This is how we understand the role of an advocate: not as an executor of procedural steps, but as an architect of legal strategy that determines the outcome before the case ever reaches court.",
     "block1Title": "White-Collar Crime: defending business and management in economic criminal proceedings",
     "block1Text": "Protecting assets and businesses from raiding, hostile takeovers and corporate warfare. White-Collar Crime — where owners and management require strategic defence.",
     "block1Items": [
@@ -321,6 +326,7 @@
   },
   "footer": {
     "desc": "Architecture of legal security for B2B. Kyiv · Odesa · Chișinău.",
+    "etymology": "Litigant — from Lat. litigare: to drive the case forward.",
     "reg": "Certificate No. 002787 · Bar Council of Odesa Region",
     "practicesTitle": "Practices",
     "bureauTitle": "Bureau",

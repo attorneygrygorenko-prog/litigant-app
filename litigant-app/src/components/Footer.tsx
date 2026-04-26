@@ -23,6 +23,7 @@ export default function Footer() {
               </div>
             </Link>
             <p className="foot-desc">{tFooter('desc')}</p>
+            <p className="foot-etym">{tFooter('etymology')}</p>
             <p className="foot-reg">{tFooter('reg')}</p>
           </div>
 

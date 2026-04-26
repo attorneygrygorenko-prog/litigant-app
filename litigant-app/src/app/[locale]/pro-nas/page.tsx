@@ -63,6 +63,7 @@ export default function AboutPage({ params: { locale } }: { params: { locale: Lo
               <span className="role">{t('role')}</span>
               <h2>{t('title')}</h2>
               <p>{t('para1')}</p>
+              <aside className="about-etym-aside">{t('etymQuote')}</aside>
               <p>{t('para2')}</p>
               <p>{t('para3')}</p>
 
