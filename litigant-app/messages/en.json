@@ -74,8 +74,12 @@
     "ctaBandText": "If the scale of the challenge matches our practice — it makes sense to talk. Response within 24 hours."
   },
   "about": {
+    "metaTitle": "Iurii Grygorenko — Attorney, Arbitration Manager, GR | Litigant Law Office Kyiv",
+    "metaDescription": "Iurii Grygorenko — attorney (Bar Certificate No. 002787), arbitration manager, Secretary of the UBA Bankruptcy Committee, UBA Representative in Moldova. Practising since 2016.",
+    "metaKeywords": "Iurii Grygorenko attorney, arbitration manager Odesa Kyiv, UBA bankruptcy committee secretary, Litigant Law Office",
     "breadcrumb": "About",
     "title": "Iurii Grygorenko",
+    "subtitle": "Attorney · Arbitration Manager · Secretary of the UBA Bankruptcy Committee · UBA Representative in the Republic of Moldova",
     "lead": "Attorney, arbitration manager, lobbying subject. Among a handful of practitioners in Ukraine whose work spans all three dimensions of legal influence.",
     "badgeYears": "Years",
     "badgeCommittee": "Committee",
@@ -126,10 +130,15 @@
     ]
   },
   "services": {
+    "metaTitle": "Practices | Bankruptcy, WCC, GR-Litigation, Anti-raiding — Litigant Law Office",
+    "metaDescription": "Bankruptcy and debt restructuring, business defence during searches, challenging tax authority decisions, anti-raiding engineering. Arbitration manager. Secretary of the UBA Bankruptcy Committee.",
+    "metaKeywords": "bankruptcy of enterprises, subsidiary liability of directors, defence during searches, challenging tax decisions, debt restructuring, white-collar crime lawyer, anti-raiding engineering Kyiv",
     "breadcrumb": "Practices",
-    "title": "Core practices",
+    "title": "Legal Practices: Bankruptcy, White-Collar Crime, GR-Litigation, Anti-raiding Defence",
     "lead": "Four areas — each requiring a team, analytics and a strategic approach.",
-    "block1Title": "Corporate conflicts",
+    "ctaQuestion": "Questions about this area?",
+    "ctaAction": "Submit a case for review →",
+    "block1Title": "White-Collar Crime: defending business and management in economic criminal proceedings",
     "block1Text": "Protecting assets and businesses from raiding, hostile takeovers and corporate warfare. White-Collar Crime — where owners and management require strategic defence.",
     "block1Items": [
       ["Anti-raiding engineering", "Systemic protection of assets and structures"],
@@ -137,7 +146,7 @@
       ["Corporate disputes", "Disputes between participants, protection of corporate rights"],
       ["Defence during searches 24/7", "Procedural support during investigative actions"]
     ],
-    "block2Title": "Disputes with the state",
+    "block2Title": "Disputes with the state: GR-Litigation, challenging tax decisions, customs disputes",
     "block2Text": "GR-Litigation. Challenging state authority decisions — from the tax service and customs to AMCU and regulators. Protecting interests through legal mechanisms to change the regulatory environment.",
     "block2Items": [
       ["GR-Litigation", "Challenging state authority decisions in court"],
@@ -145,7 +154,7 @@
       ["Administrative appeals", "Out-of-court and judicial protection against the state"],
       ["Public procurement", "Tenders, AMCU, protection from unlawful decisions"]
     ],
-    "block3Title": "Arbitration & restructuring",
+    "block3Title": "Bankruptcy and debt restructuring: arbitration manager, creditor protection, subsidiary liability",
     "block3Text": "Crisis management and asset protection in insolvency proceedings. Iurii Grygorenko is an arbitration manager and Secretary of the UBA Bankruptcy Committee.",
     "block3Items": [
       ["Arbitration management", "Arbitration manager services in bankruptcy proceedings"],
@@ -189,6 +198,11 @@
     ]
   },
   "blog": {
+    "metaTitle": "Insights | Bankruptcy, WCC, Tax Law — Iurii Grygorenko, Litigant",
+    "metaDescription": "Expert insights by Iurii Grygorenko: corporate and personal bankruptcy, business defence, White-Collar Crime, GR-Litigation, subsidiary liability.",
+    "deepLinkBankruptcy": "More on the bankruptcy practice →",
+    "deepLinkWcc": "More on White-Collar Crime →",
+    "deepLinkGr": "More on GR-Litigation →",
     "breadcrumb": "Insights",
     "title": "Analytical centre",
     "lead": "Legislation monitoring and expert long reads on core practice areas.",
@@ -239,6 +253,8 @@
     "author": "Iurii Grygorenko"
   },
   "contacts": {
+    "metaTitle": "Submit a case for review | Litigant Law Office — Attorney Kyiv, Odesa",
+    "metaDescription": "Case pre-analysis form for business owners and C-level. Bankruptcy, asset protection, White-Collar Crime. Response within 24 hours.",
     "breadcrumb": "Contacts",
     "title": "Submit a case for review",
     "lead": "Case pre-analysis form. Your application undergoes internal review. Response within 24 hours.",
@@ -271,6 +287,38 @@
     "fOk": "Your application has been accepted for initial compliance review. Expect a response within 24 hours.",
     "fErr": "Error. Please call directly."
   },
+  "checklist": {
+    "metaTitle": "Checklist: 10 owner mistakes during a business search | Litigant Law Office",
+    "metaDescription": "Free PDF checklist by attorney Iurii Grygorenko: 10 critical mistakes business owners must avoid during a search and seizure.",
+    "breadcrumb": "Checklist",
+    "title": "Checklist: 10 critical mistakes business owners make during a search",
+    "lead": "Free material from Litigant Law Office. PDF delivered to your contact after submitting the form.",
+    "items": [
+      "Not having an attorney's contact at hand",
+      "Allowing a search without a court warrant",
+      "Signing any documents without a lawyer",
+      "Failing to record the search on video",
+      "Disclosing passwords to devices",
+      "Answering questions without an attorney",
+      "Not documenting items seized",
+      "Not verifying investigators' authority",
+      "Permitting a search at night without grounds",
+      "Failing to challenge unlawful actions immediately"
+    ],
+    "formTitle": "Get the full PDF checklist",
+    "formSub": "We will send the material to your contact after the application is reviewed.",
+    "fName": "Name",
+    "fNamePh": "How may we address you",
+    "fContact": "Phone or email",
+    "fContactPh": "+38 0XX XXX XX XX or email@company.com",
+    "fSubmit": "Get the full PDF checklist",
+    "fSending": "Sending...",
+    "fOk": "Thank you. We'll send the checklist shortly.",
+    "fErr": "Submission failed. Please try again.",
+    "wccCtaTitle": "Business defence during searches — 24/7",
+    "wccCtaText": "Litigant accompanies investigative actions against owners and C-level. If there is a real threat — submit a case for pre-analysis.",
+    "wccCtaAction": "Submit a case for review →"
+  },
   "footer": {
     "desc": "Architecture of legal security for B2B. Kyiv · Odesa · Chișinău.",
     "reg": "Certificate No. 002787 · Bar Council of Odesa Region",
@@ -282,6 +330,7 @@
     "copyright": "© 2025 Litigant Law Office · Iurii Grygorenko",
     "privacy": "Privacy",
     "stateDisputes": "State disputes",
-    "arbitration": "Arbitration"
+    "arbitration": "Arbitration",
+    "checklist": "Search checklist"
   }
 }

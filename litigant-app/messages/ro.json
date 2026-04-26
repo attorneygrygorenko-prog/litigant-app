@@ -74,8 +74,12 @@
     "ctaBandText": "Dacă amploarea provocării corespunde practicii noastre — merită să discutăm. Răspuns în 24 de ore."
   },
   "about": {
+    "metaTitle": "Iurii Grygorenko — Avocat, Administrator arbitral, GR | Litigant Law Office",
+    "metaDescription": "Iurii Grygorenko — avocat (Certificat nr. 002787), administrator arbitral, secretar al Comitetului UNBA pentru faliment, reprezentant UNBA în Moldova. Practică din 2016.",
+    "metaKeywords": "Iurii Grygorenko avocat, administrator arbitral Odesa Kyiv, secretar comitet UNBA faliment, Litigant Law Office",
     "breadcrumb": "Despre noi",
     "title": "Iurii Grygorenko",
+    "subtitle": "Avocat · Administrator arbitral · Secretar al Comitetului UNBA pentru faliment · Reprezentant UNBA în Republica Moldova",
     "lead": "Avocat, administrator arbitral, subiect de lobby. Unul dintre puținii practicieni din Ucraina a căror activitate acoperă toate trei dimensiuni ale influenței juridice.",
     "badgeYears": "Ani",
     "badgeCommittee": "Comitet",
@@ -126,10 +130,15 @@
     ]
   },
   "services": {
+    "metaTitle": "Practici | Faliment, WCC, GR-Litigation, Anti-raider — Litigant Law Office",
+    "metaDescription": "Faliment și restructurarea datoriilor, apărarea afacerilor în timpul percheziției, contestarea deciziilor fiscale, inginerie anti-raider. Administrator arbitral.",
+    "metaKeywords": "faliment întreprindere, răspundere subsidiară director, apărare în timpul percheziției, contestare decizie fiscală, restructurare datorii, avocat infracțiuni economice",
     "breadcrumb": "Practici",
-    "title": "Practici cheie",
+    "title": "Practici juridice: Faliment, White-Collar Crime, GR-Litigation, Apărare anti-raider",
     "lead": "Patru domenii — fiecare necesită echipă, analiză și abordare strategică.",
-    "block1Title": "Conflicte corporative",
+    "ctaQuestion": "Aveți întrebări despre acest domeniu?",
+    "ctaAction": "Depune cazul spre analiză →",
+    "block1Title": "White-Collar Crime: apărarea afacerii și managementului în proceduri penale economice",
     "block1Text": "Protecția activelor și afacerilor împotriva raidurilor, preluărilor ostile și războaielor corporative. White-Collar Crime — unde proprietarii și managementul au nevoie de apărare strategică.",
     "block1Items": [
       ["Inginerie anti-raider", "Protecție sistemică a activelor și structurilor"],
@@ -137,7 +146,7 @@
       ["Litigii corporative", "Conflicte între participanți, protecția drepturilor corporative"],
       ["Apărare în timpul percheziților 24/7", "Însoțire procesuală a acțiunilor de investigație"]
     ],
-    "block2Title": "Litigii cu statul",
+    "block2Title": "Litigii cu statul: GR-Litigation, contestarea deciziilor fiscale, dispute vamale",
     "block2Text": "GR-Litigation. Contestarea deciziilor autorităților — de la serviciul fiscal și vamă la AMCU și regulatori. Protejarea intereselor prin mecanisme juridice de schimbare a mediului de reglementare.",
     "block2Items": [
       ["GR-Litigation", "Contestarea deciziilor autorităților în instanță"],
@@ -145,7 +154,7 @@
       ["Contestație administrativă", "Apărare extrajudiciară și judiciară față de stat"],
       ["Achiziții publice", "Licitații, AMCU, protecție împotriva deciziilor ilegale"]
     ],
-    "block3Title": "Arbitraj și restructurare",
+    "block3Title": "Faliment și restructurarea datoriilor: administrator arbitral, protecția creditorilor, răspundere subsidiară",
     "block3Text": "Management anticriză și protecția activelor în proceduri de insolvență. Iurii Grygorenko este administrator arbitral și Secretar al Comitetului UNBA pentru faliment.",
     "block3Items": [
       ["Administrare arbitrală", "Servicii de administrator arbitral în proceduri de faliment"],
@@ -189,6 +198,11 @@
     ]
   },
   "blog": {
+    "metaTitle": "Analiză | Faliment, WCC, Drept fiscal — Iurii Grygorenko, Litigant",
+    "metaDescription": "Articole de expertiză de Iurii Grygorenko: faliment al persoanelor fizice și juridice, apărarea afacerilor, White-Collar Crime, GR-Litigation, răspundere subsidiară.",
+    "deepLinkBankruptcy": "Mai multe despre practica de faliment →",
+    "deepLinkWcc": "Mai multe despre White-Collar Crime →",
+    "deepLinkGr": "Mai multe despre GR-Litigation →",
     "breadcrumb": "Analiză",
     "title": "Centrul analitic",
     "lead": "Monitorizarea legislației și articole de expertiză pe practicile cheie.",
@@ -239,6 +253,8 @@
     "author": "Iurii Grygorenko"
   },
   "contacts": {
+    "metaTitle": "Depune cazul spre analiză | Litigant Law Office — Avocat Kyiv, Odesa",
+    "metaDescription": "Formularul de pre-analiză a cazului pentru proprietari de afaceri și C-level. Faliment, protejarea activelor, White-Collar Crime. Răspuns în 24 de ore.",
     "breadcrumb": "Contacte",
     "title": "Depune cazul spre analiză",
     "lead": "Formularul de pre-analiză a cazului. Cererea dvs. trece printr-o analiză internă. Răspuns în 24 de ore.",
@@ -271,6 +287,38 @@
     "fOk": "Cererea dvs. a fost acceptată pentru efectuarea conformității primare. Așteptați răspuns în termen de 24 de ore.",
     "fErr": "Eroare. Vă rugăm să sunați direct."
   },
+  "checklist": {
+    "metaTitle": "Listă de verificare: 10 greșeli ale proprietarilor în timpul percheziției | Litigant",
+    "metaDescription": "PDF gratuit de la avocatul Iurii Grygorenko: 10 greșeli critice pe care proprietarii de afaceri trebuie să le evite în timpul percheziției.",
+    "breadcrumb": "Checklist",
+    "title": "Listă: 10 greșeli critice ale proprietarului în timpul percheziției",
+    "lead": "Material gratuit de la Litigant Law Office. PDF trimis la contactul indicat după completarea formularului.",
+    "items": [
+      "Lipsa unui contact de avocat la îndemână",
+      "Permiterea percheziției fără mandat judiciar",
+      "Semnarea oricăror documente fără avocat",
+      "Neînregistrarea video a percheziției",
+      "Furnizarea parolelor dispozitivelor",
+      "Răspuns la întrebări fără avocat",
+      "Nedocumentarea bunurilor ridicate",
+      "Neverificarea împuternicirilor anchetatorilor",
+      "Acceptarea percheziției nocturne fără temei",
+      "Necontestarea imediată a acțiunilor ilegale"
+    ],
+    "formTitle": "Primiți lista PDF completă",
+    "formSub": "Vom trimite materialul după revizuirea cererii.",
+    "fName": "Nume",
+    "fNamePh": "Cum vă putem adresa",
+    "fContact": "Telefon sau email",
+    "fContactPh": "+38 0XX XXX XX XX sau email@company.ro",
+    "fSubmit": "Primiți lista PDF completă",
+    "fSending": "Se trimite...",
+    "fOk": "Mulțumim. Vom trimite lista în curând.",
+    "fErr": "Eroare la trimitere. Încercați din nou.",
+    "wccCtaTitle": "Apărarea afacerii în timpul percheziției — 24/7",
+    "wccCtaText": "Litigant însoțește acțiunile de investigație împotriva proprietarilor și C-level. Dacă există un risc real — depuneți cazul spre pre-analiză.",
+    "wccCtaAction": "Depune cazul spre analiză →"
+  },
   "footer": {
     "desc": "Arhitectura securității juridice pentru B2B. Chișinău · Kyiv · Odesa.",
     "reg": "Certificat nr. 002787 · Baroul Avocaților din reg. Odesa",
@@ -282,6 +330,7 @@
     "copyright": "© 2025 Litigant Law Office · Iurii Grygorenko",
     "privacy": "Confidențialitate",
     "stateDisputes": "Litigii cu statul",
-    "arbitration": "Arbitraj"
+    "arbitration": "Arbitraj",
+    "checklist": "Listă percheziție"
   }
 }

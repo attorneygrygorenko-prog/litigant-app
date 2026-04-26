@@ -1,23 +1,50 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
+import { trackEvent, trackConversion } from '@/lib/analytics';
 
 type Status = 'idle' | 'sending' | 'ok' | 'err';
+
+const UTM_KEYS = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'] as const;
+
+function readUtm(): Record<string, string> {
+  if (typeof document === 'undefined') return {};
+  const match = document.cookie.split('; ').find((c) => c.startsWith('litigant_utm='));
+  if (!match) return {};
+  try {
+    return JSON.parse(decodeURIComponent(match.split('=').slice(1).join('=')));
+  } catch {
+    return {};
+  }
+}
 
 export default function CaseForm() {
   const t = useTranslations('contacts');
   const locale = useLocale();
   const [status, setStatus] = useState<Status>('idle');
+  const [utm, setUtm] = useState<Record<string, string>>({});
+  const startedRef = useRef(false);
 
   const industries = t.raw('fIndustries') as string[];
   const assets = t.raw('fAssetOptions') as string[];
+
+  useEffect(() => {
+    setUtm(readUtm());
+  }, []);
+
+  function onFirstFocus() {
+    if (startedRef.current) return;
+    startedRef.current = true;
+    trackEvent('form_start', { form: 'case' });
+  }
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     if (status === 'sending') return;
 
     const fd = new FormData(e.currentTarget);
+    const utm = readUtm();
     const payload = {
       name: String(fd.get('name') || ''),
       position: String(fd.get('position') || ''),
@@ -27,8 +54,15 @@ export default function CaseForm() {
       asset_value: String(fd.get('asset_value') || ''),
       contact: String(fd.get('contact') || ''),
       locale,
-      page: typeof window !== 'undefined' ? window.location.href : ''
+      page: typeof window !== 'undefined' ? window.location.href : '',
+      utm_source: utm.utm_source || '',
+      utm_medium: utm.utm_medium || '',
+      utm_campaign: utm.utm_campaign || '',
+      utm_content: utm.utm_content || '',
+      utm_term: utm.utm_term || ''
     };
+
+    trackEvent('form_submit', { form: 'case', service: payload.industry });
 
     setStatus('sending');
     try {
@@ -39,7 +73,13 @@ export default function CaseForm() {
       });
       if (!res.ok) throw new Error('bad-status');
       setStatus('ok');
+      trackEvent('lead_complete', {
+        service: payload.industry,
+        value: payload.asset_value
+      });
+      trackConversion('case_form');
       e.currentTarget.reset();
+      startedRef.current = false;
     } catch {
       setStatus('err');
     }
@@ -50,7 +90,7 @@ export default function CaseForm() {
       <h3>{t('formTitle')}</h3>
       <p className="form-sub">{t('formSub')}</p>
 
-      <form onSubmit={onSubmit} noValidate>
+      <form onSubmit={onSubmit} onFocusCapture={onFirstFocus} noValidate>
         <div className="f-row">
           <div>
             <label className="f-lbl">{t('fName')}</label>
@@ -96,6 +136,10 @@ export default function CaseForm() {
             <input className="field" name="contact" required placeholder={t('fContactPh')} />
           </div>
         </div>
+
+        {UTM_KEYS.map((k) => (
+          <input key={k} type="hidden" name={k} value={utm[k] || ''} readOnly />
+        ))}
 
         <button className="btn submit" type="submit" disabled={status === 'sending'}>
           {status === 'sending' ? t('fSending') : t('fSubmit')}

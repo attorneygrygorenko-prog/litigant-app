@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/routing';
+import TrackedLink from './TrackedLink';
 
 export default function Footer() {
   const tFooter = useTranslations('footer');
@@ -40,6 +41,7 @@ export default function Footer() {
             <ul>
               <li><Link href="/pro-nas">{tFooter('founder')}</Link></li>
               <li><Link href="/analityka">{tNav('blog')}</Link></li>
+              <li><Link href="/checklist">{tFooter('checklist')}</Link></li>
               <li><Link href="/kontakty">{tNav('submitCase')}</Link></li>
             </ul>
           </div>
@@ -47,8 +49,8 @@ export default function Footer() {
           <div className="foot-col">
             <h4>{tFooter('contactsTitle')}</h4>
             <ul>
-              <li><a href="tel:+380445010207">+38 (044) 501-02-07</a></li>
-              <li><a href="tel:+380932232995">+38 (093) 223-29-95</a></li>
+              <li><TrackedLink href="tel:+380445010207" event="phone_click" params={{ location: 'kyiv' }}>+38 (044) 501-02-07</TrackedLink></li>
+              <li><TrackedLink href="tel:+380932232995" event="phone_click" params={{ location: 'odesa' }}>+38 (093) 223-29-95</TrackedLink></li>
               <li><a href="mailto:advocatcompany@gmail.com">advocatcompany@gmail.com</a></li>
               <li style={{ color: 'rgba(255,255,255,.2)', fontSize: '11px', marginTop: '4px' }}>
                 {tFooter('cities')}

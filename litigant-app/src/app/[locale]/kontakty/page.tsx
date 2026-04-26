@@ -4,6 +4,7 @@ import type { Metadata } from 'next';
 
 import PageHero from '@/components/PageHero';
 import CaseForm from '@/components/CaseForm';
+import TrackedLink from '@/components/TrackedLink';
 import type { Locale } from '@/i18n/routing';
 import { SITE_URL, alternates } from '@/lib/seo';
 import { buildBreadcrumb } from '@/lib/jsonld';
@@ -11,8 +12,8 @@ import { buildBreadcrumb } from '@/lib/jsonld';
 export async function generateMetadata({ params: { locale } }: { params: { locale: Locale } }): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: 'contacts' });
   return {
-    title: `${t('title')} — Litigant Law Office`,
-    description: t('lead'),
+    title: t('metaTitle'),
+    description: t('metaDescription'),
     alternates: { canonical: `${SITE_URL}/${locale}/kontakty`, ...alternates('/kontakty') }
   };
 }
@@ -41,8 +42,8 @@ export default function ContactsPage({ params: { locale } }: { params: { locale:
                 <div className="c-info">
                   {t('kyivAddress')}
                   {'\n\n'}
-                  <a href="tel:+380445010207">+38 (044) 501-02-07</a>{'\n'}
-                  <a href="tel:+380949522996">+38 (094) 952-29-96</a>{'\n'}
+                  <TrackedLink href="tel:+380445010207" event="phone_click" params={{ location: 'kyiv' }}>+38 (044) 501-02-07</TrackedLink>{'\n'}
+                  <TrackedLink href="tel:+380949522996" event="phone_click" params={{ location: 'kyiv' }}>+38 (094) 952-29-96</TrackedLink>{'\n'}
                   <a href="mailto:advocatcompany@gmail.com">advocatcompany@gmail.com</a>
                 </div>
               </div>
@@ -52,7 +53,7 @@ export default function ContactsPage({ params: { locale } }: { params: { locale:
                 <div className="c-info">
                   {t('odesaAddress')}
                   {'\n\n'}
-                  <a href="tel:+380932232995">+38 (093) 223-29-95</a>
+                  <TrackedLink href="tel:+380932232995" event="phone_click" params={{ location: 'odesa' }}>+38 (093) 223-29-95</TrackedLink>
                 </div>
               </div>
 
@@ -64,8 +65,8 @@ export default function ContactsPage({ params: { locale } }: { params: { locale:
               <div className="c-card">
                 <span className="c-label">{t('messengersLabel')}</span>
                 <div className="messengers">
-                  <a className="msg-btn" href="https://t.me/+380932232995" target="_blank" rel="noopener noreferrer">Telegram</a>
-                  <a className="msg-btn" href="https://wa.me/380932232995" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+                  <TrackedLink className="msg-btn" href="https://t.me/+380932232995" target="_blank" rel="noopener noreferrer" event="messenger_click" params={{ type: 'telegram' }}>Telegram</TrackedLink>
+                  <TrackedLink className="msg-btn" href="https://wa.me/380932232995" target="_blank" rel="noopener noreferrer" event="messenger_click" params={{ type: 'whatsapp' }}>WhatsApp</TrackedLink>
                 </div>
               </div>
             </div>

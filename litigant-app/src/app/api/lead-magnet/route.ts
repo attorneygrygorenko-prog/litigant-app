@@ -1,10 +1,8 @@
 import { NextResponse } from 'next/server';
-import { appendLead, type LeadRow } from '@/lib/sheets';
+import { appendLead } from '@/lib/sheets';
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
-
-const REQUIRED: (keyof LeadRow)[] = ['name', 'position', 'company', 'challenge', 'contact'];
 
 function clean(v: unknown, max = 2000) {
   if (typeof v !== 'string') return '';
@@ -19,7 +17,6 @@ async function notifyCrm(payload: Record<string, string>) {
       method: 'POST',
       headers: { 'content-type': 'application/json' },
       body: JSON.stringify(payload),
-      // Don't block the user response on slow CRMs; cap at 4s.
       signal: AbortSignal.timeout(4000)
     });
   } catch (err) {
@@ -35,22 +32,14 @@ export async function POST(req: Request) {
     return NextResponse.json({ ok: false, error: 'invalid-json' }, { status: 400 });
   }
 
-  const row: LeadRow = {
-    name: clean(body.name, 200),
-    position: clean(body.position, 200),
-    company: clean(body.company, 200),
-    industry: clean(body.industry, 200),
-    challenge: clean(body.challenge, 4000),
-    asset_value: clean(body.asset_value, 200),
-    contact: clean(body.contact, 200),
-    locale: clean(body.locale, 8),
-    page: clean(body.page, 500)
-  };
+  const name = clean(body.name, 200);
+  const contact = clean(body.contact, 200);
+  const locale = clean(body.locale, 8);
+  const page = clean(body.page, 500);
+  const magnet = clean(body.magnet, 80) || 'search-checklist';
 
-  for (const k of REQUIRED) {
-    if (!row[k]) {
-      return NextResponse.json({ ok: false, error: `missing-${k}` }, { status: 400 });
-    }
+  if (!name || !contact) {
+    return NextResponse.json({ ok: false, error: 'missing-fields' }, { status: 400 });
   }
 
   const utm = {
@@ -62,24 +51,30 @@ export async function POST(req: Request) {
   };
 
   try {
-    await appendLead(row);
+    await appendLead({
+      name,
+      position: '',
+      company: '',
+      industry: `lead_magnet:${magnet}`,
+      challenge: 'Lead magnet download request',
+      asset_value: '',
+      contact,
+      locale,
+      page
+    });
   } catch (err) {
-    console.error('lead append failed', err);
+    console.error('lead magnet append failed', err);
     return NextResponse.json({ ok: false, error: 'sheets-failed' }, { status: 500 });
   }
 
   await notifyCrm({
     timestamp: new Date().toISOString(),
-    name: row.name,
-    position: row.position,
-    company: row.company,
-    industry: row.industry,
-    challenge: row.challenge,
-    asset_value: row.asset_value,
-    contact: row.contact,
-    locale: row.locale,
-    source_page: row.page,
-    ai_score: '',
+    type: 'lead_magnet',
+    magnet,
+    name,
+    contact,
+    locale,
+    source_page: page,
     ...utm
   });
 

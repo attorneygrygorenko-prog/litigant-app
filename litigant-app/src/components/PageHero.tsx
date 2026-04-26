@@ -5,9 +5,10 @@ type Props = {
   breadcrumb: string;
   title: string;
   lead?: string;
+  subtitle?: string;
 };
 
-export default function PageHero({ breadcrumb, title, lead }: Props) {
+export default function PageHero({ breadcrumb, title, lead, subtitle }: Props) {
   const tNav = useTranslations('nav');
   return (
     <div className="pghero">
@@ -18,6 +19,7 @@ export default function PageHero({ breadcrumb, title, lead }: Props) {
           <span className="bc-cur">{breadcrumb}</span>
         </div>
         <h1>{title}</h1>
+        {subtitle && <p className="pghero-sub">{subtitle}</p>}
         {lead && <p>{lead}</p>}
       </div>
     </div>

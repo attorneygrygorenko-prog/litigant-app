@@ -10,10 +10,10 @@ import { buildBreadcrumb, buildFaqJsonLd, type FaqEntry } from '@/lib/jsonld';
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: Locale } }): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: 'about' });
-  const tMeta = await getTranslations({ locale, namespace: 'meta' });
   return {
-    title: `${t('title')} — ${tMeta('ogTitle')}`,
-    description: t('lead'),
+    title: t('metaTitle'),
+    description: t('metaDescription'),
+    keywords: t('metaKeywords'),
     alternates: { canonical: `${SITE_URL}/${locale}/pro-nas`, ...alternates('/pro-nas') }
   };
 }
@@ -36,7 +36,7 @@ export default function AboutPage({ params: { locale } }: { params: { locale: Lo
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
-      <PageHero breadcrumb={t('breadcrumb')} title={t('title')} lead={t('lead')} />
+      <PageHero breadcrumb={t('breadcrumb')} title={t('title')} lead={t('lead')} subtitle={t('subtitle')} />
 
       <section className="sec">
         <div className="wrap">

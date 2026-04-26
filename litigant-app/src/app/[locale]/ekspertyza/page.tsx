@@ -3,6 +3,7 @@ import { setRequestLocale, getTranslations } from 'next-intl/server';
 import type { Metadata } from 'next';
 
 import PageHero from '@/components/PageHero';
+import ServiceViewTracker from '@/components/ServiceViewTracker';
 import { Link } from '@/i18n/routing';
 import type { Locale } from '@/i18n/routing';
 import { SITE_URL, alternates } from '@/lib/seo';
@@ -11,8 +12,9 @@ import { buildBreadcrumb, buildFaqJsonLd, type FaqEntry } from '@/lib/jsonld';
 export async function generateMetadata({ params: { locale } }: { params: { locale: Locale } }): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: 'services' });
   return {
-    title: `${t('title')} — Litigant Law Office`,
-    description: t('lead'),
+    title: t('metaTitle'),
+    description: t('metaDescription'),
+    keywords: t('metaKeywords'),
     alternates: { canonical: `${SITE_URL}/${locale}/ekspertyza`, ...alternates('/ekspertyza') }
   };
 }
@@ -54,9 +56,10 @@ export default function ServicesPage({ params: { locale } }: { params: { locale:
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
+      <ServiceViewTracker service="all_practices" />
       <PageHero breadcrumb={t('breadcrumb')} title={t('title')} lead={t('lead')} />
 
-      <section className="sec">
+      <section id="wcc" className="sec">
         <div className="wrap">
           <div className="cg">
             <div className="tb">
@@ -69,10 +72,14 @@ export default function ServicesPage({ params: { locale } }: { params: { locale:
             </div>
             <ServiceList items={block1Items} />
           </div>
+          <div className="practice-cta">
+            <p>{t('ctaQuestion')}</p>
+            <Link href="/kontakty">{t('ctaAction')}</Link>
+          </div>
         </div>
       </section>
 
-      <section className="sec sec-off">
+      <section id="gr" className="sec sec-off">
         <div className="wrap">
           <div className="cg">
             <ServiceList items={block2Items} />
@@ -88,10 +95,14 @@ export default function ServicesPage({ params: { locale } }: { params: { locale:
               </Link>
             </div>
           </div>
+          <div className="practice-cta">
+            <p>{t('ctaQuestion')}</p>
+            <Link href="/kontakty">{t('ctaAction')}</Link>
+          </div>
         </div>
       </section>
 
-      <section className="sec">
+      <section id="bankrutstvo" className="sec">
         <div className="wrap">
           <div className="cg">
             <div className="tb">
@@ -104,10 +115,14 @@ export default function ServicesPage({ params: { locale } }: { params: { locale:
             </div>
             <ServiceList items={block3Items} />
           </div>
+          <div className="practice-cta">
+            <p>{t('ctaQuestion')}</p>
+            <Link href="/kontakty">{t('ctaAction')}</Link>
+          </div>
         </div>
       </section>
 
-      <section className="sec sec-off">
+      <section id="lobbying" className="sec sec-off">
         <div className="wrap">
           <div className="cg">
             <ServiceList items={block4Items} />
@@ -122,6 +137,10 @@ export default function ServicesPage({ params: { locale } }: { params: { locale:
                 {t('discussProject')}
               </Link>
             </div>
+          </div>
+          <div className="practice-cta">
+            <p>{t('ctaQuestion')}</p>
+            <Link href="/kontakty">{t('ctaAction')}</Link>
           </div>
         </div>
       </section>

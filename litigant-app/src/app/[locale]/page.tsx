@@ -3,6 +3,7 @@ import { setRequestLocale } from 'next-intl/server';
 import { Link } from '@/i18n/routing';
 import type { Locale } from '@/i18n/routing';
 import { buildWebsiteSearch } from '@/lib/jsonld';
+import TrackedLink from '@/components/TrackedLink';
 
 export default function HomePage({ params: { locale } }: { params: { locale: Locale } }) {
   setRequestLocale(locale);
@@ -149,7 +150,7 @@ export default function HomePage({ params: { locale } }: { params: { locale: Loc
           </div>
           <div className="cta-acts">
             <Link href="/kontakty" className="btn btn-g">{t('ctaSubmit')}</Link>
-            <a className="btn btn-w" href="tel:+380445010207">+38 (044) 501-02-07</a>
+            <TrackedLink className="btn btn-w" href="tel:+380445010207" event="phone_click" params={{ location: 'kyiv' }}>+38 (044) 501-02-07</TrackedLink>
           </div>
         </div>
       </div>
