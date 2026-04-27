@@ -1,6 +1,6 @@
 import type { Locale } from '@/i18n/routing';
 
-export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://litigant.legal';
+export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.litigant.legal';
 
 export const OG_LOCALE: Record<Locale, string> = {
   ua: 'uk_UA',
@@ -8,7 +8,7 @@ export const OG_LOCALE: Record<Locale, string> = {
   ro: 'ro_MD'
 };
 
-export const HTML_LANG: Record<Locale, string> = {
+export const HTML_LANG: Record<Locale, sting> = {
   ua: 'uk',
   en: 'en',
   ro: 'ro'
