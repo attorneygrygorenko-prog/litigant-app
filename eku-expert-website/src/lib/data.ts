@@ -8,7 +8,7 @@ export type Service = {
   situations: string[];
 };
 
-export const services: Service[] = [
+export const services: Service[] = 
   {
     slug: "economic",
     title: "Судово-економічна експертиза",
@@ -235,6 +235,6 @@ export const company = {
   city: "Одеса",
   country: "Україна",
   email: "info@eku.ua",
-  phone: "+380 (00) 000-00-00",
+  phone: "+380487006196",
   address: "м. Одеса, Україна",
 };
