@@ -84,7 +84,7 @@
   .lsw { display: flex; border: 1px solid var(--b); }
   .lb { background: transparent; border: none; padding: 6px 11px; font: 400 10px/1 var(--sans); letter-spacing: .1em; cursor: pointer; color: var(--m); transition: all .15s; text-transform: uppercase; }
   .lb.on { background: var(--n); color: var(--w); }
-  .bar-cta { font-family: var(--sans); font-size: 11.5px; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; color: var(--n); padding: 9px 18px; border: 1px solid var(--n); cursor: pointer; transition: all .15s; background: transparent; text-decoration: none; display: inline-flex; }
+  .bar-cta { font-family: var(--sans); font-size: 11.5px; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; color: var(--n); padding: 9px 18px; border: 1px solid var(--n); cursor: pointer; transition: all .15s; background: transparent; text-decoration: none; display: inline-flex; white-space: nowrap; flex-shrink: 0; }
   .bar-cta:hover { background: var(--n); color: var(--w); }
   .ham { display: none; background: none; border: none; cursor: pointer; padding: 8px; flex-direction: column; gap: 5px; }
   .ham span { display: block; width: 22px; height: 1px; background: var(--n); }
@@ -162,7 +162,7 @@
 
   /* about */
   .about-g { display: grid; grid-template-columns: 5fr 7fr; gap: 80px; align-items: start; }
-  .about-photos { display: block; }
+  .about-photos { display: block; background: var(--n); min-height: 400px; }
   .photo-main { width: 100%; aspect-ratio: 3/4; object-fit: cover; object-position: top center; display: block; }
   .about-badge { display: grid; grid-template-columns: repeat(3, 1fr); background: var(--b); gap: 1px; }
   .ab { background: var(--f); padding: 16px; }
@@ -231,12 +231,12 @@
 
   /* blog */
   .blog-g { display: grid; grid-template-columns: repeat(3, 1fr); }
-  .blog-card { padding: 0; border: 1px solid var(--b); margin: -1px 0 0 -1px; cursor: pointer; background: var(--w); transition: background .15s; display: flex; flex-direction: column; text-decoration: none; color: inherit; overflow: hidden; }
+  .blog-card { padding: 0; border: 1px solid var(--b); margin: -1px 0 0 -1px; cursor: pointer; background: var(--w); transition: background .15s; display: flex; flex-direction: column; text-decoration: none; color: inherit; overflow: hidden; min-height: 400px; }
   .blog-card:hover { background: var(--f); }
   .blog-src { font-family: var(--sans); font-size: 10.5px; color: var(--g); font-weight: 500; letter-spacing: .04em; display: flex; align-items: center; gap: 3px; }
   .ext-arr { font-size: 11px; transition: transform .15s; }
   .blog-card:hover .ext-arr { transform: translate(2px,-2px); }
-  .blog-img { width: 100%; aspect-ratio: 16 / 9; overflow: hidden; background: var(--f); border-bottom: 1px solid var(--b); }
+  .blog-img { width: 100%; aspect-ratio: 16 / 9; min-height: 200px; overflow: hidden; background: var(--f); border-bottom: 1px solid var(--b); }
   .blog-img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .35s ease; }
   .blog-card:hover .blog-img img { transform: scale(1.03); }
   .blog-card > .blog-cat,
@@ -316,8 +316,10 @@
   .foot-g { grid-template-columns: 1fr 1fr; }
 }
 
-/* Tablet: hide desktop nav and CTA, reveal hamburger so the squeezed bar doesn't break */
-@media (max-width: 900px) {
+/* Tablet: hide desktop nav and CTA, reveal hamburger so the squeezed bar doesn't break.
+   Breakpoint 960px (was 900) — RO "DEPUNE CAZUL" + nav + CTA together overflow viewport
+   between 901–959px; 960 lifts the cutoff above that band. */
+@media (max-width: 960px) {
   nav, .bar-cta { display: none !important; }
   .ham { display: flex !important; }
 }
