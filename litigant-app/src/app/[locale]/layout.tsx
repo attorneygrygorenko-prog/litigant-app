@@ -1,6 +1,5 @@
 import type { ReactNode } from 'react';
 import type { Metadata } from 'next';
-import Script from 'next/script';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
@@ -70,10 +69,12 @@ export default async function LocaleLayout({
   return (
     <NextIntlClientProvider messages={messages} locale={locale}>
       <HtmlLang locale={locale} />
-      <Script
-        id="ld-json"
+      {/* JSON-LD inline — plain <script> SSR'иться надійно у Next 14 App Router.
+          <Script strategy="beforeInteractive"> для static structured data
+          інколи рендериться client-only, що ховає LegalService + Person
+          + FAQPage від Google bot. */}
+      <script
         type="application/ld+json"
-        strategy="beforeInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <UtmCapture />
