@@ -6,6 +6,10 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    url: 'https://www.hsa.org.ua/blog/iak-znaiti-maino-borznika-iakshho-vono-vze-za-kordonom',
+    category: 'Міжнародне право'
+  },
+  {
     url: 'https://www.hsa.org.ua/lectors/grygorenko-yurij-sergijovych/articles/pozov-do-rf-iak-robocii-instrument-shho-cotiri-roki-sudovoyi-praktiki-realno-daiut-biznesu',
     category: 'Міжнародне право'
   },
