@@ -1,6 +1,6 @@
 import { setRequestLocale } from 'next-intl/server';
 import type { Metadata } from 'next';
-import { notFound } from 'next/navigation';
+import { notFound, redirect } from 'next/navigation';
 
 import { Link } from '@/i18n/routing';
 import type { Locale } from '@/i18n/routing';
@@ -76,8 +76,16 @@ export default function PracticeLandingPage({
   const key = PRACTICE_BY_SLUG[practice];
   if (!key) notFound();
 
+  // Redirect to canonical locale-specific slug if user hit wrong-locale slug
+  // (e.g., /en/ekspertyza/bankrutstvo → /en/ekspertyza/bankruptcy). Preserves
+  // any old backlinks while collapsing duplicate-content into one canonical URL.
+  const expectedSlug = SLUG_BY_LOCALE[key][locale];
+  if (expectedSlug !== practice) {
+    redirect(`/${locale}/ekspertyza/${expectedSlug}`);
+  }
+
   const c = PRACTICES[key][locale];
-  const slug = SLUG_BY_LOCALE[key][locale];
+  const slug = expectedSlug;
 
   const breadcrumbLd = buildBreadcrumb(locale, [
     { name: c.breadcrumbHome, href: '/' },
