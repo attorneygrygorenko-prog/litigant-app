@@ -86,6 +86,7 @@ export default function Header() {
             {t(item.key)}
           </Link>
         ))}
+        <LangSwitch className="mob-lang" />
         <Link href="/kontakty" className="mob-cta">
           {t('submitCaseFull')}
         </Link>

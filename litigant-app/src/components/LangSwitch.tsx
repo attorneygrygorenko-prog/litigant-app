@@ -7,7 +7,12 @@ import type { Locale } from '@/i18n/routing';
 
 const LOCALES: Locale[] = ['ua', 'en', 'ro'];
 
-export default function LangSwitch() {
+interface LangSwitchProps {
+  /** Additional className to append to .lsw (e.g., "mob-lang" for in-menu variant). */
+  className?: string;
+}
+
+export default function LangSwitch({ className = '' }: LangSwitchProps = {}) {
   const locale = useLocale();
   const router = useRouter();
   const pathname = usePathname();
@@ -20,8 +25,10 @@ export default function LangSwitch() {
     });
   };
 
+  const wrapperClass = className ? `lsw ${className}` : 'lsw';
+
   return (
-    <div className="lsw">
+    <div className={wrapperClass}>
       {LOCALES.map((l) => (
         <button
           key={l}
