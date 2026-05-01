@@ -26,7 +26,7 @@ function ServiceList({ items }: { items: string[][] }) {
         <div key={i} className="svc">
           <div className="svc-dot" />
           <div>
-            <h4>{title}</h4>
+            <h3>{title}</h3>
             <p>{text}</p>
           </div>
         </div>

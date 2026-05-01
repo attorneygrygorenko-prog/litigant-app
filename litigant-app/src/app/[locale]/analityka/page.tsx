@@ -109,7 +109,7 @@ export default async function BlogPage({ params: { locale } }: { params: { local
                       <img src={card.image} alt="" loading="lazy" referrerPolicy="no-referrer" />
                     </div>
                     {card.category && <span className="blog-cat">{card.category}</span>}
-                    <h3>{card.title}</h3>
+                    <h2>{card.title}</h2>
                     {card.description && <p>{card.description}</p>}
                     <div className="blog-meta">
                       <span>{card.date || t('author')}</span>

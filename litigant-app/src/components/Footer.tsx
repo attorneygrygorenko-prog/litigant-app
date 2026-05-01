@@ -28,7 +28,7 @@ export default function Footer() {
           </div>
 
           <div className="foot-col">
-            <h4>{tFooter('practicesTitle')}</h4>
+            <h3>{tFooter('practicesTitle')}</h3>
             <ul>
               <li><Link href="/ekspertyza">{tHome('prac1Title')}</Link></li>
               <li><Link href="/ekspertyza">{tFooter('stateDisputes')}</Link></li>
@@ -38,7 +38,7 @@ export default function Footer() {
           </div>
 
           <div className="foot-col">
-            <h4>{tFooter('bureauTitle')}</h4>
+            <h3>{tFooter('bureauTitle')}</h3>
             <ul>
               <li><Link href="/pro-nas">{tFooter('founder')}</Link></li>
               <li><Link href="/analityka">{tNav('blog')}</Link></li>
@@ -48,7 +48,7 @@ export default function Footer() {
           </div>
 
           <div className="foot-col">
-            <h4>{tFooter('contactsTitle')}</h4>
+            <h3>{tFooter('contactsTitle')}</h3>
             <ul>
               <li><TrackedLink href="tel:+380445010207" event="phone_click" params={{ location: 'kyiv' }}>+38 (044) 501-02-07</TrackedLink></li>
               <li><TrackedLink href="tel:+380932232995" event="phone_click" params={{ location: 'odesa' }}>+38 (093) 223-29-95</TrackedLink></li>

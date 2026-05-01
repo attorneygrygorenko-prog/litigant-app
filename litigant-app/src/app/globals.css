@@ -117,7 +117,7 @@
   .vec { padding: 28px 0; border-bottom: 1px solid rgba(255,255,255,.1); cursor: default; transition: opacity .2s; }
   .vec:first-child { border-top: 1px solid rgba(255,255,255,.1); }
   .vec-num { font-family: var(--sans); font-size: 9.5px; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; color: var(--g2); margin-bottom: 10px; display: block; }
-  .vec h3 { font-family: var(--serif); font-size: 22px; font-weight: 600; color: var(--w); margin-bottom: 7px; }
+  .vec h2 { font-family: var(--serif); font-size: 22px; font-weight: 600; color: var(--w); margin-bottom: 7px; }
   .vec p { font-size: 13.5px; color: rgba(255,255,255,.65); line-height: 1.7; font-weight: 300; }
   .vec:hover { opacity: .75; }
 
@@ -201,7 +201,7 @@
 
   /* page hero */
   .pghero { background: var(--n); padding: 84px 0 76px; color: var(--w); }
-  .bc { font-family: var(--sans); font-size: 11px; color: rgba(255,255,255,.45); margin-bottom: 16px; display: flex; gap: 8px; letter-spacing: .04em; }
+  .bc { font-family: var(--sans); font-size: 11px; color: rgba(255,255,255,.7); margin-bottom: 16px; display: flex; gap: 8px; letter-spacing: .04em; }
   .bc-cur { color: rgba(184,148,30,.7); }
   .pghero h1 { font-family: var(--serif); font-size: clamp(28px,4.2vw,50px); font-weight: 600; line-height: 1.12; letter-spacing: .08em; margin-bottom: 14px; }
   .pghero p { font-size: 16px; color: rgba(255,255,255,.68); max-width: 580px; line-height: 1.8; font-weight: 300; }
@@ -217,7 +217,7 @@
   .svc:first-child { border-top: 1px solid var(--b); }
   .svc:hover { opacity: .7; }
   .svc-dot { width: 4px; height: 4px; border-radius: 50%; background: var(--g); flex-shrink: 0; margin-top: 7px; }
-  .svc h4 { font-family: var(--sans); font-size: 14px; font-weight: 600; color: var(--n); margin-bottom: 3px; }
+  .svc h3 { font-family: var(--sans); font-size: 14px; font-weight: 600; color: var(--n); margin-bottom: 3px; }
   .svc p { font-size: 13px; color: #4A4845; line-height: 1.55; font-weight: 400; }
   .hl { background: var(--n); padding: 36px; }
   .hl h3 { font-family: var(--serif); font-size: 18px; font-weight: 600; color: var(--w); margin-bottom: 16px; }
@@ -245,7 +245,7 @@
   .blog-card > .blog-cat { padding-top: 32px; }
   .blog-card .blog-img + .blog-cat { padding-top: 22px; }
   .blog-cat { font-family: var(--sans); font-size: 9.5px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: var(--g); display: block; margin-bottom: 14px; }
-  .blog-card h3 { font-family: var(--serif); font-size: 18px; font-weight: 600; color: var(--n); margin-bottom: 9px; line-height: 1.35; }
+  .blog-card h2 { font-family: var(--serif); font-size: 18px; font-weight: 600; color: var(--n); margin-bottom: 9px; line-height: 1.35; }
   .blog-card p { font-size: 14px; color: #4A4845; line-height: 1.55; font-weight: 400; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
   .blog-meta { display: flex; justify-content: space-between; align-items: center; margin: 18px 32px 0; padding: 14px 0 32px; border-top: 1px solid var(--b); font-family: var(--sans); font-size: 10.5px; color: var(--m); margin-top: auto; }
 
@@ -261,7 +261,7 @@
   .msg-btn { display: inline-flex; align-items: center; gap: 7px; padding: 8px 15px; border: 1px solid var(--b); font-family: var(--sans); font-size: 12px; font-weight: 400; color: var(--n); transition: all .15s; text-decoration: none; }
   .msg-btn:hover { border-color: var(--n); background: var(--f); }
   .form-wrap { padding: 44px; border: 1px solid var(--b); overflow: hidden; }
-  .form-wrap h3 { font-family: var(--serif); font-size: 24px; font-weight: 600; color: var(--n); margin-bottom: 5px; }
+  .form-wrap h2 { font-family: var(--serif); font-size: 24px; font-weight: 600; color: var(--n); margin-bottom: 5px; }
   .form-sub { font-family: var(--sans); font-size: 13.5px; color: #4A4845; margin-bottom: 28px; font-weight: 400; line-height: 1.6; }
   .f-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
   .f-lbl { font-family: var(--sans); font-size: 10px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: #555250; display: block; margin-bottom: 6px; }
@@ -286,12 +286,12 @@
   .faq-item p { padding: 0 48px 24px 0; font-family: var(--sans); font-size: 14.5px; line-height: 1.78; color: #4A4845; font-weight: 400; max-width: 880px; }
 
   /* footer */
-  footer { background: var(--n); color: rgba(255,255,255,.38); padding: 64px 0 40px; font-family: var(--sans); font-weight: 300; }
+  footer { background: var(--n); color: rgba(255,255,255,.7); padding: 64px 0 40px; font-family: var(--sans); font-weight: 300; }
   .foot-g { display: grid; grid-template-columns: 1.8fr 1fr 1fr 1fr; gap: 48px; padding-bottom: 48px; border-bottom: 1px solid rgba(255,255,255,.07); margin-bottom: 24px; }
   .foot-brand .logo-name { color: var(--w); }
   .foot-brand .logo-sub { color: var(--g2); }
   .foot-desc { font-size: 13px; line-height: 1.75; margin-top: 14px; color: rgba(255,255,255,.5); max-width: 240px; }
-  .foot-reg { font-size: 10px; color: rgba(255,255,255,.16); margin-top: 8px; }
+  .foot-reg { font-size: 10px; color: rgba(255,255,255,.55); margin-top: 8px; }
   .foot-col h4 { font-size: 9.5px; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; color: rgba(212,180,74,.85); margin-bottom: 16px; }
   .foot-col ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
   .foot-col ul li a { font-size: 13px; color: rgba(255,255,255,.55); transition: color .15s; }
@@ -383,7 +383,7 @@
 
 @layer components {
   /* Litigant etymology placements */
-  .hero-etym { font-family: var(--serif); font-size: 13px; color: rgba(255,255,255,.45); font-style: italic; letter-spacing: .06em; margin-top: -16px; }
+  .hero-etym { font-family: var(--serif); font-size: 13px; color: rgba(255,255,255,.7); font-style: italic; letter-spacing: .06em; margin-top: -16px; }
 
   .about-etym-aside { border-left: 2px solid var(--g); padding: 20px 28px; background: var(--f); font-family: var(--serif); font-size: clamp(16px,1.8vw,19px); font-style: italic; color: var(--n); margin: 32px 0; }
 
@@ -393,7 +393,7 @@
   .etym-title { font-family: var(--serif); font-size: clamp(48px,6vw,72px); font-weight: 600; color: var(--n); letter-spacing: .1em; line-height: 1; }
   .etym-prose { font-family: var(--sans); font-size: 15.5px; line-height: 1.78; color: #4A4845; font-weight: 400; }
 
-  .foot-etym { font-size: 11px; color: rgba(255,255,255,.22); font-style: italic; margin-top: 8px; }
+  .foot-etym { font-size: 11px; color: rgba(255,255,255,.6); font-style: italic; margin-top: 8px; }
 
   /* Cookie banner (en/ro only) */
   .cookie-banner { position: fixed; bottom: 16px; left: 16px; right: 16px; max-width: 720px; margin: 0 auto; z-index: 1000; background: var(--n); color: var(--w); padding: 18px 22px; display: flex; align-items: center; gap: 18px; flex-wrap: wrap; box-shadow: 0 12px 36px rgba(0,0,0,.18); }

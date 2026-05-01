@@ -1,6 +1,14 @@
 import type { Locale } from '@/i18n/routing';
 
-export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.litigant.legal';
+// Production canonical = www.litigant.legal (apex `litigant.legal` 307→www).
+// Якщо env-var помилково виставлений без www, нормалізуємо тут — щоб
+// canonical/hreflang/og:url не вказували на не-canonical apex.
+const RAW_SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL || 'https://www.litigant.legal';
+export const SITE_URL = RAW_SITE_URL.replace(
+  '://litigant.legal',
+  '://www.litigant.legal'
+);
 
 export const OG_LOCALE: Record<Locale, string> = {
   ua: 'uk_UA',

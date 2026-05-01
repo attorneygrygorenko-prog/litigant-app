@@ -61,17 +61,17 @@ export default function HomePage({ params: { locale } }: { params: { locale: Loc
           <div className="vec-block">
             <div className="vec">
               <span className="vec-num">01 — {t('vec1Label')}</span>
-              <h3>{t('vec1Title')}</h3>
+              <h2>{t('vec1Title')}</h2>
               <p>{t('vec1Text')}</p>
             </div>
             <div className="vec">
               <span className="vec-num">02 — {t('vec2Label')}</span>
-              <h3>{t('vec2Title')}</h3>
+              <h2>{t('vec2Title')}</h2>
               <p>{t('vec2Text')}</p>
             </div>
             <div className="vec">
               <span className="vec-num">03 — {t('vec3Label')}</span>
-              <h3>{t('vec3Title')}</h3>
+              <h2>{t('vec3Title')}</h2>
               <p>{t('vec3Text')}</p>
             </div>
           </div>
