@@ -4,18 +4,21 @@ import { Link } from '@/i18n/routing';
 import type { Locale } from '@/i18n/routing';
 import { buildWebsiteSearch } from '@/lib/jsonld';
 import TrackedLink from '@/components/TrackedLink';
+import { PRACTICE_KEYS, SLUG_BY_LOCALE } from '@/data/practices';
 
 export default function HomePage({ params: { locale } }: { params: { locale: Locale } }) {
   setRequestLocale(locale);
   const t = useTranslations('home');
   const websiteLd = buildWebsiteSearch(locale);
 
+  // Mapping prac1..prac4 → canonical practice key. Order matches the
+  // 4 practices in messages/{ua,en,ro}.json prac1Title..prac4Title.
   const practices = [
-    { n: '01', title: t('prac1Title'), text: t('prac1Text') },
-    { n: '02', title: t('prac2Title'), text: t('prac2Text') },
-    { n: '03', title: t('prac3Title'), text: t('prac3Text') },
-    { n: '04', title: t('prac4Title'), text: t('prac4Text') }
-  ];
+    { n: '01', title: t('prac1Title'), text: t('prac1Text'), key: 'wcc' },
+    { n: '02', title: t('prac2Title'), text: t('prac2Text'), key: 'state-disputes' },
+    { n: '03', title: t('prac3Title'), text: t('prac3Text'), key: 'bankruptcy' },
+    { n: '04', title: t('prac4Title'), text: t('prac4Text'), key: 'lobbying-gr' }
+  ] as const;
 
   const why = [
     { n: '01', title: t('why1Title'), text: t('why1Text') },
@@ -94,7 +97,11 @@ export default function HomePage({ params: { locale } }: { params: { locale: Loc
           </div>
           <div className="prac-grid">
             {practices.map((p) => (
-              <Link key={p.n} href="/ekspertyza" className="prac">
+              <Link
+                key={p.n}
+                href={`/ekspertyza/${SLUG_BY_LOCALE[p.key][locale]}`}
+                className="prac"
+              >
                 <span className="prac-n">{p.n}</span>
                 <h3>{p.title}</h3>
                 <p>{p.text}</p>

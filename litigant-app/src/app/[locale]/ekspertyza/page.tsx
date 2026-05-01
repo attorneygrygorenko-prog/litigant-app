@@ -8,6 +8,27 @@ import { Link } from '@/i18n/routing';
 import type { Locale } from '@/i18n/routing';
 import { SITE_URL, alternates } from '@/lib/seo';
 import { buildBreadcrumb, buildFaqJsonLd, type FaqEntry } from '@/lib/jsonld';
+import { SLUG_BY_LOCALE } from '@/data/practices';
+
+const LEARN_MORE_LABEL: Record<Locale, string> = {
+  ua: 'Дізнатися більше про практику',
+  en: 'Learn more about practice',
+  ro: 'Aflați mai multe despre practică'
+};
+
+const LEARN_MORE_LINK_STYLE = {
+  display: 'inline-block',
+  marginTop: 16,
+  fontFamily: 'var(--sans)',
+  fontSize: 12,
+  fontWeight: 500,
+  letterSpacing: '.12em',
+  textTransform: 'uppercase' as const,
+  color: 'var(--g)',
+  textDecoration: 'none',
+  borderBottom: '1px solid var(--g)',
+  paddingBottom: 4
+};
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: Locale } }): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: 'services' });
@@ -69,6 +90,12 @@ export default function ServicesPage({ params: { locale } }: { params: { locale:
                 <div className="sh-line"><span /><span /></div>
               </div>
               <p>{t('block1Text')}</p>
+              <Link
+                href={`/ekspertyza/${SLUG_BY_LOCALE.wcc[locale]}`}
+                style={LEARN_MORE_LINK_STYLE}
+              >
+                {LEARN_MORE_LABEL[locale]} →
+              </Link>
             </div>
             <ServiceList items={block1Items} />
           </div>
@@ -90,6 +117,12 @@ export default function ServicesPage({ params: { locale } }: { params: { locale:
                 <div className="sh-line"><span /><span /></div>
               </div>
               <p>{t('block2Text')}</p>
+              <Link
+                href={`/ekspertyza/${SLUG_BY_LOCALE['state-disputes'][locale]}`}
+                style={LEARN_MORE_LINK_STYLE}
+              >
+                {LEARN_MORE_LABEL[locale]} →
+              </Link>
               <Link href="/kontakty" className="btn btn-o" style={{ marginTop: '20px' }}>
                 {t('discussCase')}
               </Link>
@@ -112,6 +145,12 @@ export default function ServicesPage({ params: { locale } }: { params: { locale:
                 <div className="sh-line"><span /><span /></div>
               </div>
               <p>{t('block3Text')}</p>
+              <Link
+                href={`/ekspertyza/${SLUG_BY_LOCALE.bankruptcy[locale]}`}
+                style={LEARN_MORE_LINK_STYLE}
+              >
+                {LEARN_MORE_LABEL[locale]} →
+              </Link>
             </div>
             <ServiceList items={block3Items} />
           </div>
@@ -133,6 +172,12 @@ export default function ServicesPage({ params: { locale } }: { params: { locale:
                 <div className="sh-line"><span /><span /></div>
               </div>
               <p>{t('block4Text')}</p>
+              <Link
+                href={`/ekspertyza/${SLUG_BY_LOCALE['lobbying-gr'][locale]}`}
+                style={LEARN_MORE_LINK_STYLE}
+              >
+                {LEARN_MORE_LABEL[locale]} →
+              </Link>
               <Link href="/kontakty" className="btn btn-o" style={{ marginTop: '20px' }}>
                 {t('discussProject')}
               </Link>
