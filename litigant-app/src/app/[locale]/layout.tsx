@@ -41,12 +41,21 @@ export async function generateMetadata({
       url: `${SITE_URL}/${locale}`,
       type: 'website',
       locale: OG_LOCALE[locale],
-      alternateLocale: Object.values(OG_LOCALE).filter((l) => l !== OG_LOCALE[locale])
+      alternateLocale: Object.values(OG_LOCALE).filter((l) => l !== OG_LOCALE[locale]),
+      images: [
+        {
+          url: `${SITE_URL}/api/og-image`,
+          width: 1200,
+          height: 630,
+          alt: 'Litigant Law Office — Адвокатське бюро · Київ · Одеса'
+        }
+      ]
     },
     twitter: {
-      card: 'summary',
+      card: 'summary_large_image',
       title: t('ogTitle'),
-      description: t('ogDescription')
+      description: t('ogDescription'),
+      images: [`${SITE_URL}/api/og-image`]
     },
     robots: { index: true, follow: true }
   };

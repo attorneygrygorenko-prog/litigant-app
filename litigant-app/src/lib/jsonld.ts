@@ -100,6 +100,39 @@ export function buildJsonLd(locale: Locale) {
             addressCountry: 'UA'
           }
         ],
+        contactPoint: [
+          {
+            '@type': 'ContactPoint',
+            telephone: '+380445010207',
+            contactType: 'customer service',
+            areaServed: 'UA',
+            availableLanguage: ['uk', 'en', 'ro'],
+            contactOption: 'TollFree',
+            // Kyiv office line
+            description: 'Київ — головний офіс'
+          },
+          {
+            '@type': 'ContactPoint',
+            telephone: '+380932232995',
+            contactType: 'customer service',
+            areaServed: 'UA',
+            availableLanguage: ['uk', 'en'],
+            description: 'Одеса — додатковий офіс'
+          }
+        ],
+        openingHoursSpecification: [
+          {
+            '@type': 'OpeningHoursSpecification',
+            dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+            opens: '09:00',
+            closes: '18:00'
+          }
+        ],
+        geo: {
+          '@type': 'GeoCoordinates',
+          latitude: 50.4332,
+          longitude: 30.5168
+        },
         hasOfferCatalog: {
           '@type': 'OfferCatalog',
           name: 'Practices',
