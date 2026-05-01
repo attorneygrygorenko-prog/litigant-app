@@ -142,7 +142,7 @@ export const PRACTICES: Record<PracticeKey, Record<Locale, PracticeContent>> = {
         ],
         [
           'Скільки коштує захист у справах White-Collar Crime?',
-          'Вартість залежить від стадії провадження, кількості епізодів, обсягу матеріалів справи та складності доказової бази. Орієнтовно: захист на стадії досудового розслідування у справі середньої складності — від 80 000 ₴ за місяць супроводу. Кейси з масштабною доказовою базою (фінансово-кредитні операції, міжнародні розслідування) — від 250 000 ₴ за місяць. Ми працюємо за договором про правову допомогу з фіксованою щомісячною винагородою або за окремими процесуальними діями. Перший пре-аналіз кейсу — безкоштовно, на підставі форми на /kontakty.',
+          'Вартість залежить від стадії провадження, кількості епізодів, обсягу матеріалів справи та складності доказової бази. Орієнтовно: захист на стадії досудового розслідування у справі середньої складності — від 80 000 ₴ за місяць супроводу. Кейси з масштабною доказовою базою (фінансово-кредитні операції, міжнародні розслідування) — від 250 000 ₴ за місяць. Ми працюємо за договором про правову допомогу з фіксованою щомісячною винагородою або за окремими процесуальними діями. Перший пре-аналіз кейсу — за заявкою через форму на /kontakty.',
         ],
       ],
       ctaTitle: 'Не дайте слідству перехопити ініціативу',
@@ -221,7 +221,7 @@ export const PRACTICES: Record<PracticeKey, Record<Locale, PracticeContent>> = {
         ],
         [
           'How much does White-Collar Crime defense cost?',
-          'The cost depends on proceedings stage, number of episodes, case-file volume and evidence complexity. Indicatively: defense at pre-trial in a medium-complexity case starts at UAH 80 000 per month of support. Cases with a large evidence base (financial-credit operations, international investigations) start at UAH 250 000 per month. We work under a legal-services agreement with a fixed monthly retainer or on a per-procedural-action basis. The first case pre-analysis is free, via the form at /kontakty.',
+          'The cost depends on proceedings stage, number of episodes, case-file volume and evidence complexity. Indicatively: defense at pre-trial in a medium-complexity case starts at UAH 80 000 per month of support. Cases with a large evidence base (financial-credit operations, international investigations) start at UAH 250 000 per month. We work under a legal-services agreement with a fixed monthly retainer or on a per-procedural-action basis. The first case pre-analysis is by application via the form at /kontakty.',
         ],
       ],
       ctaTitle: 'Don’t let the investigation seize the initiative',
@@ -300,7 +300,7 @@ export const PRACTICES: Record<PracticeKey, Record<Locale, PracticeContent>> = {
         ],
         [
           'Cât costă apărarea în cauze White-Collar Crime?',
-          'Costul depinde de stadiul procedurilor, numărul episoadelor, volumul dosarului și complexitatea probatoriului. Orientativ: apărarea la stadiul de urmărire penală într-o cauză de complexitate medie începe de la 80 000 UAH pe lună de asistență. Cauzele cu probatoriu masiv (operațiuni financiar-creditare, anchete internaționale) — de la 250 000 UAH pe lună. Lucrăm conform contractului de asistență juridică cu retainer lunar fix sau pe acțiuni procesuale separate. Prima pre-analiză a cazului este gratuită, prin formularul de la /kontakty.',
+          'Costul depinde de stadiul procedurilor, numărul episoadelor, volumul dosarului și complexitatea probatoriului. Orientativ: apărarea la stadiul de urmărire penală într-o cauză de complexitate medie începe de la 80 000 UAH pe lună de asistență. Cauzele cu probatoriu masiv (operațiuni financiar-creditare, anchete internaționale) — de la 250 000 UAH pe lună. Lucrăm conform contractului de asistență juridică cu retainer lunar fix sau pe acțiuni procesuale separate. Prima pre-analiză a cazului se face la cerere prin formularul de la /kontakty.',
         ],
       ],
       ctaTitle: 'Nu lăsați ancheta să preia inițiativa',
@@ -876,7 +876,7 @@ export const PRACTICES: Record<PracticeKey, Record<Locale, PracticeContent>> = {
       ],
       ctaTitle: 'Зміна правил гри — окремий продукт',
       ctaText:
-        'GR-проекти не починаються з кризи. Вони починаються з моніторингу. Опишіть ваш сектор — ми проведемо безкоштовний скан законодавчого порядку денного на найближчі 6 місяців.',
+        'GR-проекти не починаються з кризи. Вони починаються з моніторингу. Опишіть ваш сектор — ми проведемо попередній скан законодавчого порядку денного на найближчі 6 місяців.',
       ctaButton: 'Замовити GR-скан',
       backToOverview: '← Усі практики Litigant',
       breadcrumbHome: 'Головна',
@@ -955,7 +955,7 @@ export const PRACTICES: Record<PracticeKey, Record<Locale, PracticeContent>> = {
       ],
       ctaTitle: 'Changing the rules of the game is a separate product',
       ctaText:
-        'GR projects do not begin with a crisis. They begin with monitoring. Describe your sector — we’ll run a free legislative-agenda scan for the next 6 months.',
+        'GR projects do not begin with a crisis. They begin with monitoring. Describe your sector — we’ll run a preliminary legislative-agenda scan for the next 6 months.',
       ctaButton: 'Order GR scan',
       backToOverview: '← All Litigant practices',
       breadcrumbHome: 'Home',
@@ -1034,7 +1034,7 @@ export const PRACTICES: Record<PracticeKey, Record<Locale, PracticeContent>> = {
       ],
       ctaTitle: 'Schimbarea regulilor jocului — un produs separat',
       ctaText:
-        'Proiectele GR nu încep cu o criză. Încep cu monitorizare. Descrieți sectorul dvs. — vom realiza o scanare gratuită a agendei legislative pentru următoarele 6 luni.',
+        'Proiectele GR nu încep cu o criză. Încep cu monitorizare. Descrieți sectorul dvs. — vom realiza o scanare preliminară a agendei legislative pentru următoarele 6 luni.',
       ctaButton: 'Comandă scanare GR',
       backToOverview: '← Toate practicile Litigant',
       breadcrumbHome: 'Acasă',
