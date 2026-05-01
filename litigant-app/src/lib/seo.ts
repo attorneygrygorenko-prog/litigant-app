@@ -8,7 +8,7 @@ export const OG_LOCALE: Record<Locale, string> = {
   ro: 'ro_MD'
 };
 
-export const HTML_LANG: Record<Locale, sting> = {
+export const HTML_LANG: Record<Locale, string> = {
   ua: 'uk',
   en: 'en',
   ro: 'ro'
