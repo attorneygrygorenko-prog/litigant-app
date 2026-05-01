@@ -1,10 +1,11 @@
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 import { Link } from '@/i18n/routing';
 import type { Locale } from '@/i18n/routing';
 import { buildWebsiteSearch } from '@/lib/jsonld';
-import TrackedLink from '@/components/TrackedLink';
-import { PRACTICE_KEYS, SLUG_BY_LOCALE } from '@/data/practices';
+import { SLUG_BY_LOCALE } from '@/data/practices';
+import HomeInlineForm from '@/components/HomeInlineForm';
 
 export default function HomePage({ params: { locale } }: { params: { locale: Locale } }) {
   setRequestLocale(locale);
@@ -34,6 +35,12 @@ export default function HomePage({ params: { locale } }: { params: { locale: Loc
     { n: '04', title: t('proc4Title'), text: t('proc4Text') }
   ];
 
+  const cases = [
+    { tag: t('case1Tag'), challenge: t('case1Challenge'), result: t('case1Result') },
+    { tag: t('case2Tag'), challenge: t('case2Challenge'), result: t('case2Result') },
+    { tag: t('case3Tag'), challenge: t('case3Challenge'), result: t('case3Result') }
+  ];
+
   return (
     <>
       <script
@@ -61,22 +68,16 @@ export default function HomePage({ params: { locale } }: { params: { locale: Loc
               <div className="hs"><div className="hs-n">2+</div><div className="hs-l">{t('stat3Label')}</div></div>
             </div>
           </div>
-          <div className="vec-block">
-            <div className="vec">
-              <span className="vec-num">01 — {t('vec1Label')}</span>
-              <h2>{t('vec1Title')}</h2>
-              <p>{t('vec1Text')}</p>
-            </div>
-            <div className="vec">
-              <span className="vec-num">02 — {t('vec2Label')}</span>
-              <h2>{t('vec2Title')}</h2>
-              <p>{t('vec2Text')}</p>
-            </div>
-            <div className="vec">
-              <span className="vec-num">03 — {t('vec3Label')}</span>
-              <h2>{t('vec3Title')}</h2>
-              <p>{t('vec3Text')}</p>
-            </div>
+          <div className="hero-photo" aria-hidden="true">
+            <Image
+              src="/images/photo_1.jpg"
+              alt=""
+              fill
+              priority
+              sizes="(max-width: 1080px) 0vw, 50vw"
+              style={{ objectFit: 'cover' }}
+            />
+            <div className="hero-photo-overlay" />
           </div>
         </div>
       </section>
@@ -132,6 +133,26 @@ export default function HomePage({ params: { locale } }: { params: { locale: Loc
         </div>
       </section>
 
+      <section className="sec sec-cases">
+        <div className="wrap">
+          <div className="sh">
+            <span className="sh-label">{t('casesLabel')}</span>
+            <h2>{t('casesTitle')}</h2>
+            <div className="sh-line"><span /><span /></div>
+          </div>
+          <div className="cases-g">
+            {cases.map((c, i) => (
+              <article key={i} className="case-card">
+                <span className="case-tag">{c.tag}</span>
+                <p className="case-challenge">{c.challenge}</p>
+                <p className="case-result">{c.result}</p>
+              </article>
+            ))}
+          </div>
+          <p className="cases-disclaimer">{t('casesDisclaimer')}</p>
+        </div>
+      </section>
+
       <section className="sec sec-off">
         <div className="wrap">
           <div className="sh">
@@ -150,18 +171,22 @@ export default function HomePage({ params: { locale } }: { params: { locale: Loc
         </div>
       </section>
 
-      <div className="wrap">
-        <div className="cta-band">
-          <div>
-            <h2>{t('ctaBandTitle')}</h2>
-            <p>{t('ctaBandText')}</p>
+      <section className="inline-form-sec">
+        <div className="wrap inline-form-g">
+          <div className="if-left">
+            <h2>{t('formHeading')}</h2>
+            <p className="if-intro">{t('formIntro')}</p>
+            <ul className="if-trust">
+              <li>{t('formTrust1')}</li>
+              <li>{t('formTrust2')}</li>
+              <li>{t('formTrust3')}</li>
+            </ul>
           </div>
-          <div className="cta-acts">
-            <Link href="/kontakty" className="btn btn-g">{t('ctaSubmit')}</Link>
-            <TrackedLink className="btn btn-w" href="tel:+380445010207" event="phone_click" params={{ location: 'kyiv' }}>+38 (044) 501-02-07</TrackedLink>
+          <div className="if-right">
+            <HomeInlineForm />
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }
