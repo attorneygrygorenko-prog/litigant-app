@@ -13,6 +13,10 @@ import HtmlLang from '@/components/HtmlLang';
 import AnalyticsScripts from '@/components/AnalyticsScripts';
 import CookieBanner from '@/components/CookieBanner';
 import UtmCapture from '@/components/UtmCapture';
+import ExitIntent from '@/components/ExitIntent';
+import StickyBar from '@/components/StickyBar';
+import ScrollTrigger from '@/components/ScrollTrigger';
+import CallbackWidget from '@/components/CallbackWidget';
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -73,7 +77,6 @@ export default async function LocaleLayout({
 
   const messages = await getMessages();
   const jsonLd = buildJsonLd(locale);
-  const requiresConsent = locale === 'en' || locale === 'ro';
 
   return (
     <NextIntlClientProvider messages={messages} locale={locale}>
@@ -87,11 +90,15 @@ export default async function LocaleLayout({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <UtmCapture />
-      <AnalyticsScripts requiresConsent={requiresConsent} />
+      <AnalyticsScripts requiresConsent />
       <Header />
       <main>{children}</main>
       <Footer />
-      {requiresConsent && <CookieBanner />}
+      <CookieBanner />
+      <ExitIntent />
+      <ScrollTrigger />
+      <StickyBar />
+      <CallbackWidget />
     </NextIntlClientProvider>
   );
 }

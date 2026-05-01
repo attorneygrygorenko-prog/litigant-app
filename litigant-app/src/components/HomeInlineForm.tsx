@@ -2,7 +2,7 @@
 
 import { useRef, useState } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
-import { trackEvent, trackConversion } from '@/lib/analytics';
+import { trackEvent, trackConversion, claritySet } from '@/lib/analytics';
 
 type Status = 'idle' | 'sending' | 'ok' | 'err';
 
@@ -76,6 +76,8 @@ export default function HomeInlineForm() {
       setStatus('ok');
       trackEvent('lead_complete', { form: 'home_inline' });
       trackConversion('home_inline_form');
+      claritySet('lead_submitted', 'true');
+      claritySet('home_inline_lead', 'true');
       e.currentTarget.reset();
       startedRef.current = false;
     } catch {

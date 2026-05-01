@@ -1,69 +1,61 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { useLocale } from 'next-intl';
+import { useTranslations } from 'next-intl';
+import { trackEvent } from '@/lib/analytics';
 
-const STORAGE_KEY = 'cookie_consent';
+const COOKIE_NAME = 'litigant_consent';
 
-const COPY: Record<string, { text: string; accept: string; decline: string; policy: string }> = {
-  en: {
-    text: 'We use cookies for analytics and personalized advertising. Read our',
-    accept: 'Accept',
-    decline: 'Decline',
-    policy: 'Privacy Policy'
-  },
-  ro: {
-    text: 'Folosim cookie-uri pentru analiză și publicitate personalizată. Citiți',
-    accept: 'Accept',
-    decline: 'Refuz',
-    policy: 'Politica de confidențialitate'
-  },
-  ua: {
-    text: 'Ми використовуємо cookie для аналітики та реклами. Ознайомтеся з',
-    accept: 'Прийняти',
-    decline: 'Відхилити',
-    policy: 'Політикою конфіденційності'
-  }
-};
+function readConsent(): 'accepted' | 'declined' | null {
+  if (typeof document === 'undefined') return null;
+  const m = document.cookie.split('; ').find((c) => c.startsWith(`${COOKIE_NAME}=`));
+  if (!m) return null;
+  const v = m.split('=').slice(1).join('=');
+  return v === 'accepted' || v === 'declined' ? v : null;
+}
+
+function setConsentCookie(value: 'accepted' | 'declined') {
+  const days = value === 'accepted' ? 365 : 30;
+  const expires = new Date(Date.now() + days * 86400 * 1000).toUTCString();
+  document.cookie = `${COOKIE_NAME}=${value}; expires=${expires}; path=/; SameSite=Lax`;
+}
 
 export default function CookieBanner() {
-  const locale = useLocale();
+  const t = useTranslations('popups');
   const [decided, setDecided] = useState<boolean>(true);
 
   useEffect(() => {
-    try {
-      const v = window.localStorage.getItem(STORAGE_KEY);
-      setDecided(v === 'accepted' || v === 'declined');
-    } catch {
-      setDecided(true);
-    }
+    setDecided(readConsent() !== null);
   }, []);
 
   function decide(value: 'accepted' | 'declined') {
     try {
-      window.localStorage.setItem(STORAGE_KEY, value);
+      setConsentCookie(value);
     } catch {
-      /* ignore */
+      /* ignore — third-party cookie blocked? */
     }
-    window.dispatchEvent(new Event('cookie-consent-change'));
+    if (value === 'accepted') {
+      trackEvent('cookie_consent_accepted');
+    } else {
+      trackEvent('cookie_consent_declined');
+    }
+    if (typeof window !== 'undefined') {
+      window.dispatchEvent(new Event('cookie-consent-change'));
+    }
     setDecided(true);
   }
 
   if (decided) return null;
 
-  const copy = COPY[locale] || COPY.en;
-
   return (
     <div className="cookie-banner" role="dialog" aria-label="Cookies">
-      <p className="cookie-text">
-        {copy.text} <a href="#">{copy.policy}</a>.
-      </p>
+      <p className="cookie-text">{t('cookieText')}</p>
       <div className="cookie-acts">
         <button type="button" className="btn btn-g" onClick={() => decide('accepted')}>
-          {copy.accept}
+          {t('cookieAccept')}
         </button>
         <button type="button" className="btn btn-o" onClick={() => decide('declined')}>
-          {copy.decline}
+          {t('cookieDecline')}
         </button>
       </div>
     </div>

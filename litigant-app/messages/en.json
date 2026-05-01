@@ -94,7 +94,9 @@
     "formMicro": "Response within 24 hours. Attorney-client privilege.",
     "formSending": "Sending...",
     "formOk": "Thank you. We will reach out within 24 hours.",
-    "formErr": "Submission failed. Please retry or email office@litigant.legal"
+    "formErr": "Submission failed. Please retry or email office@litigant.legal",
+    "heroTagLinkedIn": "For B2B companies and their owners",
+    "heroTagGoogle": "You were looking for a lawyer — you found one"
   },
   "about": {
     "metaTitle": "Iurii Grygorenko — Attorney, Arbitration Manager, GR | Litigant Law Office Kyiv",
@@ -344,7 +346,47 @@
     "fErr": "Submission failed. Please try again.",
     "wccCtaTitle": "Business defence during searches — 24/7",
     "wccCtaText": "Litigant accompanies investigative actions against owners and C-level. If there is a real threat — submit a case for pre-analysis.",
-    "wccCtaAction": "Submit a case for review →"
+    "wccCtaAction": "Submit a case for review →",
+    "urgency": "⚡ Free. Business owners and C-level only.",
+    "socialProof": "847 entrepreneurs already downloaded",
+    "upsellTitle": "Want to discuss your specific case?",
+    "upsellText": "Free preliminary consultation. Attorney-client privilege guaranteed.",
+    "upsellCta": "Yes, contact me",
+    "upsellSending": "Sending...",
+    "upsellOk": "Thank you. We'll reach out within 24 hours."
+  },
+  "popups": {
+    "exitLabel": "BEFORE YOU LEAVE",
+    "exitTitle": "Do you know the cost of your mistake?",
+    "exitText": "80% of business owners contact a lawyer when time is already lost. Leave your contact — we'll reach out within 24 hours.",
+    "exitPh": "Your phone or email",
+    "exitCta": "Get a free case analysis",
+    "exitDecline": "No thanks. I'll manage on my own.",
+    "exitSending": "Sending...",
+    "exitOk": "Thank you. We'll reach out within 24 hours.",
+    "exitErr": "Submission failed. Please retry.",
+    "exitClose": "Close",
+    "stickyText": "Have a question?",
+    "stickyCta": "Submit case →",
+    "scrollText60a": "Looks like this topic interests you.",
+    "scrollText60b": "Want to discuss your case?",
+    "scrollText3a": "You've been exploring our practice for 3 minutes.",
+    "scrollText3b": "Have a specific question?",
+    "scrollCta60": "Yes, contact me",
+    "scrollCta3": "Ask a question",
+    "scrollClose": "Close",
+    "callbackOpenLabel": "Request a callback",
+    "callbackTitle": "Request a callback",
+    "callbackPh": "Your phone number",
+    "callbackCta": "Call me back",
+    "callbackHint": "We'll call within 2 hours",
+    "callbackSending": "Sending...",
+    "callbackOk": "Thank you! We'll call shortly.",
+    "callbackErr": "Submission failed. Please retry.",
+    "cookieText": "We use cookies for analytics and personalisation. This helps us understand your needs better.",
+    "cookieAccept": "Accept",
+    "cookieDecline": "Decline",
+    "cookieLearnMore": "Privacy Policy"
   },
   "footer": {
     "desc": "Architecture of legal security for B2B. Kyiv · Odesa · Chișinău.",
@@ -362,3 +404,4 @@
     "checklist": "Search checklist"
   }
 }
+

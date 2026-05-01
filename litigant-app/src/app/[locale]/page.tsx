@@ -6,6 +6,7 @@ import type { Locale } from '@/i18n/routing';
 import { buildWebsiteSearch } from '@/lib/jsonld';
 import { SLUG_BY_LOCALE } from '@/data/practices';
 import HomeInlineForm from '@/components/HomeInlineForm';
+import HeroTag from '@/components/HeroTag';
 
 export default function HomePage({ params: { locale } }: { params: { locale: Locale } }) {
   setRequestLocale(locale);
@@ -50,7 +51,11 @@ export default function HomePage({ params: { locale } }: { params: { locale: Loc
       <section className="hero">
         <div className="wrap hero-g">
           <div>
-            <span className="hero-tag">{t('heroTag')}</span>
+            <HeroTag
+              defaultText={t('heroTag')}
+              linkedinText={t('heroTagLinkedIn')}
+              googleText={t('heroTagGoogle')}
+            />
             <h1>
               {t('heroTitle')}
               <span className="sub">{t('heroSubtitle')}</span>

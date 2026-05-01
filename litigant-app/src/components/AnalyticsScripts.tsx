@@ -9,15 +9,20 @@ const LI_PARTNER_ID = process.env.NEXT_PUBLIC_LI_PARTNER_ID;
 const CLARITY_ID = process.env.NEXT_PUBLIC_CLARITY_ID;
 const GADS_ID = process.env.NEXT_PUBLIC_GADS_ID;
 
+const COOKIE_NAME = 'litigant_consent';
 type Consent = 'accepted' | 'declined' | null;
 
 function readConsent(): Consent {
-  if (typeof window === 'undefined') return null;
-  const v = window.localStorage.getItem('cookie_consent');
+  if (typeof document === 'undefined') return null;
+  const m = document.cookie.split('; ').find((c) => c.startsWith(`${COOKIE_NAME}=`));
+  if (!m) return null;
+  const v = m.split('=').slice(1).join('=');
   return v === 'accepted' || v === 'declined' ? v : null;
 }
 
 export default function AnalyticsScripts({ requiresConsent }: { requiresConsent: boolean }) {
+  // Even when a locale doesn't legally require consent, we still respect any
+  // existing user choice — accept = full load; null + no requirement = full load.
   const [consent, setConsent] = useState<Consent>(() => (requiresConsent ? null : 'accepted'));
   const pathname = usePathname();
 
@@ -42,6 +47,9 @@ export default function AnalyticsScripts({ requiresConsent }: { requiresConsent:
 
   const fbAllowed = !!FB_PIXEL_ID && consent === 'accepted';
   const liAllowed = !!LI_PARTNER_ID && consent === 'accepted';
+  // Clarity records sessions → consent-gated. GA/GADS stays always-on as
+  // baseline analytics (no advertising profile), so it works on `declined`.
+  const clarityAllowed = !!CLARITY_ID && consent === 'accepted';
 
   return (
     <>
@@ -78,7 +86,7 @@ export default function AnalyticsScripts({ requiresConsent }: { requiresConsent:
         </Script>
       )}
 
-      {CLARITY_ID && (
+      {clarityAllowed && (
         <Script id="ms-clarity" strategy="lazyOnload">
           {`
             (function(c,l,a,r,i,t,y){

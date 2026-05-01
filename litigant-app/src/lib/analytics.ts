@@ -5,6 +5,7 @@ declare global {
     gtag?: (...args: unknown[]) => void;
     fbq?: (...args: unknown[]) => void;
     dataLayer?: unknown[];
+    clarity?: ((...args: unknown[]) => void) & { q?: unknown[][] };
   }
 }
 
@@ -38,4 +39,17 @@ export function trackConversion(label: string, params?: Params) {
     event_label: label,
     ...params
   });
+}
+
+// Microsoft Clarity custom tag — used to segment session recordings
+// (e.g. only "users who submitted a lead"). No-op when Clarity hasn't loaded
+// or consent was declined.
+export function claritySet(key: string, value: string) {
+  if (typeof window === 'undefined') return;
+  if (typeof window.clarity !== 'function') return;
+  try {
+    window.clarity('set', key, value);
+  } catch {
+    /* swallow */
+  }
 }

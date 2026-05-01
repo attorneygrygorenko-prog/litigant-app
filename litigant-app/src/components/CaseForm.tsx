@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
-import { trackEvent, trackConversion } from '@/lib/analytics';
+import { trackEvent, trackConversion, claritySet } from '@/lib/analytics';
 
 type Status = 'idle' | 'sending' | 'ok' | 'err';
 
@@ -78,6 +78,7 @@ export default function CaseForm() {
         value: payload.asset_value
       });
       trackConversion('case_form');
+      claritySet('lead_submitted', 'true');
       e.currentTarget.reset();
       startedRef.current = false;
     } catch {
