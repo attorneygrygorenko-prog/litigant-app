@@ -45,7 +45,7 @@ export default function AboutPage({ params: { locale } }: { params: { locale: Lo
               <div className="about-photos">
                 <Image
                   className="photo-main"
-                  src="/images/photo_1.jpg"
+                  src="/images/photo_about.jpg"
                   alt={`${t('title')} — Litigant Law Office`}
                   width={600}
                   height={800}
