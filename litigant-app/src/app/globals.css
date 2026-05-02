@@ -527,6 +527,25 @@
   .cb-direct-row a { color: var(--g); transition: color .15s, transform .15s; display: inline-flex; align-items: center; }
   .cb-direct-row a:hover { color: var(--g1); transform: translateY(-1px); }
 
+  /* Quick-contact form (.qc-form) — compact sibling of CaseForm on /kontakty.
+     POSTs /api/contact (SMTP via NIC.UA, office-routed). */
+  .contact-forms { display: flex; flex-direction: column; gap: 24px; }
+  .qc-form { padding: 28px; border: 1px solid var(--b); background: var(--f); display: grid; gap: 12px; }
+  .qc-form h3 { font-family: var(--serif); font-size: 20px; font-weight: 600; color: var(--n); letter-spacing: .04em; margin: 0; }
+  .qc-form .form-sub { font-family: var(--sans); font-size: 13px; color: #4A4845; margin: -6px 0 6px; line-height: 1.55; font-weight: 400; }
+  .qc-form .field { width: 100%; padding: 11px 13px; border: 1px solid var(--b); background: var(--w); font-family: var(--sans); font-size: 14px; color: var(--t); margin-bottom: 0; }
+  .qc-form .field:focus { border-color: var(--n); outline: none; }
+  .qc-form textarea.field { min-height: 80px; resize: vertical; }
+  .qc-form .submit { width: 100%; justify-content: center; background: var(--n); color: var(--w); font-size: 11px; letter-spacing: .14em; padding: 13px; border: 1px solid var(--n); }
+  .qc-form .submit:hover { background: var(--n1); }
+  .qc-form .submit:disabled { opacity: .65; cursor: wait; }
+  .qc-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  @media (max-width: 700px) {
+    .qc-row { grid-template-columns: 1fr; }
+    .qc-form { padding: 22px; }
+  }
+  .qc-ok-wrap .st { margin-top: 6px; }
+
   /* Footer social row — under .foot-reg in the brand column */
   .foot-social { display: flex; gap: 16px; margin-top: 16px; }
   .foot-social a { color: rgba(255,255,255,.4); transition: color .2s; display: inline-flex; align-items: center; }

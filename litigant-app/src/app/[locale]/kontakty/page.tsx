@@ -4,6 +4,7 @@ import type { Metadata } from 'next';
 
 import PageHero from '@/components/PageHero';
 import CaseForm from '@/components/CaseForm';
+import ContactForm from '@/components/ContactForm';
 import TrackedLink from '@/components/TrackedLink';
 import type { Locale } from '@/i18n/routing';
 import { SITE_URL, alternates } from '@/lib/seo';
@@ -77,7 +78,10 @@ export default function ContactsPage({ params: { locale } }: { params: { locale:
               </div>
             </div>
 
-            <CaseForm />
+            <div className="contact-forms">
+              <CaseForm />
+              <ContactForm />
+            </div>
           </div>
         </div>
       </section>
