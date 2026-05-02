@@ -2,6 +2,13 @@ import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/routing';
 import TrackedLink from './TrackedLink';
+import {
+  FacebookIcon,
+  InstagramIcon,
+  ThreadsIcon,
+  LinkedInIcon
+} from './SocialIcons';
+import { SOCIAL_LINKS } from '@/data/social';
 
 export default function Footer() {
   const tFooter = useTranslations('footer');
@@ -25,6 +32,40 @@ export default function Footer() {
             <p className="foot-desc">{tFooter('desc')}</p>
             <p className="foot-etym">{tFooter('etymology')}</p>
             <p className="foot-reg">{tFooter('reg')}</p>
+            <div className="foot-social">
+              <a
+                href={SOCIAL_LINKS.facebook}
+                target="_blank"
+                rel="noopener noreferrer me"
+                aria-label="Facebook"
+              >
+                <FacebookIcon />
+              </a>
+              <a
+                href={SOCIAL_LINKS.instagram}
+                target="_blank"
+                rel="noopener noreferrer me"
+                aria-label="Instagram"
+              >
+                <InstagramIcon />
+              </a>
+              <a
+                href={SOCIAL_LINKS.threads}
+                target="_blank"
+                rel="noopener noreferrer me"
+                aria-label="Threads"
+              >
+                <ThreadsIcon />
+              </a>
+              <a
+                href={SOCIAL_LINKS.linkedin}
+                target="_blank"
+                rel="noopener noreferrer me"
+                aria-label="LinkedIn"
+              >
+                <LinkedInIcon />
+              </a>
+            </div>
           </div>
 
           <div className="foot-col">

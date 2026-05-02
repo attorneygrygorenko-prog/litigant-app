@@ -383,6 +383,7 @@
     "callbackSending": "Sending...",
     "callbackOk": "Thank you! We'll call shortly.",
     "callbackErr": "Submission failed. Please retry.",
+    "directMessage": "or message us directly:",
     "cookieText": "We use cookies for analytics and personalisation. This helps us understand your needs better.",
     "cookieAccept": "Accept",
     "cookieDecline": "Decline",

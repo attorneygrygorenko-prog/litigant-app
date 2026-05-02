@@ -3,6 +3,8 @@
 import { useState } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
 import { trackEvent, trackConversion, claritySet } from '@/lib/analytics';
+import { SOCIAL_LINKS } from '@/data/social';
+import { FacebookIcon, InstagramIcon, WhatsAppIcon } from './SocialIcons';
 
 type Status = 'idle' | 'sending' | 'ok' | 'err';
 
@@ -92,6 +94,36 @@ export default function CallbackWidgetPanel({ onClose }: { onClose: () => void }
           </button>
           <p className="cb-hint">{t('callbackHint')}</p>
           {status === 'err' && <div className="st st-e">{t('callbackErr')}</div>}
+          <p className="cb-direct">{t('directMessage')}</p>
+          <div className="cb-direct-row">
+            <a
+              href={SOCIAL_LINKS.whatsapp}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="WhatsApp"
+              onClick={() => trackEvent('callback_direct_click', { type: 'whatsapp' })}
+            >
+              <WhatsAppIcon size={24} />
+            </a>
+            <a
+              href={SOCIAL_LINKS.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              onClick={() => trackEvent('callback_direct_click', { type: 'instagram' })}
+            >
+              <InstagramIcon size={24} />
+            </a>
+            <a
+              href={SOCIAL_LINKS.facebook}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+              onClick={() => trackEvent('callback_direct_click', { type: 'facebook' })}
+            >
+              <FacebookIcon size={24} />
+            </a>
+          </div>
         </form>
       )}
       <button

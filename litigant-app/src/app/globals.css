@@ -522,6 +522,15 @@
   .cb-close { position: absolute; top: 6px; right: 8px; background: none; border: none; color: var(--m); font-size: 20px; line-height: 1; cursor: pointer; padding: 4px 8px; transition: color .15s; }
   .cb-close:hover { color: var(--n); }
   .cb-form .st-e { background: rgba(178,58,72,.07); border-left: 3px solid #B23A48; color: #8B2020; padding: 9px 12px; font-size: 12.5px; }
+  .cb-direct { font-family: var(--sans); font-size: 11.5px; color: var(--m); text-align: center; margin: 14px 0 8px; padding-top: 14px; border-top: 1px solid var(--b); }
+  .cb-direct-row { display: flex; justify-content: center; gap: 22px; }
+  .cb-direct-row a { color: var(--g); transition: color .15s, transform .15s; display: inline-flex; align-items: center; }
+  .cb-direct-row a:hover { color: var(--g1); transform: translateY(-1px); }
+
+  /* Footer social row — under .foot-reg in the brand column */
+  .foot-social { display: flex; gap: 16px; margin-top: 16px; }
+  .foot-social a { color: rgba(255,255,255,.4); transition: color .2s; display: inline-flex; align-items: center; }
+  .foot-social a:hover { color: var(--g); }
   @media (max-width: 700px) {
     /* Hide on mobile — sticky bar covers the bottom-right corner there. */
     .cb-root { display: none; }

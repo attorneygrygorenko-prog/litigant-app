@@ -1,5 +1,6 @@
 import type { Locale } from '@/i18n/routing';
 import { SITE_URL } from './seo';
+import { PERSON_SAME_AS } from '@/data/social';
 
 const FAQ_BY_LOCALE: Record<Locale, { q: string; a: string }[]> = {
   ua: [
@@ -152,11 +153,7 @@ export function buildJsonLd(locale: Locale) {
           'Anti-Raiding',
           'Debt Restructuring'
         ],
-        sameAs: [
-          'https://blog.liga.net/user/yuhryhorenko',
-          'https://www.hsa.org.ua/lectors/grygorenko-yurij-sergijovych',
-          'https://www.instagram.com/iurii_litigant/'
-        ]
+        sameAs: PERSON_SAME_AS
       },
       {
         '@type': 'Person',
@@ -166,11 +163,7 @@ export function buildJsonLd(locale: Locale) {
         jobTitle: 'Managing Partner, Attorney, Arbitration Manager',
         worksFor: { '@id': `${SITE_URL}/#firm` },
         url: SITE_URL,
-        sameAs: [
-          'https://blog.liga.net/user/yuhryhorenko',
-          'https://www.hsa.org.ua/lectors/grygorenko-yurij-sergijovych',
-          'https://www.instagram.com/iurii_litigant/'
-        ],
+        sameAs: PERSON_SAME_AS,
         knowsAbout: [
           'White-Collar Crime Ukraine',
           'Bankruptcy Law Ukraine',

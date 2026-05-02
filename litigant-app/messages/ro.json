@@ -383,6 +383,7 @@
     "callbackSending": "Se trimite...",
     "callbackOk": "Mulțumim! Vă vom suna în curând.",
     "callbackErr": "Trimiterea a eșuat. Reîncercați.",
+    "directMessage": "sau scrieți direct:",
     "cookieText": "Folosim cookie-uri pentru analiză și personalizare. Aceasta ne ajută să înțelegem mai bine nevoile dvs.",
     "cookieAccept": "Accept",
     "cookieDecline": "Refuz",

@@ -8,6 +8,7 @@ import TrackedLink from '@/components/TrackedLink';
 import type { Locale } from '@/i18n/routing';
 import { SITE_URL, alternates } from '@/lib/seo';
 import { buildBreadcrumb } from '@/lib/jsonld';
+import { SOCIAL_LINKS } from '@/data/social';
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: Locale } }): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: 'contacts' });
@@ -65,8 +66,11 @@ export default function ContactsPage({ params: { locale } }: { params: { locale:
               <div className="c-card">
                 <span className="c-label">{t('messengersLabel')}</span>
                 <div className="messengers">
-                  <TrackedLink className="msg-btn" href="https://t.me/+380932232995" target="_blank" rel="noopener noreferrer" event="messenger_click" params={{ type: 'telegram' }}>Telegram</TrackedLink>
-                  <TrackedLink className="msg-btn" href="https://wa.me/380932232995" target="_blank" rel="noopener noreferrer" event="messenger_click" params={{ type: 'whatsapp' }}>WhatsApp</TrackedLink>
+                  <TrackedLink className="msg-btn" href={SOCIAL_LINKS.whatsapp} target="_blank" rel="noopener noreferrer" event="messenger_click" params={{ type: 'whatsapp' }}>WhatsApp</TrackedLink>
+                  <TrackedLink className="msg-btn" href={SOCIAL_LINKS.telegram} target="_blank" rel="noopener noreferrer" event="messenger_click" params={{ type: 'telegram' }}>Telegram</TrackedLink>
+                  <TrackedLink className="msg-btn" href={SOCIAL_LINKS.facebook} target="_blank" rel="noopener noreferrer" event="messenger_click" params={{ type: 'facebook' }}>Facebook</TrackedLink>
+                  <TrackedLink className="msg-btn" href={SOCIAL_LINKS.instagram} target="_blank" rel="noopener noreferrer" event="messenger_click" params={{ type: 'instagram' }}>Instagram</TrackedLink>
+                  <TrackedLink className="msg-btn" href={SOCIAL_LINKS.threads} target="_blank" rel="noopener noreferrer" event="messenger_click" params={{ type: 'threads' }}>Threads</TrackedLink>
                 </div>
               </div>
             </div>
