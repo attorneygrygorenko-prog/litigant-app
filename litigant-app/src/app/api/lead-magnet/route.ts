@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import { appendLead } from '@/lib/sheets';
+import { sendLeadMagnetEmail } from '@/lib/email';
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
@@ -77,6 +78,8 @@ export async function POST(req: Request) {
     source_page: page,
     ...utm
   });
+
+  await sendLeadMagnetEmail({ name, contact, locale, page, magnet });
 
   return NextResponse.json({ ok: true });
 }

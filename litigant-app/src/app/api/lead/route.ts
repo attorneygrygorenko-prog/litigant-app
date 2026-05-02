@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import { appendLead, type LeadRow } from '@/lib/sheets';
+import { sendLeadEmail } from '@/lib/email';
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
@@ -81,6 +82,15 @@ export async function POST(req: Request) {
     source_page: row.page,
     ai_score: '',
     ...utm
+  });
+
+  // Email notification — fully isolated from the user response by the helper's
+  // internal try/catch. A Resend outage / unverified domain / missing API key
+  // will not flip the form into the err state.
+  await sendLeadEmail({
+    ...row,
+    source: clean(body.source, 200),
+    ai_review: clean(body.ai_review, 2000)
   });
 
   return NextResponse.json({ ok: true });
