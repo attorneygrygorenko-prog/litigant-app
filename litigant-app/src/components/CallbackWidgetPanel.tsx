@@ -4,7 +4,13 @@ import { useState } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
 import { trackEvent, trackConversion, claritySet } from '@/lib/analytics';
 import { SOCIAL_LINKS } from '@/data/social';
-import { FacebookIcon, InstagramIcon, WhatsAppIcon } from './SocialIcons';
+import {
+  FacebookIcon,
+  InstagramIcon,
+  SignalIcon,
+  ViberIcon,
+  WhatsAppIcon
+} from './SocialIcons';
 
 type Status = 'idle' | 'sending' | 'ok' | 'err';
 
@@ -104,6 +110,22 @@ export default function CallbackWidgetPanel({ onClose }: { onClose: () => void }
               onClick={() => trackEvent('callback_direct_click', { type: 'whatsapp' })}
             >
               <WhatsAppIcon size={24} />
+            </a>
+            <a
+              href={SOCIAL_LINKS.viber}
+              aria-label="Viber"
+              onClick={() => trackEvent('callback_direct_click', { type: 'viber' })}
+            >
+              <ViberIcon size={24} />
+            </a>
+            <a
+              href={SOCIAL_LINKS.signal}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Signal"
+              onClick={() => trackEvent('callback_direct_click', { type: 'signal' })}
+            >
+              <SignalIcon size={24} />
             </a>
             <a
               href={SOCIAL_LINKS.instagram}

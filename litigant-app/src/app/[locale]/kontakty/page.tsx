@@ -68,6 +68,8 @@ export default function ContactsPage({ params: { locale } }: { params: { locale:
                 <div className="messengers">
                   <TrackedLink className="msg-btn" href={SOCIAL_LINKS.whatsapp} target="_blank" rel="noopener noreferrer" event="messenger_click" params={{ type: 'whatsapp' }}>WhatsApp</TrackedLink>
                   <TrackedLink className="msg-btn" href={SOCIAL_LINKS.telegram} target="_blank" rel="noopener noreferrer" event="messenger_click" params={{ type: 'telegram' }}>Telegram</TrackedLink>
+                  <TrackedLink className="msg-btn" href={SOCIAL_LINKS.viber} event="messenger_click" params={{ type: 'viber' }}>Viber</TrackedLink>
+                  <TrackedLink className="msg-btn" href={SOCIAL_LINKS.signal} target="_blank" rel="noopener noreferrer" event="messenger_click" params={{ type: 'signal' }}>Signal</TrackedLink>
                   <TrackedLink className="msg-btn" href={SOCIAL_LINKS.facebook} target="_blank" rel="noopener noreferrer" event="messenger_click" params={{ type: 'facebook' }}>Facebook</TrackedLink>
                   <TrackedLink className="msg-btn" href={SOCIAL_LINKS.instagram} target="_blank" rel="noopener noreferrer" event="messenger_click" params={{ type: 'instagram' }}>Instagram</TrackedLink>
                   <TrackedLink className="msg-btn" href={SOCIAL_LINKS.threads} target="_blank" rel="noopener noreferrer" event="messenger_click" params={{ type: 'threads' }}>Threads</TrackedLink>

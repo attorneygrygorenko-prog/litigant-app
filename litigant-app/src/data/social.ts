@@ -6,6 +6,8 @@ export const SOCIAL_LINKS = {
   threads: 'https://www.threads.com/@iurii_litigant',
   whatsapp: 'https://wa.me/380932232995',
   telegram: 'https://t.me/+380932232995',
+  viber: 'viber://chat?number=380932232995',
+  signal: 'https://signal.me/#p/+380932232995',
   linkedin: 'https://www.linkedin.com/company/litigant-law-office'
 } as const;
 
