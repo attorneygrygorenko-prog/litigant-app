@@ -3,7 +3,7 @@ import { useTranslations } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 import { Link } from '@/i18n/routing';
 import type { Locale } from '@/i18n/routing';
-import { buildWebsiteSearch } from '@/lib/jsonld';
+import { buildHomeFaqJsonLd, buildWebsiteSearch } from '@/lib/jsonld';
 import { SLUG_BY_LOCALE } from '@/data/practices';
 import HomeInlineForm from '@/components/HomeInlineForm';
 import HeroTag from '@/components/HeroTag';
@@ -12,6 +12,7 @@ export default function HomePage({ params: { locale } }: { params: { locale: Loc
   setRequestLocale(locale);
   const t = useTranslations('home');
   const websiteLd = buildWebsiteSearch(locale);
+  const homeFaqLd = buildHomeFaqJsonLd(locale);
 
   // Mapping prac1..prac4 → canonical practice key. Order matches the
   // 4 practices in messages/{ua,en,ro}.json prac1Title..prac4Title.
@@ -47,6 +48,10 @@ export default function HomePage({ params: { locale } }: { params: { locale: Loc
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homeFaqLd) }}
       />
       <section className="hero">
         <div className="wrap hero-g">

@@ -62,8 +62,6 @@ const FAQ_BY_LOCALE: Record<Locale, { q: string; a: string }[]> = {
 const HTML_LANG_FOR_FAQ: Record<Locale, string> = { ua: 'uk', en: 'en', ro: 'ro' };
 
 export function buildJsonLd(locale: Locale) {
-  const faqs = FAQ_BY_LOCALE[locale];
-
   return {
     '@context': 'https://schema.org',
     '@graph': [
@@ -184,17 +182,30 @@ export function buildJsonLd(locale: Locale) {
           name: 'Ukrainian National Bar Association (UBA)'
         }
       },
-      {
-        '@type': 'FAQPage',
-        '@id': `${SITE_URL}/${locale}#faq`,
-        inLanguage: HTML_LANG_FOR_FAQ[locale],
-        mainEntity: faqs.map((f) => ({
-          '@type': 'Question',
-          name: f.q,
-          acceptedAnswer: { '@type': 'Answer', text: f.a }
-        }))
-      }
     ]
+  };
+}
+
+/**
+ * Homepage FAQ — emitted ONLY on the home page, not from the layout.
+ * Previously this was inside buildJsonLd's @graph, which meant every
+ * locale page (including /ekspertyza/[practice]) ended up with two
+ * conflicting FAQPage entities — the homepage one (`@id: /ua#faq`) and
+ * the page's own. Google Search Console flagged practice landings with
+ * "Об'єкт: Н/Д" because of that ambiguity.
+ */
+export function buildHomeFaqJsonLd(locale: Locale) {
+  const faqs = FAQ_BY_LOCALE[locale];
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    '@id': `${SITE_URL}/${locale}#faq`,
+    inLanguage: HTML_LANG_FOR_FAQ[locale],
+    mainEntity: faqs.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a }
+    }))
   };
 }
 
