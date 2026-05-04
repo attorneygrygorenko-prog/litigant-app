@@ -4,6 +4,7 @@ import { setRequestLocale, getTranslations } from 'next-intl/server';
 import type { Metadata } from 'next';
 
 import PageHero from '@/components/PageHero';
+import ScrollReveal from '@/components/ScrollReveal';
 import type { Locale } from '@/i18n/routing';
 import { SITE_URL, alternates } from '@/lib/seo';
 import { buildBreadcrumb, buildFaqJsonLd, type FaqEntry } from '@/lib/jsonld';
@@ -41,25 +42,27 @@ export default function AboutPage({ params: { locale } }: { params: { locale: Lo
       <section className="sec">
         <div className="wrap">
           <div className="about-g">
-            <div>
-              <div className="about-photos">
-                <Image
-                  className="photo-main"
-                  src="/images/photo_about.jpg"
-                  alt={`${t('title')} — Litigant Law Office`}
-                  width={600}
-                  height={800}
-                  priority
-                />
+            <ScrollReveal direction="left">
+              <div>
+                <div className="about-photos">
+                  <Image
+                    className="photo-main"
+                    src="/images/photo_about.jpg"
+                    alt={`${t('title')} — Litigant Law Office`}
+                    width={600}
+                    height={800}
+                    priority
+                  />
+                </div>
+                <div className="about-badge">
+                  <div className="ab"><div className="ab-n">9+</div><div className="ab-l">{t('badgeYears')}</div></div>
+                  <div className="ab"><div className="ab-n">НААУ</div><div className="ab-l">{t('badgeCommittee')}</div></div>
+                  <div className="ab"><div className="ab-n">2016</div><div className="ab-l">{t('badgeLicence')}</div></div>
+                </div>
               </div>
-              <div className="about-badge">
-                <div className="ab"><div className="ab-n">9+</div><div className="ab-l">{t('badgeYears')}</div></div>
-                <div className="ab"><div className="ab-n">НААУ</div><div className="ab-l">{t('badgeCommittee')}</div></div>
-                <div className="ab"><div className="ab-n">2016</div><div className="ab-l">{t('badgeLicence')}</div></div>
-              </div>
-            </div>
+            </ScrollReveal>
 
-            <div className="about-info">
+            <ScrollReveal direction="right" className="about-info">
               <span className="role">{t('role')}</span>
               <h2>{t('title')}</h2>
               <p>{t('para1')}</p>
@@ -84,7 +87,7 @@ export default function AboutPage({ params: { locale } }: { params: { locale: Lo
                 <span className="tag">GR · Lobbying</span>
                 <span className="tag">{t('tagMaritime')}</span>
               </div>
-            </div>
+            </ScrollReveal>
           </div>
         </div>
       </section>

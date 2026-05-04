@@ -7,6 +7,10 @@ import { buildHomeFaqJsonLd, buildWebsiteSearch } from '@/lib/jsonld';
 import { SLUG_BY_LOCALE } from '@/data/practices';
 import HomeInlineForm from '@/components/HomeInlineForm';
 import HeroTag from '@/components/HeroTag';
+import CounterNumber from '@/components/CounterNumber';
+import TextReveal from '@/components/TextReveal';
+import ScrollReveal from '@/components/ScrollReveal';
+import MagneticButton from '@/components/MagneticButton';
 
 export default function HomePage({ params: { locale } }: { params: { locale: Locale } }) {
   setRequestLocale(locale);
@@ -62,20 +66,24 @@ export default function HomePage({ params: { locale } }: { params: { locale: Loc
               googleText={t('heroTagGoogle')}
             />
             <h1>
-              {t('heroTitle')}
-              <span className="sub">{t('heroSubtitle')}</span>
+              <TextReveal text={t('heroTitle')} />
+              <span className="sub">
+                <TextReveal text={t('heroSubtitle')} baseDelay={300} />
+              </span>
             </h1>
             <div className="hero-line"><span /><span /></div>
             <p className="hero-text">{t('heroText')}</p>
             <p className="hero-etym">{t('heroEtymology')}</p>
             <div className="hero-cta">
-              <Link href="/kontakty" className="btn btn-g">{t('ctaSubmit')}</Link>
+              <MagneticButton>
+                <Link href="/kontakty" className="btn btn-g">{t('ctaSubmit')}</Link>
+              </MagneticButton>
               <Link href="/ekspertyza" className="btn btn-w">{t('ctaVectors')}</Link>
             </div>
             <div className="hero-stats">
-              <div className="hs"><div className="hs-n">9+</div><div className="hs-l">{t('stat1Label')}</div></div>
-              <div className="hs"><div className="hs-n">3</div><div className="hs-l">{t('stat2Label')}</div></div>
-              <div className="hs"><div className="hs-n">2+</div><div className="hs-l">{t('stat3Label')}</div></div>
+              <div className="hs"><div className="hs-n"><CounterNumber end={9} suffix="+" /></div><div className="hs-l">{t('stat1Label')}</div></div>
+              <div className="hs"><div className="hs-n"><CounterNumber end={3} /></div><div className="hs-l">{t('stat2Label')}</div></div>
+              <div className="hs"><div className="hs-n"><CounterNumber end={2} suffix="+" /></div><div className="hs-l">{t('stat3Label')}</div></div>
             </div>
           </div>
           <div className="hero-photo" aria-hidden="true">
@@ -94,7 +102,9 @@ export default function HomePage({ params: { locale } }: { params: { locale: Loc
 
       <section className="manifesto">
         <div className="wrap">
-          <blockquote>{t('manifesto')}</blockquote>
+          <ScrollReveal>
+            <blockquote>{t('manifesto')}</blockquote>
+          </ScrollReveal>
         </div>
       </section>
 
@@ -107,19 +117,20 @@ export default function HomePage({ params: { locale } }: { params: { locale: Loc
             <p>{t('practicesIntro')}</p>
           </div>
           <div className="prac-grid">
-            {practices.map((p) => (
-              <Link
-                key={p.n}
-                href={`/ekspertyza/${SLUG_BY_LOCALE[p.key][locale]}`}
-                className="prac"
-              >
-                <span className="prac-n">{p.n}</span>
-                <h3>{p.title}</h3>
-                <p>{p.text}</p>
-                <span className="prac-more">
-                  {t('learnMore')} <span className="prac-arr">→</span>
-                </span>
-              </Link>
+            {practices.map((p, i) => (
+              <ScrollReveal key={p.n} delay={i * 100}>
+                <Link
+                  href={`/ekspertyza/${SLUG_BY_LOCALE[p.key][locale]}`}
+                  className="prac"
+                >
+                  <span className="prac-n">{p.n}</span>
+                  <h3>{p.title}</h3>
+                  <p>{p.text}</p>
+                  <span className="prac-more">
+                    {t('learnMore')} <span className="prac-arr">→</span>
+                  </span>
+                </Link>
+              </ScrollReveal>
             ))}
           </div>
         </div>
@@ -132,12 +143,14 @@ export default function HomePage({ params: { locale } }: { params: { locale: Loc
             <h2>{t('principlesTitle')}</h2>
           </div>
           <div className="why-g">
-            {why.map((w) => (
-              <div key={w.n} className="why">
-                <span className="why-n">{w.n}</span>
-                <h3>{w.title}</h3>
-                <p>{w.text}</p>
-              </div>
+            {why.map((w, i) => (
+              <ScrollReveal key={w.n} delay={i * 100}>
+                <div className="why">
+                  <span className="why-n">{w.n}</span>
+                  <h3>{w.title}</h3>
+                  <p>{w.text}</p>
+                </div>
+              </ScrollReveal>
             ))}
           </div>
         </div>
@@ -152,11 +165,13 @@ export default function HomePage({ params: { locale } }: { params: { locale: Loc
           </div>
           <div className="cases-g">
             {cases.map((c, i) => (
-              <article key={i} className="case-card">
-                <span className="case-tag">{c.tag}</span>
-                <p className="case-challenge">{c.challenge}</p>
-                <p className="case-result">{c.result}</p>
-              </article>
+              <ScrollReveal key={i} delay={i * 150}>
+                <article className="case-card">
+                  <span className="case-tag">{c.tag}</span>
+                  <p className="case-challenge">{c.challenge}</p>
+                  <p className="case-result">{c.result}</p>
+                </article>
+              </ScrollReveal>
             ))}
           </div>
           <p className="cases-disclaimer">{t('casesDisclaimer')}</p>
@@ -170,12 +185,14 @@ export default function HomePage({ params: { locale } }: { params: { locale: Loc
             <h2>{t('processTitle')}</h2>
           </div>
           <div className="proc-g">
-            {proc.map((p) => (
-              <div key={p.n} className="proc">
-                <span className="proc-n">{p.n}</span>
-                <h3>{p.title}</h3>
-                <p>{p.text}</p>
-              </div>
+            {proc.map((p, i) => (
+              <ScrollReveal key={p.n} delay={i * 100}>
+                <div className="proc">
+                  <span className="proc-n">{p.n}</span>
+                  <h3>{p.title}</h3>
+                  <p>{p.text}</p>
+                </div>
+              </ScrollReveal>
             ))}
           </div>
         </div>

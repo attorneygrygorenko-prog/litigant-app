@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
 import { trackEvent, trackConversion, claritySet } from '@/lib/analytics';
+import MagneticButton from './MagneticButton';
 
 type Status = 'idle' | 'sending' | 'ok' | 'err';
 
@@ -142,9 +143,11 @@ export default function CaseForm() {
           <input key={k} type="hidden" name={k} value={utm[k] || ''} readOnly />
         ))}
 
-        <button className="btn submit" type="submit" disabled={status === 'sending'}>
-          {status === 'sending' ? t('fSending') : t('fSubmit')}
-        </button>
+        <MagneticButton>
+          <button className="btn submit" type="submit" disabled={status === 'sending'}>
+            {status === 'sending' ? t('fSending') : t('fSubmit')}
+          </button>
+        </MagneticButton>
       </form>
 
       {status === 'sending' && <div className="st st-s">{t('fSending')}</div>}
