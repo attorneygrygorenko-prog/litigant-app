@@ -42,7 +42,17 @@
     line-height: 1.7;
     overflow-x: hidden;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 16px;
+  }
+
+  /* Keyboard-only focus indicator. .btn has outline:none to kill the
+     mouse-click outline; this :focus-visible rule restores it for
+     keyboard users. Specificity matches .btn (0,1,0) but it's defined
+     LATER in source so it wins the cascade. */
+  :focus-visible {
+    outline: 2px solid var(--g);
+    outline-offset: 3px;
+    border-radius: 1px;
   }
 
   /* Geometric "Century Gothic" feel — wide tracking on all headings */
@@ -327,8 +337,9 @@
   .foot-col ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
   .foot-col ul li a { font-size: 13px; color: rgba(255,255,255,.55); transition: color .15s; }
   .foot-col ul li a:hover { color: rgba(255,255,255,.75); }
-  .foot-bot { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; font-size: 11px; color: rgba(255,255,255,.2); }
-  .foot-bot a { color: rgba(255,255,255,.2); margin-left: 14px; }
+  .foot-bot { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; font-size: 12px; color: rgba(255,255,255,.55); }
+  .foot-bot a { color: rgba(255,255,255,.55); margin-left: 14px; transition: color .15s; }
+  .foot-bot a:hover { color: rgba(255,255,255,.85); }
 }
 
 @media (max-width: 1080px) {
@@ -367,6 +378,7 @@
 
 @media (max-width: 700px) {
   .prac-grid { grid-template-columns: 1fr; }
+  .btn { min-height: 44px; }
   .inline-form-sec { padding: 60px 0; }
   .if-form { padding: 22px; }
   .case-card { padding: 22px; }
