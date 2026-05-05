@@ -149,7 +149,7 @@
 
   /* prac */
   .prac-grid { display: grid; grid-template-columns: repeat(2, 1fr); }
-  .prac { padding: 44px; border: 1px solid var(--b); margin: -1px 0 0 -1px; background: var(--w); cursor: pointer; position: relative; overflow: hidden; transition: background .15s; }
+  .prac { display: block; padding: 44px; border: 1px solid var(--b); margin: -1px 0 0 -1px; background: var(--w); cursor: pointer; position: relative; overflow: hidden; transition: background .15s; }
   .prac:hover { background: var(--f); }
   .prac::after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 2px; background: var(--g); transition: width .4s; }
   .prac:hover::after { width: 100%; }
