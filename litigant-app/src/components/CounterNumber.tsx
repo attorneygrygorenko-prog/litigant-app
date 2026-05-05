@@ -11,21 +11,25 @@ interface Props {
 export default function CounterNumber({ end, suffix = '', duration = 2000 }: Props) {
   const [value, setValue] = useState(0);
   const ref = useRef<HTMLSpanElement>(null);
-  const startedRef = useRef(false);
+  const hasAnimated = useRef(false);
 
   useEffect(() => {
     if (typeof window === 'undefined') return;
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
       setValue(end);
+      hasAnimated.current = true;
       return;
     }
+    if (hasAnimated.current) return;
+
     const node = ref.current;
     if (!node) return;
+
     const obs = new IntersectionObserver(
       (entries) => {
-        for (const e of entries) {
-          if (e.isIntersecting && !startedRef.current) {
-            startedRef.current = true;
+        for (const entry of entries) {
+          if (entry.isIntersecting && !hasAnimated.current) {
+            hasAnimated.current = true;
             const start = performance.now();
             const tick = (now: number) => {
               const elapsed = now - start;

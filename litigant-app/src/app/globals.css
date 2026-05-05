@@ -547,8 +547,11 @@
   .qc-ok-wrap .st { margin-top: 6px; }
 
   /* TextReveal — word-by-word clip-path reveal for hero H1.
-     Word delays come from inline animation-delay on .tr-inner. */
-  .tr-word { display: inline-block; overflow: hidden; vertical-align: bottom; }
+     Word delays come from inline animation-delay on .tr-inner.
+     margin-right separates words because the trailing whitespace inside
+     each .tr-word gets collapsed by browsers (inline-block + overflow:hidden). */
+  .tr-word { display: inline-block; overflow: hidden; vertical-align: bottom; margin-right: 0.25em; }
+  .tr-word:last-child { margin-right: 0; }
   .tr-inner { display: inline-block; transform: translateY(100%); opacity: 0; animation: trReveal 0.7s cubic-bezier(.16,1,.3,1) forwards; will-change: transform, opacity; }
   @keyframes trReveal { to { transform: translateY(0); opacity: 1; } }
   @media (prefers-reduced-motion: reduce) {

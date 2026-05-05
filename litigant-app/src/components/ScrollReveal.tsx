@@ -7,37 +7,45 @@ interface Props {
   delay?: number;
   direction?: 'up' | 'left' | 'right';
   className?: string;
-  /** Apply a contents-style wrapper (no <div>) so grid / flex parents
-      keep treating children as direct items. Use for .prac-grid etc. */
-  asContents?: boolean;
 }
 
 export default function ScrollReveal({
   children,
   delay = 0,
   direction = 'up',
-  className,
-  asContents = false
+  className
 }: Props) {
   const ref = useRef<HTMLDivElement>(null);
+  const hasRevealed = useRef(false);
   const [visible, setVisible] = useState(false);
   const [reduced, setReduced] = useState(false);
 
   useEffect(() => {
     if (typeof window === 'undefined') return;
     setReduced(window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+    if (hasRevealed.current) {
+      setVisible(true);
+      return;
+    }
+
     const node = ref.current;
     if (!node) return;
+
     const obs = new IntersectionObserver(
       (entries) => {
-        for (const e of entries) {
-          if (e.isIntersecting) {
+        for (const entry of entries) {
+          if (entry.isIntersecting && !hasRevealed.current) {
+            hasRevealed.current = true;
             setVisible(true);
             obs.disconnect();
           }
         }
       },
-      { threshold: 0.15 }
+      // [0, 0.1] catches both "first pixel in" and "10% in" — covers tall
+      // sections that never reach 15% intersection. rootMargin shrinks the
+      // root rect 50px from the bottom so reveal triggers slightly before
+      // the element fully clears the fold.
+      { threshold: [0, 0.1], rootMargin: '0px 0px -50px 0px' }
     );
     obs.observe(node);
     return () => obs.disconnect();
@@ -51,8 +59,7 @@ export default function ScrollReveal({
     : {
         opacity: visible ? 1 : 0,
         transform: visible ? 'translate(0, 0)' : `translate(${offset})`,
-        transition: `opacity 0.6s cubic-bezier(.16,1,.3,1) ${delay}ms, transform 0.6s cubic-bezier(.16,1,.3,1) ${delay}ms`,
-        ...(asContents ? { display: 'contents' } : {})
+        transition: `opacity 0.6s cubic-bezier(.16,1,.3,1) ${delay}ms, transform 0.6s cubic-bezier(.16,1,.3,1) ${delay}ms`
       };
 
   return (
