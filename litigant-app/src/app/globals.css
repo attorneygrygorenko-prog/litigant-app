@@ -578,4 +578,35 @@
     /* Hide on mobile — sticky bar covers the bottom-right corner there. */
     .cb-root { display: none; }
   }
+
+  /* EN-only unique section on practice landings — differentiates EN
+     content from UA/RO so Google indexes EN URLs separately. */
+  .en-unique { border-top: 1px solid var(--b); }
+  .en-unique h2 {
+    font-family: var(--serif);
+    font-size: clamp(20px, 2.5vw, 28px);
+    color: var(--n);
+    margin: 24px 0 16px;
+    max-width: 640px;
+  }
+  .en-unique p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--t);
+    max-width: 720px;
+    margin-bottom: 24px;
+  }
+  .en-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .en-stat {
+    display: flex;
+    gap: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--n);
+  }
+  .en-stat-icon { color: var(--g); }
 }

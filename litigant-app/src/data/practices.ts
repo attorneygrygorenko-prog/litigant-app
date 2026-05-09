@@ -48,6 +48,12 @@ export const PRACTICE_BY_SLUG: Record<string, PracticeKey> = (() => {
   return m;
 })();
 
+export interface PracticeUniqueSection {
+  heading: string;
+  body: string;
+  stats: string[];
+}
+
 export interface PracticeContent {
   metaTitle: string;
   metaDescription: string;
@@ -69,6 +75,13 @@ export interface PracticeContent {
   breadcrumbHome: string;
   breadcrumbPractices: string;
   breadcrumbCurrent: string;
+  /**
+   * Locale-specific unique section. Currently used only on EN to add
+   * exclusive content that differentiates EN landings from UA/RO for
+   * Google's content-clustering algorithm (avoids "Alternate page" GSC
+   * status driven by content similarity).
+   */
+  enUniqueSection?: PracticeUniqueSection;
 }
 
 export const PRACTICES: Record<PracticeKey, Record<Locale, PracticeContent>> = {
@@ -232,6 +245,16 @@ export const PRACTICES: Record<PracticeKey, Record<Locale, PracticeContent>> = {
       breadcrumbHome: 'Home',
       breadcrumbPractices: 'Practices',
       breadcrumbCurrent: 'White-Collar Crime',
+      enUniqueSection: {
+        heading:
+          'Why international clients choose Litigant for White-Collar Crime defense',
+        body: "Ukraine's criminal procedure law has undergone significant reforms since 2012. Foreign business owners and C-level executives facing economic crime investigations in Ukraine require counsel who combines deep procedural knowledge with international communication standards. Litigant operates at this intersection — representing clients before DBR, NABU, SBU and courts in Kyiv and Odesa, while maintaining full English-language communication throughout the process.",
+        stats: [
+          '9+ years in economic crime defense',
+          'Active in Kyiv · Odesa · Chișinău',
+          'English-language client communication',
+        ],
+      },
     },
     ro: {
       metaTitle:
@@ -475,6 +498,16 @@ export const PRACTICES: Record<PracticeKey, Record<Locale, PracticeContent>> = {
       breadcrumbHome: 'Home',
       breadcrumbPractices: 'Practices',
       breadcrumbCurrent: 'Bankruptcy',
+      enUniqueSection: {
+        heading:
+          'Bankruptcy and restructuring in Ukraine: what foreign creditors need to know',
+        body: "Ukraine's insolvency framework — the Code of Bankruptcy Procedures (KUzPB) — has been in force since 2019 and continues to evolve. Foreign creditors and investors with Ukrainian exposure need specialized counsel to navigate creditor committee procedures, asset recovery mechanisms and cross-border insolvency recognition. Yurii Hryhorenko serves as Secretary of the UNBA Bankruptcy Committee — providing clients with direct access to legislative developments before they become law.",
+        stats: [
+          'Secretary, UNBA Bankruptcy Committee',
+          'KUzPB specialist since 2019',
+          'Creditor and debtor representation',
+        ],
+      },
     },
     ro: {
       metaTitle:
@@ -718,6 +751,16 @@ export const PRACTICES: Record<PracticeKey, Record<Locale, PracticeContent>> = {
       breadcrumbHome: 'Home',
       breadcrumbPractices: 'Practices',
       breadcrumbCurrent: 'Disputes with the state',
+      enUniqueSection: {
+        heading:
+          'Challenging Ukrainian state authority decisions: a guide for foreign businesses',
+        body: "Administrative disputes with Ukrainian tax authorities, customs, AMCU and sector regulators follow strict procedural timelines. Missing a 10-day appeal window or filing in the wrong jurisdiction can permanently close off remedies worth millions. Litigant's GR-Litigation practice combines administrative law expertise with government relations — challenging decisions in court while simultaneously engaging regulators through lawful advocacy channels.",
+        stats: [
+          'Tax, customs and regulatory disputes',
+          'AMCU and licensing authority challenges',
+          'GR-Litigation: legal + regulatory combined',
+        ],
+      },
     },
     ro: {
       metaTitle:
@@ -961,6 +1004,16 @@ export const PRACTICES: Record<PracticeKey, Record<Locale, PracticeContent>> = {
       breadcrumbHome: 'Home',
       breadcrumbPractices: 'Practices',
       breadcrumbCurrent: 'Lobbying and GR',
+      enUniqueSection: {
+        heading:
+          'Government relations and lobbying in Ukraine: legitimate advocacy for business interests',
+        body: "Ukraine's Law on Lobbying (2023) created a regulated framework for business advocacy before parliament and executive bodies. Litigant holds registered lobbying subject status — enabling lawful representation of client interests during legislative drafting, regulatory consultations and committee hearings. Our UNBA representation in Moldova further extends this capability to cross-border regulatory coordination between Ukraine and the Republic of Moldova.",
+        stats: [
+          'Registered lobbying subject under Ukrainian law',
+          'UNBA representative in Republic of Moldova',
+          'Legislative drafting and regulatory advocacy',
+        ],
+      },
     },
     ro: {
       metaTitle:

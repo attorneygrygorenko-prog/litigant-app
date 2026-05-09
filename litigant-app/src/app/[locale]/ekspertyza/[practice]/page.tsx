@@ -205,6 +205,26 @@ export default function PracticeLandingPage({
         </div>
       </section>
 
+      {/* EN-only unique section: differentiates EN landings from UA/RO
+          for content-similarity heuristics. */}
+      {locale === 'en' && c.enUniqueSection && (
+        <section className="en-unique sec sec-off">
+          <div className="wrap">
+            <div className="line-g" />
+            <h2>{c.enUniqueSection.heading}</h2>
+            <p>{c.enUniqueSection.body}</p>
+            <div className="en-stats">
+              {c.enUniqueSection.stats.map((s, i) => (
+                <div key={i} className="en-stat">
+                  <span className="en-stat-icon">→</span>
+                  <span>{s}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* FAQ */}
       <section className="sec" style={{ background: 'var(--f)' }}>
         <div className="wrap" style={{ maxWidth: 820 }}>
