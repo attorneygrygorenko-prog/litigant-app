@@ -6,6 +6,11 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    url: 'https://www.hsa.org.ua/blog/zakonodavca-arxitektura-procedur-bankrutstva-ocikuvannia-ta-rezultati-sesti-rokiv-cinnosti-kuzpb',
+    category: 'Банкрутство',
+    date: '2026-05-08'
+  },
+  {
     url: 'https://www.hsa.org.ua/blog/iak-znaiti-maino-borznika-iakshho-vono-vze-za-kordonom',
     category: 'Міжнародне право'
   },
