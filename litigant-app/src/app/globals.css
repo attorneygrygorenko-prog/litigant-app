@@ -298,6 +298,11 @@
   .c-info { font-size: 15px; color: var(--t); line-height: 1.85; font-weight: 400; white-space: pre-line; }
   .c-info a { color: var(--n); font-weight: 400; }
   .c-info a:hover { color: var(--g); }
+  /* Branded office emails on /kontakty. .c-info a rule above sets color
+     to --n, so we use a slightly more specific selector to land on the
+     gold accent the design calls for. */
+  .c-info a.contact-email { font-size: 14px; color: var(--g); text-decoration: none; letter-spacing: .04em; display: block; margin-top: 6px; }
+  .c-info a.contact-email:hover { color: var(--g); opacity: .75; }
   .messengers { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 12px; }
   .msg-btn { display: inline-flex; align-items: center; gap: 7px; padding: 8px 15px; border: 1px solid var(--b); font-family: var(--sans); font-size: 12px; font-weight: 400; color: var(--n); transition: all .15s; text-decoration: none; }
   .msg-btn:hover { border-color: var(--n); background: var(--f); }

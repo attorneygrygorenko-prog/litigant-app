@@ -79,7 +79,7 @@ export function buildJsonLd(locale: Locale) {
             ? 'Law firm specialised in White-Collar Crime, corporate conflicts, bankruptcy and GR-Litigation. Kyiv, Odesa, Chișinău.'
             : 'Адвокатське бюро зі спеціалізацією на White-Collar Crime, корпоративних конфліктах, банкрутстві та GR-Litigation. Київ, Одеса, Кишинів.',
         telephone: '+380445010207',
-        email: 'advocatcompany@gmail.com',
+        email: 'kyiv@litigant.legal',
         areaServed: ['UA', 'MD'],
         knowsLanguage: ['uk', 'en', 'ro'],
         priceRange: '$$$$',
@@ -103,8 +103,9 @@ export function buildJsonLd(locale: Locale) {
           {
             '@type': 'ContactPoint',
             telephone: '+380445010207',
-            contactType: 'customer service',
-            areaServed: 'UA',
+            email: 'kyiv@litigant.legal',
+            contactType: 'legal',
+            areaServed: 'Kyiv',
             availableLanguage: ['uk', 'en', 'ro'],
             contactOption: 'TollFree',
             // Kyiv office line
@@ -113,8 +114,9 @@ export function buildJsonLd(locale: Locale) {
           {
             '@type': 'ContactPoint',
             telephone: '+380932232995',
-            contactType: 'customer service',
-            areaServed: 'UA',
+            email: 'odesa@litigant.legal',
+            contactType: 'legal',
+            areaServed: 'Odesa',
             availableLanguage: ['uk', 'en'],
             description: 'Одеса — додатковий офіс'
           }

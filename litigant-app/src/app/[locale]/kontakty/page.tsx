@@ -45,8 +45,8 @@ export default function ContactsPage({ params: { locale } }: { params: { locale:
                   {t('kyivAddress')}
                   {'\n\n'}
                   <TrackedLink href="tel:+380445010207" event="phone_click" params={{ location: 'kyiv' }}>+38 (044) 501-02-07</TrackedLink>{'\n'}
-                  <TrackedLink href="tel:+380949522996" event="phone_click" params={{ location: 'kyiv' }}>+38 (094) 952-29-96</TrackedLink>{'\n'}
-                  <a href="mailto:advocatcompany@gmail.com">advocatcompany@gmail.com</a>
+                  <TrackedLink href="tel:+380949522996" event="phone_click" params={{ location: 'kyiv' }}>+38 (094) 952-29-96</TrackedLink>
+                  <a className="contact-email" href="mailto:kyiv@litigant.legal">kyiv@litigant.legal</a>
                 </div>
               </div>
 
@@ -56,6 +56,7 @@ export default function ContactsPage({ params: { locale } }: { params: { locale:
                   {t('odesaAddress')}
                   {'\n\n'}
                   <TrackedLink href="tel:+380932232995" event="phone_click" params={{ location: 'odesa' }}>+38 (093) 223-29-95</TrackedLink>
+                  <a className="contact-email" href="mailto:odesa@litigant.legal">odesa@litigant.legal</a>
                 </div>
               </div>
 
