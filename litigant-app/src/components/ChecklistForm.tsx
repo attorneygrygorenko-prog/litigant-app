@@ -144,7 +144,6 @@ export default function ChecklistForm() {
       <button className="btn btn-g submit" type="submit" disabled={status === 'sending'}>
         {status === 'sending' ? t('fSending') : t('fSubmit')}
       </button>
-      <p className="cl-social">{t('socialProof')}</p>
       {status === 'err' && <div className="st st-e">{t('fErr')}</div>}
     </form>
   );

@@ -4,7 +4,6 @@ import type { Metadata } from 'next';
 
 import PageHero from '@/components/PageHero';
 import ChecklistForm from '@/components/ChecklistForm';
-import { Link } from '@/i18n/routing';
 import type { Locale } from '@/i18n/routing';
 import { SITE_URL, alternates } from '@/lib/seo';
 import { buildBreadcrumb } from '@/lib/jsonld';
@@ -31,7 +30,7 @@ export default function ChecklistPage({
   const t = useTranslations('checklist');
   const tNav = useTranslations('nav');
 
-  const items = t.raw('items') as string[];
+  const steps = t.raw('items') as string[];
 
   const breadcrumbLd = buildBreadcrumb(locale, [
     { name: tNav('home'), href: '/' },
@@ -47,32 +46,22 @@ export default function ChecklistPage({
       <PageHero breadcrumb={t('breadcrumb')} title={t('title')} lead={t('lead')} />
 
       <section className="sec">
-        <div className="wrap">
-          <ol className="checklist-list">
-            {items.map((item, i) => (
-              <li key={i}>{item}</li>
+        <div className="wrap sla-wrap">
+          <p className="sla-description">{t('description')}</p>
+
+          <h2 className="sla-process-title">{t('processTitle')}</h2>
+          <ol className="sla-steps">
+            {steps.map((s, i) => (
+              <li key={i}>
+                <span className="sla-step-n">{`0${i + 1}`}</span>
+                <span>{s}</span>
+              </li>
             ))}
           </ol>
 
           <ChecklistForm />
 
-          <div className="practice-cta" style={{ marginTop: '40px' }}>
-            <div>
-              <h3
-                style={{
-                  fontFamily: 'var(--serif)',
-                  fontSize: '20px',
-                  fontWeight: 600,
-                  marginBottom: '6px',
-                  color: 'var(--n)'
-                }}
-              >
-                {t('wccCtaTitle')}
-              </h3>
-              <p>{t('wccCtaText')}</p>
-            </div>
-            <Link href="/kontakty">{t('wccCtaAction')}</Link>
-          </div>
+          <p className="sla-disclaimer">{t('disclaimer')}</p>
         </div>
       </section>
     </>
