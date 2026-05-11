@@ -5,10 +5,8 @@ import { useLocale, useTranslations } from 'next-intl';
 import { trackEvent, trackConversion, claritySet } from '@/lib/analytics';
 import { SOCIAL_LINKS } from '@/data/social';
 import {
-  FacebookIcon,
-  InstagramIcon,
   SignalIcon,
-  ViberIcon,
+  TelegramIcon,
   WhatsAppIcon
 } from './SocialIcons';
 
@@ -112,11 +110,13 @@ export default function CallbackWidgetPanel({ onClose }: { onClose: () => void }
               <WhatsAppIcon size={24} />
             </a>
             <a
-              href={SOCIAL_LINKS.viber}
-              aria-label="Viber"
-              onClick={() => trackEvent('callback_direct_click', { type: 'viber' })}
+              href={SOCIAL_LINKS.telegram}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Telegram"
+              onClick={() => trackEvent('callback_direct_click', { type: 'telegram' })}
             >
-              <ViberIcon size={24} />
+              <TelegramIcon size={24} />
             </a>
             <a
               href={SOCIAL_LINKS.signal}
@@ -126,24 +126,6 @@ export default function CallbackWidgetPanel({ onClose }: { onClose: () => void }
               onClick={() => trackEvent('callback_direct_click', { type: 'signal' })}
             >
               <SignalIcon size={24} />
-            </a>
-            <a
-              href={SOCIAL_LINKS.instagram}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Instagram"
-              onClick={() => trackEvent('callback_direct_click', { type: 'instagram' })}
-            >
-              <InstagramIcon size={24} />
-            </a>
-            <a
-              href={SOCIAL_LINKS.facebook}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Facebook"
-              onClick={() => trackEvent('callback_direct_click', { type: 'facebook' })}
-            >
-              <FacebookIcon size={24} />
             </a>
           </div>
         </form>

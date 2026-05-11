@@ -202,6 +202,7 @@ export default function HomePage({ params: { locale } }: { params: { locale: Loc
         <div className="wrap inline-form-g">
           <div className="if-left">
             <h2>{t('formHeading')}</h2>
+            <p className="if-capacity">{t('formCapacity')}</p>
             <p className="if-intro">{t('formIntro')}</p>
             <ul className="if-trust">
               <li>{t('formTrust1')}</li>

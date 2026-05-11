@@ -224,6 +224,7 @@
   .inline-form-sec { background: var(--n1); color: var(--w); padding: 80px 0; }
   .inline-form-g { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
   .if-left h2 { font-family: var(--serif); font-size: clamp(26px,3vw,38px); font-weight: 600; color: var(--w); letter-spacing: .08em; margin-bottom: 14px; line-height: 1.2; }
+  .if-capacity { font-family: var(--sans); font-size: 12.5px; color: var(--g); text-transform: uppercase; letter-spacing: .14em; margin-bottom: 14px; font-weight: 500; }
   .if-intro { font-size: 15px; color: rgba(255,255,255,.7); font-weight: 300; line-height: 1.7; max-width: 440px; margin-bottom: 28px; }
   .if-trust { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; }
   .if-trust li { font-family: var(--sans); font-size: 13.5px; color: rgba(255,255,255,.78); padding-left: 22px; position: relative; line-height: 1.5; }
@@ -303,6 +304,7 @@
   .msg-btn:hover { border-color: var(--n); background: var(--f); }
   .form-wrap { padding: 44px; border: 1px solid var(--b); overflow: hidden; }
   .form-wrap h2 { font-family: var(--serif); font-size: 24px; font-weight: 600; color: var(--n); margin-bottom: 5px; }
+  .form-capacity { font-family: var(--sans); font-size: 12.5px; color: var(--g); text-transform: uppercase; letter-spacing: .14em; margin-bottom: 12px; font-weight: 500; }
   .form-sub { font-family: var(--sans); font-size: 13.5px; color: #4A4845; margin-bottom: 28px; font-weight: 400; line-height: 1.6; }
   .f-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
   .f-lbl { font-family: var(--sans); font-size: 10px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: #555250; display: block; margin-bottom: 6px; }

@@ -90,6 +90,7 @@ export default function CaseForm() {
   return (
     <div className="form-wrap">
       <h2>{t('formTitle')}</h2>
+      <p className="form-capacity">{t('formCapacity')}</p>
       <p className="form-sub">{t('formSub')}</p>
 
       <form onSubmit={onSubmit} onFocusCapture={onFirstFocus} noValidate>
