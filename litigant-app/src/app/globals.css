@@ -224,7 +224,6 @@
   .inline-form-sec { background: var(--n1); color: var(--w); padding: 80px 0; }
   .inline-form-g { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
   .if-left h2 { font-family: var(--serif); font-size: clamp(26px,3vw,38px); font-weight: 600; color: var(--w); letter-spacing: .08em; margin-bottom: 14px; line-height: 1.2; }
-  .if-capacity { font-family: var(--sans); font-size: 12.5px; color: var(--g); text-transform: uppercase; letter-spacing: .14em; margin-bottom: 14px; font-weight: 500; }
   .if-intro { font-size: 15px; color: rgba(255,255,255,.7); font-weight: 300; line-height: 1.7; max-width: 440px; margin-bottom: 28px; }
   .if-trust { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; }
   .if-trust li { font-family: var(--sans); font-size: 13.5px; color: rgba(255,255,255,.78); padding-left: 22px; position: relative; line-height: 1.5; }
@@ -304,7 +303,6 @@
   .msg-btn:hover { border-color: var(--n); background: var(--f); }
   .form-wrap { padding: 44px; border: 1px solid var(--b); overflow: hidden; }
   .form-wrap h2 { font-family: var(--serif); font-size: 24px; font-weight: 600; color: var(--n); margin-bottom: 5px; }
-  .form-capacity { font-family: var(--sans); font-size: 12.5px; color: var(--g); text-transform: uppercase; letter-spacing: .14em; margin-bottom: 12px; font-weight: 500; }
   .form-sub { font-family: var(--sans); font-size: 13.5px; color: #4A4845; margin-bottom: 28px; font-weight: 400; line-height: 1.6; }
   .f-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
   .f-lbl { font-family: var(--sans); font-size: 10px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: #555250; display: block; margin-bottom: 6px; }
@@ -620,4 +618,173 @@
     color: var(--n);
   }
   .en-stat-icon { color: var(--g); }
+
+  /* Luxury Funnel triggers — calm scarcity / fear / micro-commitment.
+     Designed to deepen engagement without feeling salesy. */
+
+  /* Hero calm-confidence line (under the two hero CTAs). */
+  .hero-calm {
+    font-size: 13px;
+    color: rgba(255,255,255,.38);
+    font-style: italic;
+    margin-top: 16px;
+    margin-bottom: 0;
+    letter-spacing: .02em;
+    max-width: 560px;
+  }
+
+  /* Manifesto sub-line — single rule, dimmed accent below the blockquote. */
+  .manifesto-sub {
+    margin: 28px auto 0;
+    max-width: 720px;
+    text-align: center;
+    font-family: var(--sans);
+    font-size: 14px;
+    font-style: italic;
+    color: rgba(255,255,255,.42);
+    letter-spacing: .02em;
+    line-height: 1.6;
+  }
+
+  /* Scarcity note (replaces .form-capacity / .if-capacity).
+     Default colors target dark backgrounds (home inline form);
+     light-bg override below for the /kontakty case form. */
+  .scarcity-note {
+    font-size: 13px;
+    color: rgba(255,255,255,.5);
+    font-style: italic;
+    margin-top: -8px;
+    margin-bottom: 20px;
+    padding-left: 12px;
+    border-left: 1px solid var(--g);
+    line-height: 1.55;
+    max-width: 460px;
+  }
+  .form-wrap .scarcity-note {
+    color: rgba(15,15,15,.55);
+    margin-top: 0;
+    margin-bottom: 22px;
+  }
+
+  /* Risk Insights — 3 cards on home between Process and inline form. */
+  .sec-risks { padding: var(--pad) 0; background: var(--f); }
+  .risks-g { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 48px; }
+  .risk-card {
+    display: flex;
+    flex-direction: column;
+    background: var(--w);
+    border: 1px solid var(--b);
+    border-left: 2px solid var(--g);
+    padding: 28px;
+    transition: border-color .2s ease, transform .25s ease;
+    text-decoration: none;
+    color: var(--n);
+  }
+  .risk-card:hover { transform: translateY(-3px); border-color: var(--g); }
+  .risk-tag {
+    display: inline-block;
+    font-family: var(--sans);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    color: var(--g);
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(184,148,30,.3);
+    align-self: flex-start;
+  }
+  .risk-title {
+    font-family: var(--serif);
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--n);
+    line-height: 1.35;
+    margin: 0 0 14px;
+    letter-spacing: .01em;
+  }
+  .risk-text {
+    font-family: var(--sans);
+    font-size: 14.5px;
+    color: var(--m);
+    line-height: 1.65;
+    margin: 0 0 20px;
+    flex-grow: 1;
+  }
+  .risk-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--sans);
+    font-size: 11.5px;
+    font-weight: 600;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--n);
+    transition: color .2s ease;
+  }
+  .risk-card:hover .risk-cta { color: var(--g); }
+  .risk-arr { transition: transform .2s ease; }
+  .risk-card:hover .risk-arr { transform: translateX(4px); }
+  @media (max-width: 900px) {
+    .risks-g { grid-template-columns: 1fr; }
+  }
+
+  /* Compliance block on /kontakty — above the case form. Dark, serif,
+     gold-arrow checklist. Micro-commitment to "if all conditions met". */
+  .compliance-block {
+    background: var(--n);
+    color: var(--w);
+    border-left: 2px solid var(--g);
+    padding: 32px;
+    margin-bottom: 24px;
+  }
+  .compliance-title {
+    font-family: var(--serif);
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--w);
+    letter-spacing: .04em;
+    margin: 0 0 12px;
+  }
+  .compliance-lead {
+    font-family: var(--sans);
+    font-size: 14px;
+    color: rgba(255,255,255,.78);
+    line-height: 1.6;
+    margin: 0 0 18px;
+  }
+  .compliance-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .compliance-list li {
+    display: flex;
+    gap: 12px;
+    font-family: var(--serif);
+    font-size: 15px;
+    color: rgba(255,255,255,.92);
+    line-height: 1.55;
+    align-items: flex-start;
+  }
+  .compliance-arr {
+    color: var(--g);
+    font-weight: 600;
+    flex-shrink: 0;
+    padding-top: 2px;
+  }
+  .compliance-closing {
+    font-family: var(--sans);
+    font-size: 13.5px;
+    color: rgba(255,255,255,.65);
+    font-style: italic;
+    line-height: 1.6;
+    margin: 0;
+    padding-top: 14px;
+    border-top: 1px solid rgba(255,255,255,.12);
+  }
 }

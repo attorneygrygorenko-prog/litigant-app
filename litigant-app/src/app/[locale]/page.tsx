@@ -4,7 +4,7 @@ import { setRequestLocale } from 'next-intl/server';
 import { Link } from '@/i18n/routing';
 import type { Locale } from '@/i18n/routing';
 import { buildHomeFaqJsonLd, buildWebsiteSearch } from '@/lib/jsonld';
-import { SLUG_BY_LOCALE } from '@/data/practices';
+import { SLUG_BY_LOCALE, type PracticeKey } from '@/data/practices';
 import HomeInlineForm from '@/components/HomeInlineForm';
 import HeroTag from '@/components/HeroTag';
 import CounterNumber from '@/components/CounterNumber';
@@ -28,10 +28,17 @@ export default function HomePage({ params: { locale } }: { params: { locale: Loc
   ] as const;
 
   const why = [
-    { n: '01', title: t('why1Title'), text: t('why1Text') },
-    { n: '02', title: t('why2Title'), text: t('why2Text') },
-    { n: '03', title: t('why3Title'), text: t('why3Text') },
-    { n: '04', title: t('why4Title'), text: t('why4Text') }
+    { n: '01', title: t('whyArchTitle'), text: t('whyArchText') },
+    { n: '02', title: t('why1Title'), text: t('why1Text') },
+    { n: '03', title: t('why2Title'), text: t('why2Text') },
+    { n: '04', title: t('why3Title'), text: t('why3Text') },
+    { n: '05', title: t('why4Title'), text: t('why4Text') }
+  ];
+
+  const risks: { tag: string; title: string; text: string; key: PracticeKey }[] = [
+    { tag: t('risk1Tag'), title: t('risk1Title'), text: t('risk1Text'), key: t('risk1PracticeKey') as PracticeKey },
+    { tag: t('risk2Tag'), title: t('risk2Title'), text: t('risk2Text'), key: t('risk2PracticeKey') as PracticeKey },
+    { tag: t('risk3Tag'), title: t('risk3Title'), text: t('risk3Text'), key: t('risk3PracticeKey') as PracticeKey }
   ];
 
   const proc = [
@@ -80,6 +87,7 @@ export default function HomePage({ params: { locale } }: { params: { locale: Loc
               </MagneticButton>
               <Link href="/ekspertyza" className="btn btn-w">{t('ctaVectors')}</Link>
             </div>
+            <p className="hero-calm">{t('heroCalm')}</p>
             <div className="hero-stats">
               <div className="hs"><div className="hs-n"><CounterNumber end={9} suffix="+" /></div><div className="hs-l">{t('stat1Label')}</div></div>
               <div className="hs"><div className="hs-n"><CounterNumber end={3} /></div><div className="hs-l">{t('stat2Label')}</div></div>
@@ -104,6 +112,9 @@ export default function HomePage({ params: { locale } }: { params: { locale: Loc
         <div className="wrap">
           <ScrollReveal>
             <blockquote>{t('manifesto')}</blockquote>
+          </ScrollReveal>
+          <ScrollReveal delay={120}>
+            <p className="manifesto-sub">{t('manifestoSub')}</p>
           </ScrollReveal>
         </div>
       </section>
@@ -198,11 +209,38 @@ export default function HomePage({ params: { locale } }: { params: { locale: Loc
         </div>
       </section>
 
+      <section className="sec sec-risks">
+        <div className="wrap">
+          <div className="sh">
+            <span className="sh-label">{t('risksLabel')}</span>
+            <h2>{t('risksTitle')}</h2>
+            <div className="sh-line"><span /><span /></div>
+          </div>
+          <div className="risks-g">
+            {risks.map((r, i) => (
+              <ScrollReveal key={r.key} delay={i * 120}>
+                <Link
+                  href={`/ekspertyza/${SLUG_BY_LOCALE[r.key][locale]}`}
+                  className="risk-card"
+                >
+                  <span className="risk-tag">{r.tag}</span>
+                  <h3 className="risk-title">{r.title}</h3>
+                  <p className="risk-text">{r.text}</p>
+                  <span className="risk-cta">
+                    {t('risksCta')} <span className="risk-arr">→</span>
+                  </span>
+                </Link>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="inline-form-sec">
         <div className="wrap inline-form-g">
           <div className="if-left">
             <h2>{t('formHeading')}</h2>
-            <p className="if-capacity">{t('formCapacity')}</p>
+            <p className="scarcity-note">{t('formCapacity')}</p>
             <p className="if-intro">{t('formIntro')}</p>
             <ul className="if-trust">
               <li>{t('formTrust1')}</li>

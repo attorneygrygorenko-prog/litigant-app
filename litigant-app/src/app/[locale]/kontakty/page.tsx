@@ -75,6 +75,19 @@ export default function ContactsPage({ params: { locale } }: { params: { locale:
             </div>
 
             <div className="contact-forms">
+              <aside className="compliance-block">
+                <h3 className="compliance-title">{t('complianceTitle')}</h3>
+                <p className="compliance-lead">{t('complianceLead')}</p>
+                <ul className="compliance-list">
+                  {(t.raw('complianceItems') as string[]).map((item, i) => (
+                    <li key={i}>
+                      <span className="compliance-arr">→</span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+                <p className="compliance-closing">{t('complianceClosing')}</p>
+              </aside>
               <CaseForm />
               <ContactForm />
             </div>
