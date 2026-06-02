@@ -177,7 +177,7 @@
   },
   "services": {
     "metaTitle": "Practici | Faliment, WCC, GR-Litigation, Anti-raider — Litigant Law Office",
-    "metaDescription": "Faliment și restructurarea datoriilor, apărarea afacerilor în timpul percheziției, contestarea deciziilor fiscale, inginerie anti-raider. Administrator arbitral.",
+    "metaDescription": "Faliment și restructurare, apărare în percheziții, contestare fiscală, inginerie anti-raider, GR-Litigation. Avocat și administrator arbitral Iurii Grygorenko.",
     "metaKeywords": "faliment întreprindere, răspundere subsidiară director, apărare în timpul percheziției, contestare decizie fiscală, restructurare datorii, avocat infracțiuni economice",
     "breadcrumb": "Practici",
     "title": "Practici juridice: Faliment, White-Collar Crime, GR-Litigation, Apărare anti-raider",
@@ -190,34 +190,82 @@
     "block1Title": "White-Collar Crime: apărarea afacerii și managementului în proceduri penale economice",
     "block1Text": "Protecția activelor și afacerilor împotriva raidurilor, preluărilor ostile și războaielor corporative. White-Collar Crime — unde proprietarii și managementul au nevoie de apărare strategică.",
     "block1Items": [
-      ["Inginerie anti-raider", "Protecție sistemică a activelor și structurilor"],
-      ["White-Collar Crime", "Apărarea proprietarilor și managementului în proceduri penale"],
-      ["Litigii corporative", "Conflicte între participanți, protecția drepturilor corporative"],
-      ["Apărare în timpul percheziților 24/7", "Însoțire procesuală a acțiunilor de investigație"]
+      [
+        "Inginerie anti-raider",
+        "Protecție sistemică a activelor și structurilor"
+      ],
+      [
+        "White-Collar Crime",
+        "Apărarea proprietarilor și managementului în proceduri penale"
+      ],
+      [
+        "Litigii corporative",
+        "Conflicte între participanți, protecția drepturilor corporative"
+      ],
+      [
+        "Apărare în timpul percheziților 24/7",
+        "Însoțire procesuală a acțiunilor de investigație"
+      ]
     ],
     "block2Title": "Litigii cu statul: GR-Litigation, contestarea deciziilor fiscale, dispute vamale",
     "block2Text": "GR-Litigation. Contestarea deciziilor autorităților — de la serviciul fiscal și vamă la AMCU și regulatori. Protejarea intereselor prin mecanisme juridice de schimbare a mediului de reglementare.",
     "block2Items": [
-      ["GR-Litigation", "Contestarea deciziilor autorităților în instanță"],
-      ["Apărare fiscală", "Litigii cu serviciul fiscal, dispute vamale, contestarea controalelor"],
-      ["Contestație administrativă", "Apărare extrajudiciară și judiciară față de stat"],
-      ["Achiziții publice", "Licitații, AMCU, protecție împotriva deciziilor ilegale"]
+      [
+        "GR-Litigation",
+        "Contestarea deciziilor autorităților în instanță"
+      ],
+      [
+        "Apărare fiscală",
+        "Litigii cu serviciul fiscal, dispute vamale, contestarea controalelor"
+      ],
+      [
+        "Contestație administrativă",
+        "Apărare extrajudiciară și judiciară față de stat"
+      ],
+      [
+        "Achiziții publice",
+        "Licitații, AMCU, protecție împotriva deciziilor ilegale"
+      ]
     ],
     "block3Title": "Faliment și restructurarea datoriilor: administrator arbitral, protecția creditorilor, răspundere subsidiară",
     "block3Text": "Management anticriză și protecția activelor în proceduri de insolvență. Iurii Grygorenko este administrator arbitral și Secretar al Comitetului UNBA pentru faliment.",
     "block3Items": [
-      ["Administrare arbitrală", "Servicii de administrator arbitral în proceduri de faliment"],
-      ["Protecția creditorilor", "Reprezentarea și protejarea intereselor creditorilor"],
-      ["Restructurarea datoriilor", "Planuri de restructurare, negocieri, acorduri de pace"],
-      ["Apărarea debitorilor", "Însoțire juridică în proceduri de insolvență"]
+      [
+        "Administrare arbitrală",
+        "Servicii de administrator arbitral în proceduri de faliment"
+      ],
+      [
+        "Protecția creditorilor",
+        "Reprezentarea și protejarea intereselor creditorilor"
+      ],
+      [
+        "Restructurarea datoriilor",
+        "Planuri de restructurare, negocieri, acorduri de pace"
+      ],
+      [
+        "Apărarea debitorilor",
+        "Însoțire juridică în proceduri de insolvență"
+      ]
     ],
     "block4Title": "Lobby și GR",
     "block4Text": "Protejarea intereselor de afaceri la nivel de formare a legislației. Reprezentarea UNBA în Moldova deschide oportunități de coordonare juridică internațională.",
     "block4Items": [
-      ["Inițiative legislative", "Elaborarea și promovarea modificărilor legislative"],
-      ["GR în fața autorităților", "Reprezentare la nivelul comitetelor și regulatorilor"],
-      ["Strategie de reglementare", "Analiza și planificarea activității cu mediul de reglementare"],
-      ["Reprezentare internațională", "UNBA · Moldova (Chișinău) · coordonarea consilierilor străini"]
+      [
+        "Inițiative legislative",
+        "Elaborarea și promovarea modificărilor legislative"
+      ],
+      [
+        "GR în fața autorităților",
+        "Reprezentare la nivelul comitetelor și regulatorilor"
+      ],
+      [
+        "Strategie de reglementare",
+        "Analiza și planificarea activității cu mediul de reglementare"
+      ],
+      [
+        "Reprezentare internațională",
+        "UNBA · Moldova (Chișinău) · coordonarea consilierilor străini"
+      ]
     ],
     "discussCase": "Discutați cazul",
     "discussProject": "Discutați proiectul",
@@ -248,7 +296,7 @@
   },
   "blog": {
     "metaTitle": "Legal Insights | Faliment, WCC, Drept fiscal — Iurii Grygorenko, Litigant",
-    "metaDescription": "Informări analitice și materiale de poziție din domeniile cheie ale biroului: faliment al persoanelor fizice și juridice, White-Collar Crime, GR-Litigation, răspundere subsidiară.",
+    "metaDescription": "Informări analitice Litigant Law Office: faliment, White-Collar Crime, GR-Litigation, răspundere subsidiară, conflicte corporative. Practică din 2016.",
     "deepLinkBankruptcy": "Mai multe despre practica de faliment →",
     "deepLinkWcc": "Mai multe despre White-Collar Crime →",
     "deepLinkGr": "Mai multe despre GR-Litigation →",
@@ -333,11 +381,28 @@
     "fCompany": "Denumirea companiei",
     "fCompanyPh": "SRL / SA / Grup",
     "fIndustry": "Industrie",
-    "fIndustries": ["Energie", "Retail și FMCG", "Logistică și transport", "Finanțe și sector bancar", "Agribusiness", "Construcții și dezvoltare", "IT și tehnologie", "Producție", "Altele"],
+    "fIndustries": [
+      "Energie",
+      "Retail și FMCG",
+      "Logistică și transport",
+      "Finanțe și sector bancar",
+      "Agribusiness",
+      "Construcții și dezvoltare",
+      "IT și tehnologie",
+      "Producție",
+      "Altele"
+    ],
     "fChallenge": "Esența provocării",
     "fChallengePh": "Descrieți situația, riscurile cheie și urgența",
     "fAsset": "Valoarea estimată a activului în pericol",
-    "fAssetOptions": ["de la 10 mil UAH", "de la 50 mil UAH", "de la 100 mil UAH", "de la 1 mil $", "de la 10 mil $", "Activ strategic"],
+    "fAssetOptions": [
+      "de la 10 mil UAH",
+      "de la 50 mil UAH",
+      "de la 100 mil UAH",
+      "de la 1 mil $",
+      "de la 10 mil $",
+      "Activ strategic"
+    ],
     "fContact": "Telefon sau email",
     "fContactPh": "+38 0XX XXX XX XX",
     "fSelect": "— alegeți —",
@@ -364,7 +429,7 @@
   },
   "checklist": {
     "metaTitle": "Strategic Legal Assessment | Litigant Law Office",
-    "metaDescription": "Analiză strategică preliminară pentru proprietari de afaceri și C-level. Confidențial.",
+    "metaDescription": "Strategic Legal Assessment — analiză juridică preliminară pentru proprietari de afaceri și C-level. Confidențial, fără obligații. Răspuns în 24 ore.",
     "breadcrumb": "Strategic Legal Assessment",
     "title": "Strategic Legal Assessment",
     "lead": "Analiză strategică preliminară pentru proprietari de afaceri și C-level. Confidențial.",

@@ -177,7 +177,7 @@
   },
   "services": {
     "metaTitle": "Practices | Bankruptcy, WCC, GR-Litigation, Anti-raiding — Litigant Law Office",
-    "metaDescription": "Bankruptcy and debt restructuring, business defence during searches, challenging tax authority decisions, anti-raiding engineering. Arbitration manager. Secretary of the UBA Bankruptcy Committee.",
+    "metaDescription": "Bankruptcy and debt restructuring, search defence, tax appeals, anti-raiding engineering, GR-Litigation. Attorney and arbitration manager Iurii Grygorenko.",
     "metaKeywords": "bankruptcy of enterprises, subsidiary liability of directors, defence during searches, challenging tax decisions, debt restructuring, white-collar crime lawyer, anti-raiding engineering Kyiv",
     "breadcrumb": "Practices",
     "title": "Legal Practices: Bankruptcy, White-Collar Crime, GR-Litigation, Anti-raiding Defence",
@@ -190,34 +190,82 @@
     "block1Title": "White-Collar Crime: defending business and management in economic criminal proceedings",
     "block1Text": "Protecting assets and businesses from raiding, hostile takeovers and corporate warfare. White-Collar Crime — where owners and management require strategic defence.",
     "block1Items": [
-      ["Anti-raiding engineering", "Systemic protection of assets and structures"],
-      ["White-Collar Crime", "Defence of owners and management in criminal proceedings"],
-      ["Corporate disputes", "Disputes between participants, protection of corporate rights"],
-      ["Defence during searches 24/7", "Procedural support during investigative actions"]
+      [
+        "Anti-raiding engineering",
+        "Systemic protection of assets and structures"
+      ],
+      [
+        "White-Collar Crime",
+        "Defence of owners and management in criminal proceedings"
+      ],
+      [
+        "Corporate disputes",
+        "Disputes between participants, protection of corporate rights"
+      ],
+      [
+        "Defence during searches 24/7",
+        "Procedural support during investigative actions"
+      ]
     ],
     "block2Title": "Disputes with the state: GR-Litigation, challenging tax decisions, customs disputes",
     "block2Text": "GR-Litigation. Challenging state authority decisions — from the tax service and customs to AMCU and regulators. Protecting interests through legal mechanisms to change the regulatory environment.",
     "block2Items": [
-      ["GR-Litigation", "Challenging state authority decisions in court"],
-      ["Tax defence", "Disputes with the tax authority, customs disputes"],
-      ["Administrative appeals", "Out-of-court and judicial protection against the state"],
-      ["Public procurement", "Tenders, AMCU, protection from unlawful decisions"]
+      [
+        "GR-Litigation",
+        "Challenging state authority decisions in court"
+      ],
+      [
+        "Tax defence",
+        "Disputes with the tax authority, customs disputes"
+      ],
+      [
+        "Administrative appeals",
+        "Out-of-court and judicial protection against the state"
+      ],
+      [
+        "Public procurement",
+        "Tenders, AMCU, protection from unlawful decisions"
+      ]
     ],
     "block3Title": "Bankruptcy and debt restructuring: arbitration manager, creditor protection, subsidiary liability",
     "block3Text": "Crisis management and asset protection in insolvency proceedings. Iurii Grygorenko is an arbitration manager and Secretary of the UBA Bankruptcy Committee.",
     "block3Items": [
-      ["Arbitration management", "Arbitration manager services in bankruptcy proceedings"],
-      ["Creditor protection", "Representation and protection of creditor interests"],
-      ["Debt restructuring", "Restructuring plans, negotiations, settlement agreements"],
-      ["Debtor defence", "Legal support in insolvency proceedings"]
+      [
+        "Arbitration management",
+        "Arbitration manager services in bankruptcy proceedings"
+      ],
+      [
+        "Creditor protection",
+        "Representation and protection of creditor interests"
+      ],
+      [
+        "Debt restructuring",
+        "Restructuring plans, negotiations, settlement agreements"
+      ],
+      [
+        "Debtor defence",
+        "Legal support in insolvency proceedings"
+      ]
     ],
     "block4Title": "Lobbying & GR",
     "block4Text": "Protecting business interests at the level of legislation formation. UBA representation in Moldova opens opportunities for international legal coordination.",
     "block4Items": [
-      ["Legislative initiatives", "Developing and advancing legislative changes"],
-      ["GR before state authorities", "Representation at committee and regulatory level"],
-      ["Regulatory strategy", "Analysis and planning of regulatory engagement"],
-      ["International representation", "UBA · Moldova · foreign counsel coordination"]
+      [
+        "Legislative initiatives",
+        "Developing and advancing legislative changes"
+      ],
+      [
+        "GR before state authorities",
+        "Representation at committee and regulatory level"
+      ],
+      [
+        "Regulatory strategy",
+        "Analysis and planning of regulatory engagement"
+      ],
+      [
+        "International representation",
+        "UBA · Moldova · foreign counsel coordination"
+      ]
     ],
     "discussCase": "Discuss a case",
     "discussProject": "Discuss a project",
@@ -248,7 +296,7 @@
   },
   "blog": {
     "metaTitle": "Legal Insights | Bankruptcy, WCC, Tax Law — Iurii Grygorenko, Litigant",
-    "metaDescription": "Analytical briefings and position papers from the firm's key practice areas: corporate and personal bankruptcy, White-Collar Crime, GR-Litigation, subsidiary liability.",
+    "metaDescription": "Analytical briefings from Litigant Law Office: bankruptcy, White-Collar Crime, GR-Litigation, subsidiary liability, corporate conflicts. Practice since 2016.",
     "deepLinkBankruptcy": "More on the bankruptcy practice →",
     "deepLinkWcc": "More on White-Collar Crime →",
     "deepLinkGr": "More on GR-Litigation →",
@@ -333,11 +381,28 @@
     "fCompany": "Company name",
     "fCompanyPh": "LLC / JSC / Group",
     "fIndustry": "Industry",
-    "fIndustries": ["Energy", "Retail & FMCG", "Logistics & Transport", "Finance & Banking", "Agribusiness", "Construction & Development", "IT & Technology", "Manufacturing", "Other"],
+    "fIndustries": [
+      "Energy",
+      "Retail & FMCG",
+      "Logistics & Transport",
+      "Finance & Banking",
+      "Agribusiness",
+      "Construction & Development",
+      "IT & Technology",
+      "Manufacturing",
+      "Other"
+    ],
     "fChallenge": "Nature of the challenge",
     "fChallengePh": "Describe the situation, key risks and urgency",
     "fAsset": "Estimated value of asset at risk",
-    "fAssetOptions": ["from UAH 10M", "from UAH 50M", "from UAH 100M", "from $1M", "from $10M", "Strategic asset"],
+    "fAssetOptions": [
+      "from UAH 10M",
+      "from UAH 50M",
+      "from UAH 100M",
+      "from $1M",
+      "from $10M",
+      "Strategic asset"
+    ],
     "fContact": "Phone or email",
     "fContactPh": "+38 0XX XXX XX XX",
     "fSelect": "— select —",
@@ -364,7 +429,7 @@
   },
   "checklist": {
     "metaTitle": "Strategic Legal Assessment | Litigant Law Office",
-    "metaDescription": "Preliminary strategic analysis for business owners and C-level executives. Confidential.",
+    "metaDescription": "Strategic Legal Assessment — preliminary case analysis for business owners and C-level executives. Confidential, no obligations. Response within 24 hours.",
     "breadcrumb": "Strategic Legal Assessment",
     "title": "Strategic Legal Assessment",
     "lead": "Preliminary strategic analysis for business owners and C-level executives. Confidential.",
@@ -441,4 +506,3 @@
     "checklist": "Strategic Legal Assessment"
   }
 }
-
