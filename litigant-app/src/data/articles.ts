@@ -6,6 +6,18 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    url: 'https://www.hsa.org.ua/blog/vidpovidalnist-u-procedurax-bankrutstva-comu-administrativna-castina-nebezpecnisa-niz-zdajetsia',
+    category: 'Банкрутство'
+  },
+  {
+    url: 'https://unba.org.ua/news/11777-yurij-grigorenko-ocholiv-komitet-naau-shodo-pravoporushen-proti-advokativ.html',
+    category: 'Адвокатура'
+  },
+  {
+    url: 'https://advokatpost.com/pro-neplatospromozhnist-fizychnykh-osib-advokat-arbitrazhnyj-keruiuchyj-iurij-hryhorenko/',
+    category: 'Банкрутство'
+  },
+  {
     url: 'https://www.hsa.org.ua/blog/zakonodavca-arxitektura-procedur-bankrutstva-ocikuvannia-ta-rezultati-sesti-rokiv-cinnosti-kuzpb',
     category: 'Банкрутство',
     date: '2026-05-08'
