@@ -6,6 +6,11 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    url: 'https://advokatpost.com/dobrosovisnist-iak-predmet-dokazuvannia-shcho-varto-vrakhuvaty-borzhnyku-u-spravi-pro-neplatospromozhnist-advokat-hryhorenko/',
+    category: 'Банкрутство',
+    date: '2026-08-18'
+  },
+  {
     url: 'https://www.hsa.org.ua/blog/vidpovidalnist-u-procedurax-bankrutstva-comu-administrativna-castina-nebezpecnisa-niz-zdajetsia',
     category: 'Банкрутство'
   },
