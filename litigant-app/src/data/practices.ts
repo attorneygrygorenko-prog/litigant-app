@@ -1171,7 +1171,7 @@ export const PRACTICES: Record<PracticeKey, Record<Locale, PracticeContent>> = {
         ],
         [
           'Скільки коштує супровід RD4U-кейсу та як формується ціна?',
-          'Вартість залежить від кількості заяв у портфелі клієнта, обсягу доказової бази, необхідності паралельного національного позову та оцінки за Методикою. Орієнтовно: першочергова пілотна заява з найбільш завершеною доказовою базою — від 150 000 ₴ за повний цикл (документація, оцінка, цифрове повноваження, подача, моніторинг до рішення Ради). Наступні заяви за уніфікованим шаблоном — зі знижкою 30-40%. Перший пре-аналіз кейсу і орієнтовний кошторис — безкоштовно за заявкою через форму на /kontakty.',
+          'Ставка — 120 EUR/год. Сценарій A (вже є рішення суду і висновок експерта): 26-43 години ≈ 3 100-5 200 EUR на одну заяву категорії C3.1 (аналіз матеріалів, аудит висновку, звірна таблиця позов→висновок→рішення→заява, опис обставин, методологія, цифрове повноваження, подача, супровід запитів Секретаріату). Сценарій B (доказову базу треба формувати з нуля): додатково 10-20 год на ЄРДР + статус потерпілого + акти ДСНС + 4-6 год на технічне завдання експерту — разом 40-70 год ≈ 4 800-8 400 EUR. Моделі: погодинна (пілот), фіксована за заяву (наступні, −30-40% обсягу), змішана (фіксована частина + гонорар успіху від фактично отриманого Комісією). Оцінка/експертиза (будівельно-технічна + економічна DCF для СЕС) — окрема стаття витрат за кошторисом незалежної установи. Пре-аналіз кейсу і орієнтовний кошторис — безкоштовно за заявкою на /kontakty.',
         ],
       ],
       ctaTitle: 'Фіксація вимоги сьогодні — компенсація через роки',
@@ -1249,7 +1249,7 @@ export const PRACTICES: Record<PracticeKey, Record<Locale, PracticeContent>> = {
         ],
         [
           'How much does RD4U case support cost and how is pricing structured?',
-          'Pricing depends on the number of claims in the client\'s portfolio, the volume of evidence, whether a parallel national claim and Methodology-based valuation are required. Approximately: a first pilot claim with the most complete evidence base — from UAH 150,000 for the full cycle (documentation, valuation, digital authorization, submission, monitoring through the Board\'s decision). Subsequent claims under a unified template — 30-40% discount. Initial case pre-analysis and preliminary estimate — free, via the form at /kontakty.',
+          'Rate — EUR 120/hour. Scenario A (court judgment and expert opinion already in place): 26-43 hours ≈ EUR 3,100-5,200 per C3.1 claim (materials analysis, expert-opinion audit, cross-matching claim→opinion→judgment→filing, circumstances write-up, methodology, digital authorization, submission, Secretariat clarification support). Scenario B (evidence base to be built from scratch): additional 10-20h on ERDR + victim status + SES acts + 4-6h on expert technical specification — total 40-70h ≈ EUR 4,800-8,400. Models: hourly (pilot), fixed per claim (subsequent — 30-40% hours reduction via unified template), hybrid (fixed component + success fee on amounts actually received from the Commission). Valuation/expertise (construction-technical + economic DCF for solar plants) — separate expense per independent firm\'s quote. Initial case pre-analysis and preliminary estimate — free, via the form at /kontakty.',
         ],
       ],
       ctaTitle: 'Record the Claim Today — Compensation Years From Now',
@@ -1338,7 +1338,7 @@ export const PRACTICES: Record<PracticeKey, Record<Locale, PracticeContent>> = {
         ],
         [
           'Cât costă asistența pentru un caz RD4U și cum se structurează prețul?',
-          'Prețul depinde de numărul de cereri din portofoliul clientului, volumul dovezilor, necesitatea unei acțiuni naționale paralele și a evaluării conform Metodologiei. Aproximativ: o primă cerere pilot cu baza probatorie cea mai completă — de la 150.000 UAH pentru ciclul complet (documentare, evaluare, autorizare digitală, depunere, monitorizare până la decizia Consiliului). Cereri ulterioare conform unui șablon unificat — reducere de 30-40%. Pre-analiza inițială și estimarea preliminară — gratuit, prin formularul de la /kontakty.',
+          'Tarif — 120 EUR/oră. Scenariul A (există deja o hotărâre judecătorească și un raport de expertiză): 26-43 ore ≈ 3 100-5 200 EUR pe o cerere categoria C3.1 (analiză materiale, audit raport, tabel de corespondență acțiune→raport→hotărâre→cerere, descriere circumstanțe, metodologie, autorizare digitală, depunere, asistență la solicitările Secretariatului). Scenariul B (baza probatorie se construiește de la zero): adițional 10-20 ore pentru ERDR + statut de parte vătămată + acte DSNS + 4-6 ore pentru specificațiile tehnice ale expertului — total 40-70 ore ≈ 4 800-8 400 EUR. Modele: tarif orar (pilot), fix pe cerere (ulterioare — reducere de 30-40% ore prin șablon unificat), hibrid (parte fixă + onorariu de succes din sumele efectiv primite de la Comisie). Evaluarea/expertiza (tehnico-construcție + economică DCF pentru centrale solare) — cheltuială separată conform cotației firmei independente. Pre-analiza inițială și estimarea preliminară — gratuit, prin formularul de la /kontakty.',
         ],
       ],
       ctaTitle: 'Înregistrați cererea astăzi — compensație peste ani',
