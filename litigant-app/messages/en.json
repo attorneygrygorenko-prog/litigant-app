@@ -292,6 +292,30 @@
         "q": "How to challenge a tax authority decision?",
         "a": "Challenging Ukrainian tax authority decisions has two stages: administrative appeal (a complaint to the higher-level tax body within 10 working days of receiving the tax notification-decision) and judicial appeal in the district administrative court. Common business mistakes: missing the 10-day deadline (then court is the only option left), incorrect legal qualification (e.g., appealing on substance instead of procedural violations), lack of expert evidence on transactions (commodity, transport, financial). Litigant builds defence on two layers: procedural violations during the audit (assignment, notification, act execution) and substantive arguments on the reality of operations. Strategically, the position must be ready BEFORE the decision arrives — at the audit stage."
       }
+    ],
+    "block5Title": "War Damage Compensation for Business via RD4U",
+    "block5Text": "Full-cycle support for Ukrainian companies in registering war damages via the international Register of Damage (RD4U) in The Hague. National claim against Russia, valuation under Methodology No. 3904/1223, digital authorization via Diia, submission and monitoring through the Board's decision. Portfolio of 6 claims in representation (solar power plants, maritime asset), majority confirmed by commercial court judgments.",
+    "block5Items": [
+      [
+        "Legal audit and category selection",
+        "Classification under Register's group C categories (C1.1 critical infrastructure, C1.5 non-residential real estate, C3.1-C3.4 assets/relocation, C4 humanitarian). Avoidance of subsidiary C3.4 and double-counting."
+      ],
+      [
+        "National evidentiary layer",
+        "SES acts, ERDR extracts under Art. 438 Criminal Code, legal-entity victim status, geo-tagged photo/video, OSINT. Evidence base that withstands RD4U Secretariat review."
+      ],
+      [
+        "Claim against Russia in commercial court",
+        "Free of court fees for the claimant (Art. 5 para. 22 Court Fees Act). The judgment is weighty supplementary proof for the international Commission."
+      ],
+      [
+        "Valuation under Methodology No. 3904/1223",
+        "Coordination with valuation professional or forensic expert. Cost + comparative + income approaches. Structure: real losses + lost profit."
+      ],
+      [
+        "Digital authorization and submission via Diia",
+        "The only path for legal entities under group C. Claim preparation, Secretariat response support, monitoring through Board's decision."
+      ]
     ]
   },
   "blog": {

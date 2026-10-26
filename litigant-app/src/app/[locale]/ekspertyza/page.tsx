@@ -65,6 +65,7 @@ export default function ServicesPage({ params: { locale } }: { params: { locale:
   const block2Items = t.raw('block2Items') as string[][];
   const block3Items = t.raw('block3Items') as string[][];
   const block4Items = t.raw('block4Items') as string[][];
+  const block5Items = t.raw('block5Items') as string[][];
   const faq = t.raw('faq') as FaqEntry[];
 
   const breadcrumbLd = buildBreadcrumb(locale, [
@@ -190,7 +191,33 @@ export default function ServicesPage({ params: { locale } }: { params: { locale:
         </div>
       </section>
 
-      <section className="sec">
+      <section id="rd4u" className="sec">
+        <div className="wrap">
+          <div className="cg">
+            <div className="tb">
+              <div className="sh">
+                <span className="sh-label">05</span>
+                <h2>{t('block5Title')}</h2>
+                <div className="sh-line"><span /><span /></div>
+              </div>
+              <p>{t('block5Text')}</p>
+              <Link
+                href={`/ekspertyza/${SLUG_BY_LOCALE['rd4u-damages'][locale]}`}
+                style={LEARN_MORE_LINK_STYLE}
+              >
+                {LEARN_MORE_LABEL[locale]} →
+              </Link>
+            </div>
+            <ServiceList items={block5Items} />
+          </div>
+          <div className="practice-cta">
+            <p>{t('ctaQuestion')}</p>
+            <Link href="/kontakty">{t('ctaAction')}</Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="sec sec-off">
         <div className="wrap">
           <div className="sh">
             <span className="sh-label">{t('faqLabel')}</span>

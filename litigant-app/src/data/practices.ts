@@ -4,13 +4,14 @@ import type { Locale } from '@/i18n/routing';
  * Канонічні ключі 4 практик (мовно-нейтральні).
  * Slug-и локалізовані: див. SLUG_BY_LOCALE.
  */
-export type PracticeKey = 'wcc' | 'bankruptcy' | 'state-disputes' | 'lobbying-gr';
+export type PracticeKey = 'wcc' | 'bankruptcy' | 'state-disputes' | 'lobbying-gr' | 'rd4u-damages';
 
 export const PRACTICE_KEYS: PracticeKey[] = [
   'wcc',
   'bankruptcy',
   'state-disputes',
   'lobbying-gr',
+  'rd4u-damages',
 ];
 
 /** URL slug per locale per practice. */
@@ -34,6 +35,11 @@ export const SLUG_BY_LOCALE: Record<PracticeKey, Record<Locale, string>> = {
     ua: 'lobizm-gr',
     en: 'lobbying-gr',
     ro: 'lobby-gr',
+  },
+  'rd4u-damages': {
+    ua: 'rd4u-kompensatsiia-zbytkiv',
+    en: 'rd4u-war-damage-compensation',
+    ro: 'rd4u-compensare-daune-razboi',
   },
 };
 
@@ -1093,6 +1099,256 @@ export const PRACTICES: Record<PracticeKey, Record<Locale, PracticeContent>> = {
       breadcrumbHome: 'Acasă',
       breadcrumbPractices: 'Practici',
       breadcrumbCurrent: 'Lobby și GR',
+    },
+  },
+  /* ─────────────────────────────────────────────────────────────────
+     RD4U — WAR DAMAGE COMPENSATION FOR BUSINESS
+     ───────────────────────────────────────────────────────────────── */
+  'rd4u-damages': {
+    ua: {
+      metaTitle:
+        'Компенсація воєнних збитків бізнесу через RD4U — адвокат Київ · Litigant',
+      metaDescription:
+        'Супровід українських компаній у фіксації воєнних збитків через міжнародний Реєстр RD4U. Національний позов до РФ, оцінка за Методикою № 3904/1223, подача заяви через «Дію». Адвокат Юрій Григоренко.',
+      keywords:
+        'RD4U адвокат, компенсація воєнних збитків, реєстр збитків Україна, Register of Damage, позов до Росії, оцінка воєнних збитків методика 3904/1223',
+      h1: 'Компенсація воєнних збитків бізнесу: Реєстр збитків RD4U та оцінка вимог',
+      intro: [
+        'У 2026 році український бізнес уперше отримав повноцінний доступ до міжнародного механізму фіксації воєнних збитків. 29 квітня 2026 року Реєстр збитків, завданих агресією Російської Федерації проти України (RD4U), відкрив перші категорії заяв для юридичних осіб, а 10 вересня 2026 року — фінальні три. Відтепер підприємство може заявити не лише фізичне руйнування активів, а й втрату контролю над майном на тимчасово окупованих територіях, витрати на релокацію, інші економічні втрати та гуманітарні витрати на працівників.',
+        'Litigant супроводжує українські компанії у повному циклі: від фіксації доказів в Україні, оцінки збитків за Методикою № 3904/1223, національного позову до РФ у господарському суді (без судового збору) — до цифрового повноваження через «Дію» і подачі заяви у Реєстр у Гаазі з моніторингом до рішення Ради. Висновки ґрунтуються на практиці: шість вимог у супроводі (сонячні електростанції + морський актив), більшість підтверджена рішеннями господарських судів.',
+      ],
+      servicesTitle: 'Спектр послуг для RD4U-кейсів',
+      services: [
+        [
+          'Правовий аудит і вибір категорії вимоги',
+          'Класифікація кейсу за категоріями C групи Реєстру (C1.1 — критична інфраструктура, C1.5 — нежитлова нерухомість, C3.1-C3.4 — активи, релокація, інші втрати, C4 — гуманітарні витрати). Уникнення субсидіарної категорії C3.4 та подвійного рахунку.',
+        ],
+        [
+          'Національний доказовий контур',
+          'Витяги з Державного реєстру речових прав, акти ДСНС, витяги з ЄРДР (ст. 438 КК), статус потерпілого юрособи (ст. 55 КПК), фото- та відеоматеріали з геолокацією, OSINT-аналіз. Доказова база, що витримує Секретаріат Реєстру.',
+        ],
+        [
+          'Позов до РФ у господарський суд',
+          'Підготовка позовної заяви з відшкодування шкоди, завданої агресією РФ. Безкоштовно для позивача (п. 22 ч. 1 ст. 5 Закону про судовий збір). Рішення суду — вагомий додатковий доказ розміру вимоги для міжнародної Комісії.',
+        ],
+        [
+          'Оцінка збитків за Методикою № 3904/1223',
+          'Супровід з суб\'єктом оціночної діяльності або судовим експертом. Структура вимоги: реальні збитки (включно з витратами на відновлення, ст. 22 ЦК) + упущена вигода. Витратний, порівняльний і дохідний підходи — прозорий і відтворюваний розрахунок.',
+        ],
+        [
+          'Цифрове повноваження та подача через «Дію»',
+          'Оформлення цифрового повноваження в сервісі «Дія» (єдиний шлях для юросіб у категоріях C), підготовка заяви, супровід реакцій Секретаріату на запити виправлень і додаткових доказів. Моніторинг до рішення Ради Реєстру.',
+        ],
+      ],
+      whenTitle: 'Коли звертаються до Litigant за RD4U',
+      whenLead:
+        'Типові кейси. У кожному з них потрібна координація національного процесу з міжнародним — вікно для виправлень обмежене стадією Секретаріату.',
+      whenItems: [
+        'Виробниче підприємство в прифронтовій зоні зазнало пошкодження обладнання, цехів, складських приміщень',
+        'Енергетичний об\'єкт (сонячна/вітрова електростанція, підстанція, ТЕЦ) зазнав руйнувань внаслідок ударів',
+        'Актив втрачено внаслідок окупації території — втрата контролю, упущена вигода, повна втрата бізнесу',
+        'Релокація бізнесу з прифронтових / окупованих територій — витрати на логістику, перезапуск, оренду житла працівників',
+        'Іноземний інвестор діє в Україні через українську юридичну особу, керівник-нерезидент без українського КЕП',
+      ],
+      faqTitle: 'Часті питання про RD4U',
+      faqLead: 'Відповіді на ключові питання керівників компаній перед укладенням договору про правову допомогу у RD4U-кейсі.',
+      faq: [
+        [
+          'Чи здійснює RD4U виплати компенсацій?',
+          'Ні. Реєстр лише фіксує та класифікує вимоги. Виплати здійснюватиме майбутня Міжнародна комісія з розгляду претензій (Конвенцію ратифіковано ВР України 30.04.2026, потрібні ратифікації 25 держав для набрання чинності) та Компенсаційний фонд, джерела наповнення якого ще не визначені. Строки виплат залежать від набрання чинності Конвенцією. Але якість заяви, поданої сьогодні — доказова база, правильна категорія, обґрунтована оцінка — визначатиме результат через роки.',
+        ],
+        [
+          'Хто може подати заяву в категоріях C для юридичних осіб?',
+          'Юридична особа, утворена за правом України або будь-якої іншої держави (крім Російської Федерації), незалежно від організаційно-правової форми та форми власності — включно з державними та комунальними підприємствами. Це відкриває механізм для іноземних інвесторів, які діють в Україні через українські юрособи. Заяву подає основний представник (директор, голова правління) або призначений ним через «Дію» представник (адвокат чи інший). Для заяв у категоріях C це єдиний шлях.',
+        ],
+        [
+          'Які категорії вимог відкрито для юридичних осіб?',
+          'Станом на жовтень 2026 року відкрито повний набір категорій групи C: C1.1 (критична інфраструктура), C1.2 (некритична інфраструктура), C1.3-C1.5 (нерухомість, у т.ч. нежитлова), C3.1 (пошкодження/втрата активів, упущена вигода, повна втрата бізнесу), C3.2 (втрата контролю над майном на ТОТ), C3.3 (релокація бізнесу), C3.4 (інші економічні втрати — субсидіарно), C4 (гуманітарні витрати на працівників). Майно фізосіб-підприємців — у категоріях групи A (A3.5), не C.',
+        ],
+        [
+          'Чи обов\'язково спочатку мати рішення українського суду?',
+          'Ні, це не обов\'язково. Але національний позов до РФ у господарський суд — порівняно недорогий (безкоштовний для позивача) спосіб отримати судову оцінку розміру збитків до подачі заяви у Реєстр. Верховний Суд з 14.04.2022 (справа № 308/9708/19) не застосовує судовий імунітет РФ у справах про агресію. Рішення українського суду не має преюдиційного значення для міжнародної Комісії, але є вагомим додатковим доказом. У нашій практиці більшість вимог спочатку пройшла національний суд, потім подається у RD4U.',
+        ],
+        [
+          'Скільки коштує супровід RD4U-кейсу та як формується ціна?',
+          'Вартість залежить від кількості заяв у портфелі клієнта, обсягу доказової бази, необхідності паралельного національного позову та оцінки за Методикою. Орієнтовно: першочергова пілотна заява з найбільш завершеною доказовою базою — від 150 000 ₴ за повний цикл (документація, оцінка, цифрове повноваження, подача, моніторинг до рішення Ради). Наступні заяви за уніфікованим шаблоном — зі знижкою 30-40%. Перший пре-аналіз кейсу і орієнтовний кошторис — безкоштовно за заявкою через форму на /kontakty.',
+        ],
+      ],
+      ctaTitle: 'Фіксація вимоги сьогодні — компенсація через роки',
+      ctaText:
+        'Якість заяви, поданої сьогодні — доказова база, правильна категорія, обґрунтована оцінка — визначатиме результат, коли Компенсаційний фонд почне виплати. Опишіть кейс — поверну пре-аналіз з рекомендованою категорією та орієнтовним кошторисом протягом 48 робочих годин.',
+      ctaButton: 'Подати кейс на RD4U-пре-аналіз',
+      backToOverview: '← Усі практики Litigant',
+      breadcrumbHome: 'Головна',
+      breadcrumbPractices: 'Практики',
+      breadcrumbCurrent: 'Компенсація через RD4U',
+    },
+    en: {
+      metaTitle:
+        'War Damage Compensation for Business via RD4U — Attorney Kyiv · Litigant',
+      metaDescription:
+        'Full-cycle representation of Ukrainian businesses in registering war damages via the international Register of Damage (RD4U). National claim against Russia, damage valuation under Methodology No. 3904/1223, submission via Diia. Attorney Iurii Grygorenko.',
+      keywords:
+        'RD4U lawyer, Register of Damage for Ukraine, war damage compensation Ukraine, business claim against Russia, Methodology 3904/1223',
+      h1: 'War Damage Compensation for Business: Register of Damage (RD4U) and Claim Valuation',
+      intro: [
+        'In 2026, Ukrainian businesses gained full access to the international mechanism for recording war damages. On 29 April 2026, the Register of Damage caused by the aggression of the Russian Federation against Ukraine (RD4U) opened the first claim categories for legal entities; the final three categories opened on 10 September 2026. Companies can now record not only physical destruction of assets but also loss of control over property in temporarily occupied territories, relocation costs, other economic losses, and humanitarian expenses for employees.',
+        'Litigant supports Ukrainian companies through the full cycle: evidence gathering in Ukraine, damage valuation under Methodology No. 3904/1223, national claim against Russia in commercial courts (no court fee), digital authorization via Diia, submission to the Hague Register, and monitoring through the Board\'s decision. Our conclusions are grounded in practice: a portfolio of six claims under representation (solar power plants plus a maritime asset), the majority confirmed by commercial court decisions.',
+      ],
+      servicesTitle: 'RD4U Case Service Spectrum',
+      services: [
+        [
+          'Legal audit and claim category selection',
+          'Classification under the Register\'s group C categories (C1.1 critical infrastructure, C1.5 non-residential real estate, C3.1-C3.4 assets/relocation/other losses, C4 humanitarian expenses for workers). Avoidance of the subsidiary C3.4 category and double-counting.',
+        ],
+        [
+          'National evidentiary layer',
+          'Extracts from the State Register of Property Rights, SES (DSNS) acts, URPTI (ERDR) extracts under Art. 438 of the Criminal Code, legal-entity victim status (Art. 55 CPC), geo-tagged photo and video, OSINT analysis. Evidence base that withstands RD4U Secretariat review.',
+        ],
+        [
+          'Claim against Russia in Ukrainian commercial court',
+          'Preparation of a claim for compensation of damage caused by Russian aggression. Court fee waived for the claimant (Art. 5 para. 22 of the Court Fees Act). The judgment is a weighty supplementary proof of claim size for the international Commission.',
+        ],
+        [
+          'Damage valuation under Methodology No. 3904/1223',
+          'Coordination with a valuation professional or forensic expert. Claim structure: real losses (including recovery costs, Art. 22 Civil Code) plus lost profit. Cost, comparative, and income approaches — a transparent and reproducible calculation.',
+        ],
+        [
+          'Digital authorization and submission via Diia',
+          'Processing of digital authorization in the Diia service (the only path for legal entities under group C categories), claim preparation, support for Secretariat requests for corrections or additional evidence. Monitoring through the Register Board\'s decision.',
+        ],
+      ],
+      whenTitle: 'When Businesses Engage Litigant for RD4U',
+      whenLead:
+        'Typical cases. In each, national-process coordination with the international track is essential — the correction window is limited to the Secretariat review stage.',
+      whenItems: [
+        'Industrial enterprise in a frontline zone sustained damage to equipment, workshops, or warehouses',
+        'Energy asset (solar/wind power plant, substation, CHP) was damaged by strikes',
+        'Asset lost due to territorial occupation — loss of control, lost profit, total business loss',
+        'Business relocation from frontline or occupied territories — logistics, restart, worker housing',
+        'Foreign investor operating in Ukraine through a Ukrainian legal entity; non-resident director without a Ukrainian qualified electronic signature',
+      ],
+      faqTitle: 'FAQ about RD4U',
+      faqLead: 'Answers to the key questions executives ask before engaging on an RD4U case.',
+      faq: [
+        [
+          'Does RD4U pay out compensation?',
+          'No. The Register only records and classifies claims. Payouts will be made by the future International Claims Commission (the Convention was ratified by Ukraine\'s Verkhovna Rada on 30.04.2026 and requires 25 state ratifications to enter into force) and the Compensation Fund, whose funding sources have not yet been determined. The timing of payouts depends on Convention entry into force. However, the quality of a claim filed today — the evidence base, correct category, well-grounded valuation — will determine the result years from now.',
+        ],
+        [
+          'Who may submit a claim in group C categories for legal entities?',
+          'A legal entity formed under the law of Ukraine or any other state (except the Russian Federation), regardless of corporate form and ownership — including state and municipal enterprises. This opens the mechanism to foreign investors operating in Ukraine via Ukrainian subsidiaries. The claim is filed by the primary representative (director, chairman of the board) or by a representative authorized through Diia (lawyer or non-lawyer). For group C categories, this is the only path.',
+        ],
+        [
+          'Which claim categories are currently open for legal entities?',
+          'As of October 2026, the full set of group C categories is open: C1.1 (critical infrastructure), C1.2 (non-critical infrastructure), C1.3-C1.5 (real estate including non-residential), C3.1 (damage/loss of assets, lost profit, total business loss), C3.2 (loss of control over property in temporarily occupied territories), C3.3 (business relocation), C3.4 (other economic losses — subsidiary category), C4 (humanitarian expenses for workers). Property of individual entrepreneurs falls under group A categories (A3.5), not C.',
+        ],
+        [
+          'Must I obtain a Ukrainian court judgment before filing with the Register?',
+          'No, it is not mandatory. However, a national claim against Russia in a commercial court is a relatively inexpensive (free of court fees for the claimant) way to obtain a judicial assessment of damage amount before filing with the Register. The Supreme Court, since judgment of 14.04.2022 in case No. 308/9708/19, does not apply Russia\'s sovereign immunity in aggression cases. The Ukrainian judgment has no res judicata effect for the international Commission but is weighty supplementary proof. In our practice, most claims first pass through a national court before being submitted to RD4U.',
+        ],
+        [
+          'How much does RD4U case support cost and how is pricing structured?',
+          'Pricing depends on the number of claims in the client\'s portfolio, the volume of evidence, whether a parallel national claim and Methodology-based valuation are required. Approximately: a first pilot claim with the most complete evidence base — from UAH 150,000 for the full cycle (documentation, valuation, digital authorization, submission, monitoring through the Board\'s decision). Subsequent claims under a unified template — 30-40% discount. Initial case pre-analysis and preliminary estimate — free, via the form at /kontakty.',
+        ],
+      ],
+      ctaTitle: 'Record the Claim Today — Compensation Years From Now',
+      ctaText:
+        'The quality of a claim filed today — evidence base, correct category, well-grounded valuation — will determine the result when the Compensation Fund begins payouts. Describe your case — I will return a pre-analysis with recommended category and preliminary estimate within 48 business hours.',
+      ctaButton: 'Submit case for RD4U pre-analysis',
+      backToOverview: '← All Litigant Practices',
+      breadcrumbHome: 'Home',
+      breadcrumbPractices: 'Practices',
+      breadcrumbCurrent: 'RD4U Compensation',
+      enUniqueSection: {
+        heading: 'Why the national court path matters before Hague',
+        body:
+          'The Ukrainian commercial court path serves a function the Register itself cannot: it generates a judicially-tested valuation of damages, with cross-examination of experts, submission of forensic reports, and reasoned findings on causation and quantum. By the time the RD4U Secretariat reviews our claim, the valuation has already withstood adversarial scrutiny. This is the opposite of a cold submission with a self-prepared estimate — and the Secretariat\'s pattern of requesting clarifications and additional evidence favors claims arriving with judicial findings.',
+        stats: [
+          '6 war damage claims in portfolio: solar power plants + maritime asset',
+          'Majority confirmed by commercial court judgments against the Russian Federation',
+          'No court fee for the claimant — Art. 5 para. 22 of the Court Fees Act',
+          'Full cycle supported: evidence gathering → valuation → national claim → RD4U submission → monitoring',
+        ],
+      },
+    },
+    ro: {
+      metaTitle:
+        'Compensarea daunelor de război pentru afaceri prin RD4U — Avocat Kiev · Litigant',
+      metaDescription:
+        'Reprezentare integrală a companiilor ucrainene în înregistrarea daunelor de război prin Registrul internațional al Daunelor (RD4U). Acțiune națională împotriva Rusiei, evaluare conform Metodologiei nr. 3904/1223, depunere prin «Diia». Avocat Iurii Grygorenko.',
+      keywords:
+        'avocat RD4U, Registrul Daunelor Ucraina, compensare daune război, acțiune împotriva Rusiei, evaluare Metodologia 3904/1223',
+      h1: 'Compensarea daunelor de război pentru afaceri: Registrul Daunelor (RD4U) și evaluarea cererilor',
+      intro: [
+        'În 2026, afacerile ucrainene au obținut acces complet la mecanismul internațional de înregistrare a daunelor de război. La 29 aprilie 2026, Registrul Daunelor cauzate de agresiunea Federației Ruse împotriva Ucrainei (RD4U) a deschis primele categorii de cereri pentru persoane juridice; ultimele trei categorii s-au deschis la 10 septembrie 2026. Companiile pot acum înregistra nu doar distrugerea fizică a activelor, ci și pierderea controlului asupra proprietății în teritoriile ocupate temporar, costurile de relocare, alte pierderi economice și cheltuielile umanitare pentru angajați.',
+        'Litigant asistă companiile ucrainene în ciclul complet: colectarea dovezilor în Ucraina, evaluarea daunelor conform Metodologiei nr. 3904/1223, acțiune națională împotriva Rusiei în instanțele comerciale (fără taxă judiciară), autorizare digitală prin «Diia», depunere la Registrul de la Haga și monitorizare până la decizia Consiliului. Concluziile se bazează pe practica: șase cereri în reprezentare (centrale solare + un activ maritim), majoritatea confirmate prin hotărâri ale instanțelor comerciale.',
+      ],
+      servicesTitle: 'Spectrul serviciilor pentru cazurile RD4U',
+      services: [
+        [
+          'Audit juridic și alegerea categoriei cererii',
+          'Clasificare conform categoriilor grupului C ale Registrului (C1.1 infrastructură critică, C1.5 proprietăți nerezidențiale, C3.1-C3.4 active/relocare/alte pierderi, C4 cheltuieli umanitare). Evitarea categoriei subsidiare C3.4 și a dublei numărări.',
+        ],
+        [
+          'Strat probatoriu național',
+          'Extrase din Registrul de Stat al Drepturilor de Proprietate, acte DSNS, extrase ERDR conform art. 438 Cod penal, statutul de parte vătămată pentru persoane juridice (art. 55 CPP), fotografii și videoclipuri cu geolocație, analiză OSINT. Bază probatorie care rezistă revizuirii Secretariatului RD4U.',
+        ],
+        [
+          'Acțiune împotriva Rusiei în instanța comercială ucraineană',
+          'Pregătirea acțiunii pentru compensarea daunelor cauzate de agresiunea rusă. Taxa judiciară este scutită pentru reclamant (art. 5 alin. 22 din Legea taxelor judiciare). Hotărârea este o dovadă suplimentară puternică a cuantumului cererii pentru Comisia internațională.',
+        ],
+        [
+          'Evaluarea daunelor conform Metodologiei nr. 3904/1223',
+          'Coordonare cu un evaluator profesionist sau expert judiciar. Structura cererii: pierderi reale (inclusiv costuri de recuperare, art. 22 Cod civil) plus profit nerealizat. Abordări prin cost, comparativă și pe venituri — calcul transparent și reproductibil.',
+        ],
+        [
+          'Autorizare digitală și depunere prin «Diia»',
+          'Procesarea autorizării digitale în serviciul «Diia» (singura cale pentru persoane juridice în categoriile grupului C), pregătirea cererii, asistență la solicitările Secretariatului de corecturi sau dovezi suplimentare. Monitorizare până la decizia Consiliului Registrului.',
+        ],
+      ],
+      whenTitle: 'Când clienții apelează la Litigant pentru RD4U',
+      whenLead:
+        'Cazuri tipice. În fiecare este esențială coordonarea procesului național cu cel internațional — fereastra pentru corectări este limitată la etapa de revizuire a Secretariatului.',
+      whenItems: [
+        'O întreprindere industrială dintr-o zonă de frontieră a suferit deteriorări ale echipamentelor, atelierelor sau depozitelor',
+        'Un activ energetic (centrală solară/eoliană, substație, CHP) a fost deteriorat în urma atacurilor',
+        'Activ pierdut din cauza ocupației teritoriului — pierdere a controlului, profit nerealizat, pierdere totală a afacerii',
+        'Relocarea afacerii din teritorii de frontieră sau ocupate — logistică, repornire, cazare pentru angajați',
+        'Investitor străin care operează în Ucraina printr-o persoană juridică ucraineană; director nerezident fără semnătură electronică calificată ucraineană',
+      ],
+      faqTitle: 'Întrebări frecvente despre RD4U',
+      faqLead: 'Răspunsuri la întrebările-cheie pe care le adresează managerii înainte de a încheia un contract pentru un caz RD4U.',
+      faq: [
+        [
+          'RD4U efectuează plăți de compensații?',
+          'Nu. Registrul doar înregistrează și clasifică cererile. Plățile vor fi efectuate de viitoarea Comisie Internațională de Soluționare a Pretențiilor (Convenția a fost ratificată de Rada Supremă a Ucrainei la 30.04.2026 și necesită ratificări din 25 de state pentru a intra în vigoare) și de Fondul de Compensare, ale cărui surse de finanțare nu au fost încă determinate. Timpul plăților depinde de intrarea în vigoare a Convenției. Totuși, calitatea unei cereri depuse astăzi — baza probatorie, categoria corectă, evaluarea bine fundamentată — va determina rezultatul peste ani.',
+        ],
+        [
+          'Cine poate depune o cerere în categoriile grupului C pentru persoane juridice?',
+          'O persoană juridică constituită conform legii Ucrainei sau a oricărui alt stat (cu excepția Federației Ruse), indiferent de forma juridică și de proprietate — inclusiv întreprinderi de stat și municipale. Acest lucru deschide mecanismul investitorilor străini care operează în Ucraina prin filiale ucrainene. Cererea este depusă de reprezentantul principal (director, președintele consiliului) sau de un reprezentant autorizat prin «Diia» (avocat sau nu). Pentru categoriile grupului C, aceasta este singura cale.',
+        ],
+        [
+          'Ce categorii de cereri sunt deschise pentru persoane juridice?',
+          'Începând cu octombrie 2026, întregul set de categorii grupului C este deschis: C1.1 (infrastructură critică), C1.2 (infrastructură non-critică), C1.3-C1.5 (proprietăți, inclusiv nerezidențiale), C3.1 (deteriorare/pierdere de active, profit nerealizat, pierderea totală a afacerii), C3.2 (pierderea controlului asupra proprietății în teritorii ocupate temporar), C3.3 (relocarea afacerii), C3.4 (alte pierderi economice — categorie subsidiară), C4 (cheltuieli umanitare pentru angajați). Proprietatea întreprinzătorilor individuali intră în categoriile grupului A (A3.5), nu C.',
+        ],
+        [
+          'Este obligatoriu să am mai întâi o hotărâre a instanței ucrainene?',
+          'Nu, nu este obligatoriu. Totuși, o acțiune națională împotriva Rusiei în instanța comercială este o modalitate relativ ieftină (fără taxă judiciară pentru reclamant) de a obține o evaluare judiciară a cuantumului daunelor înainte de depunerea la Registru. Curtea Supremă, începând cu hotărârea din 14.04.2022 în cazul nr. 308/9708/19, nu aplică imunitatea suverană a Rusiei în cazurile de agresiune. Hotărârea ucraineană nu are efect de res judicata pentru Comisia internațională, dar este o dovadă suplimentară puternică. În practica noastră, majoritatea cererilor trec mai întâi prin instanțele naționale înainte de a fi depuse la RD4U.',
+        ],
+        [
+          'Cât costă asistența pentru un caz RD4U și cum se structurează prețul?',
+          'Prețul depinde de numărul de cereri din portofoliul clientului, volumul dovezilor, necesitatea unei acțiuni naționale paralele și a evaluării conform Metodologiei. Aproximativ: o primă cerere pilot cu baza probatorie cea mai completă — de la 150.000 UAH pentru ciclul complet (documentare, evaluare, autorizare digitală, depunere, monitorizare până la decizia Consiliului). Cereri ulterioare conform unui șablon unificat — reducere de 30-40%. Pre-analiza inițială și estimarea preliminară — gratuit, prin formularul de la /kontakty.',
+        ],
+      ],
+      ctaTitle: 'Înregistrați cererea astăzi — compensație peste ani',
+      ctaText:
+        'Calitatea unei cereri depuse astăzi — baza probatorie, categoria corectă, evaluarea bine fundamentată — va determina rezultatul când Fondul de Compensare va începe plățile. Descrieți cazul — voi returna o pre-analiză cu categoria recomandată și estimarea preliminară în 48 de ore lucrătoare.',
+      ctaButton: 'Trimite cazul pentru pre-analiza RD4U',
+      backToOverview: '← Toate practicile Litigant',
+      breadcrumbHome: 'Acasă',
+      breadcrumbPractices: 'Practici',
+      breadcrumbCurrent: 'Compensare prin RD4U',
     },
   },
 };
