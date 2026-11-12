@@ -6,6 +6,46 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    url: 'https://www.hsa.org.ua/blog/sproshhene-bankrutstvo-mikro-ta-malogo-biznesu-180-dniv-zgoda-borznika-i-drugii-sans-pid-kontrolem-dobrosovisnosti',
+    category: 'Банкрутство',
+    date: '2026-11-12'
+  },
+  {
+    url: 'https://ua.news/ua/ukraine/kompensatsiia-voiennikh-zbitkiv-biznesu-reiestr-zbitkiv-rd4u-ta-otsinka-vimog',
+    category: 'Міжнародне право',
+    date: '2026-11-05'
+  },
+  {
+    url: 'https://www.hsa.org.ua/blog/orendovana-zemlia-osg-na-aukcioni-v-proceduri-restrukturizaciyi-ci-zoboviazanii-arbitraznii-keruiucii-povidomliati-orendaria',
+    category: 'Банкрутство',
+    date: '2026-09-24'
+  },
+  {
+    url: 'https://www.hsa.org.ua/blog/straf-za-porusennia-mitnix-pravil-u-proceduri-neplatospromoznosti-fizicnoyi-osobi-verxovnii-sud-postaviv-krapku',
+    category: 'Банкрутство',
+    date: '2026-09-24'
+  },
+  {
+    url: 'https://www.hsa.org.ua/blog/bankrutstvo-derzavnix-pidprijemstv-shho-varto-znati-advokatu-u-spravax-z-derzavnoiu-castkoiu',
+    category: 'Банкрутство',
+    date: '2026-09-03'
+  },
+  {
+    url: 'https://www.hsa.org.ua/blog/avtonomiia-advokaturi-zamist-zovnisnyogo-upravlinnia-cogo-naspravdi-potrebuje-profesiia',
+    category: 'Адвокатура',
+    date: '2026-10-26'
+  },
+  {
+    url: 'https://www.hsa.org.ua/blog/zakrittia-provadzennia-u-spravi-pro-bankrutstvo-anatomiia-statti-90-kuzpb',
+    category: 'Банкрутство',
+    date: '2026-08-12'
+  },
+  {
+    url: 'https://www.youtube.com/watch?v=yH2iFYgD1tg',
+    category: 'Адвокатура',
+    date: '2026-11-12'
+  },
+  {
     url: 'https://advokatpost.com/dobrosovisnist-iak-predmet-dokazuvannia-shcho-varto-vrakhuvaty-borzhnyku-u-spravi-pro-neplatospromozhnist-advokat-hryhorenko/',
     category: 'Банкрутство',
     date: '2026-08-18'
