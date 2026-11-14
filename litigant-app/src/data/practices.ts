@@ -527,7 +527,7 @@ export const PRACTICES: Record<PracticeKey, Record<Locale, PracticeContent>> = {
       enUniqueSection: {
         heading:
           'Bankruptcy and restructuring in Ukraine: what foreign creditors need to know',
-        body: "Ukraine's insolvency framework — the Code of Bankruptcy Procedures (KUzPB) — has been in force since 2019 and continues to evolve. Foreign creditors and investors with Ukrainian exposure need specialized counsel to navigate creditor committee procedures, asset recovery mechanisms and cross-border insolvency recognition. Yurii Hryhorenko serves as Secretary of the UNBA Bankruptcy Committee — providing clients with direct access to legislative developments before they become law.",
+        body: "Ukraine's insolvency framework — the Code of Bankruptcy Procedures (KUzPB) — has been in force since 2019 and continues to evolve. Foreign creditors and investors with Ukrainian exposure need specialized counsel to navigate creditor committee procedures, asset recovery mechanisms and cross-border insolvency recognition. Iurii Grygorenko serves as Secretary of the UNBA Bankruptcy Committee — providing clients with direct access to legislative developments before they become law.",
         stats: [
           'Secretary, UNBA Bankruptcy Committee',
           'KUzPB specialist since 2019',
