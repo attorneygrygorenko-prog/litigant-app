@@ -281,3 +281,12 @@ footer { color: rgba(242, 237, 228, .62); border-top: 1px solid var(--line-d); }
 .logo svg .lm-inner { stroke-dasharray: 48; stroke-dashoffset: 48; animation-delay: .5s; }
 @keyframes lm-draw { to { stroke-dashoffset: 0; } }
 @media (prefers-reduced-motion: reduce) { .logo svg path { animation: none; stroke-dashoffset: 0; } }
+
+/* ---------- footer: 5 columns incl. "useful links" to sister sites ---------- */
+.foot-g { grid-template-columns: 1.6fr repeat(4, 1fr); gap: 40px; }
+.foot-col h3 { font-family: var(--sans); font-size: 10.5px; font-weight: 600; letter-spacing: .22em; text-transform: uppercase; color: var(--g); margin-bottom: 16px; }
+.foot-links a { display: flex; flex-direction: column; gap: 3px; }
+.foot-links a span { font-size: 11.5px; color: rgba(242, 237, 228, .4); }
+.foot-links a:hover span { color: var(--g); }
+@media (max-width: 1080px) { .foot-g { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 700px) { .foot-g { grid-template-columns: 1fr; } }

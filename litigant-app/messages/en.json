@@ -541,6 +541,11 @@
     "privacy": "Privacy",
     "stateDisputes": "State disputes",
     "arbitration": "Arbitration",
-    "checklist": "Strategic Legal Assessment"
+    "checklist": "Strategic Legal Assessment",
+    "linksTitle": "Useful links",
+    "linkEkuName": "Forensic Expert Institution",
+    "linkEkuSub": "forensic expertise · eku-expert.od.ua",
+    "linkGrygName": "Insolvency Practitioner",
+    "linkGrygSub": "bankruptcy · grygorenko.pro"
   }
 }

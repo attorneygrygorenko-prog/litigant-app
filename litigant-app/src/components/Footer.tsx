@@ -89,6 +89,24 @@ export default function Footer() {
           </div>
 
           <div className="foot-col">
+            <h3>{tFooter('linksTitle')}</h3>
+            <ul className="foot-links">
+              <li>
+                <a href="https://eku-expert.od.ua/" target="_blank" rel="noopener">
+                  {tFooter('linkEkuName')}
+                  <span>{tFooter('linkEkuSub')}</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://grygorenko.pro/" target="_blank" rel="noopener">
+                  {tFooter('linkGrygName')}
+                  <span>{tFooter('linkGrygSub')}</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div className="foot-col">
             <h3>{tFooter('contactsTitle')}</h3>
             <ul>
               <li><TrackedLink href="tel:+380445010207" event="phone_click" params={{ location: 'kyiv' }}>+38 (044) 501-02-07</TrackedLink></li>
