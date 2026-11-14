@@ -1,5 +1,5 @@
-import Image from 'next/image';
 import { useTranslations } from 'next-intl';
+import LogoMark from './LogoMark';
 import { Link } from '@/i18n/routing';
 import TrackedLink from './TrackedLink';
 import {
@@ -22,7 +22,7 @@ export default function Footer() {
           <div className="foot-brand">
             <Link href="/" className="logo">
               <div className="logo-sq">
-                <Image src="/images/logo.png" alt="Litigant Law Office" width={76} height={76} />
+                <LogoMark tone="dark" size={46} />
               </div>
               <div className="logo-text">
                 <span className="logo-name">LITIGANT</span>

@@ -274,3 +274,10 @@ footer { color: rgba(242, 237, 228, .62); border-top: 1px solid var(--line-d); }
   .lx-scroll::after { animation: none; }
   .btn::before, .bar-cta::before, .nl::after, .prac::before { transition: none; }
 }
+
+/* ---------- logo mark: hairlines draw in once on load ---------- */
+.logo-sq { width: 48px; height: 48px; }
+.logo svg path { stroke-dasharray: 64; stroke-dashoffset: 64; animation: lm-draw 1.4s var(--ease) .15s forwards; }
+.logo svg .lm-inner { stroke-dasharray: 48; stroke-dashoffset: 48; animation-delay: .5s; }
+@keyframes lm-draw { to { stroke-dashoffset: 0; } }
+@media (prefers-reduced-motion: reduce) { .logo svg path { animation: none; stroke-dashoffset: 0; } }

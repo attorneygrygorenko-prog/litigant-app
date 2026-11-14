@@ -71,7 +71,7 @@ export function buildJsonLd(locale: Locale) {
         name: 'Litigant Law Office',
         alternateName: 'АБ ЛІТІҐЕНТ',
         url: SITE_URL,
-        logo: `${SITE_URL}/images/logo.png`,
+        logo: `${SITE_URL}/api/logo`,
         description:
           locale === 'ro'
             ? 'Birou de avocați specializat în White-Collar Crime, conflicte corporative, faliment și GR-Litigation. Chișinău, Kyiv, Odesa.'

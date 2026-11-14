@@ -3,11 +3,11 @@ import { ImageResponse } from "next/og";
 export const runtime = "edge";
 export const revalidate = 86400;
 
-const NAVY = "#0D1B3E";
-const NAVY_LIGHT = "#1A2B64";
-const GOLD = "#B8941E";
-const GOLD_LIGHT = "#CDA82A";
-const IVORY = "#F6F5F1";
+const NAVY = "#0b0b0d";
+const NAVY_LIGHT = "#1d1d21";
+const GOLD = "#c9a96e";
+const GOLD_LIGHT = "#d6b981";
+const IVORY = "#f2ede4";
 
 /**
  * Load a Cyrillic-capable Google Font as ArrayBuffer for satori.
@@ -84,25 +84,11 @@ export async function GET() {
             padding: "0 80px",
           }}
         >
-          {/* Big "L" — gold square with serif L */}
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              width: "200px",
-              height: "200px",
-              background: GOLD,
-              fontSize: "180px",
-              fontWeight: 700,
-              color: NAVY,
-              fontFamily: "Georgia, 'Times New Roman', serif",
-              lineHeight: 1,
-              flexShrink: 0,
-            }}
-          >
-            L
-          </div>
+          {/* Litigant mark — two nested hairline L's */}
+          <svg width="200" height="200" viewBox="0 0 48 48" fill="none" strokeWidth="2.6" strokeLinecap="square" strokeLinejoin="miter" style={{ flexShrink: 0 }}>
+            <path d="M9 5V41H33" stroke={IVORY} />
+            <path d="M17 11V33H39" stroke={GOLD} />
+          </svg>
 
           {/* Wordmark + subtitle */}
           <div

@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { useTranslations } from 'next-intl';
-import Image from 'next/image';
+import LogoMark from './LogoMark';
 import { Link, usePathname } from '@/i18n/routing';
 import { NAV_ITEMS } from '@/lib/nav';
 import LangSwitch from './LangSwitch';
@@ -42,7 +42,7 @@ export default function Header() {
         <div className="wrap bar-in">
           <Link href="/" className="logo">
             <div className="logo-sq">
-              <Image src="/images/logo.png" alt="Litigant Law Office logo" width={76} height={76} />
+              <LogoMark tone="dark" size={46} />
             </div>
             <div className="logo-text">
               <span className="logo-name">LITIGANT</span>
@@ -72,7 +72,10 @@ export default function Header() {
 
       <div className={`mob ${open ? 'open' : ''}`}>
         <div className="mob-header">
-          <Link href="/" className="logo-name" style={{ color: '#fff' }}>LITIGANT</Link>
+          <Link href="/" className="logo" aria-label="Litigant">
+            <LogoMark tone="dark" size={38} />
+            <span className="logo-name">LITIGANT</span>
+          </Link>
           <button
             onClick={() => setOpen(false)}
             aria-label={t('close')}
