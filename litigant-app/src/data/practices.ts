@@ -256,7 +256,7 @@ export const PRACTICES: Record<PracticeKey, Record<Locale, PracticeContent>> = {
           'Why international clients choose Litigant for White-Collar Crime defense',
         body: "Ukraine's criminal procedure law has undergone significant reforms since 2012. Foreign business owners and C-level executives facing economic crime investigations in Ukraine require counsel who combines deep procedural knowledge with international communication standards. Litigant operates at this intersection — representing clients before DBR, NABU, SBU and courts in Kyiv and Odesa, while maintaining full English-language communication throughout the process.",
         stats: [
-          '9+ years in economic crime defense',
+          '10+ years in economic crime defense',
           'Active in Kyiv · Odesa · Chișinău',
           'English-language client communication',
         ],

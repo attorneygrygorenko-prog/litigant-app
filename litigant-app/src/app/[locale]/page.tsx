@@ -99,7 +99,7 @@ export default function HomePage({ params: { locale } }: { params: { locale: Loc
           <p className="hero-calm lx-fade lx-d4">{t('heroCalm')}</p>
         </div>
         <div className="wrap lx-stats lx-fade lx-d4">
-          <div className="lx-stat"><div className="lx-stat-n"><CounterNumber end={9} suffix="+" /></div><div className="lx-stat-l">{t('stat1Label')}</div></div>
+          <div className="lx-stat"><div className="lx-stat-n"><CounterNumber end={10} suffix="+" /></div><div className="lx-stat-l">{t('stat1Label')}</div></div>
           <div className="lx-stat"><div className="lx-stat-n">2016</div><div className="lx-stat-l">{t('statSinceLabel')}</div></div>
           <div className="lx-stat"><div className="lx-stat-n"><CounterNumber end={50} suffix="+" /></div><div className="lx-stat-l">{t('statPubLabel')}</div></div>
           <div className="lx-stat"><div className="lx-stat-n"><CounterNumber end={3} /></div><div className="lx-stat-l">{t('statCitiesLabel')}</div></div>

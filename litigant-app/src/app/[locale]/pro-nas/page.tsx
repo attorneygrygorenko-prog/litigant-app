@@ -55,7 +55,7 @@ export default function AboutPage({ params: { locale } }: { params: { locale: Lo
                   />
                 </div>
                 <div className="about-badge">
-                  <div className="ab"><div className="ab-n">9+</div><div className="ab-l">{t('badgeYears')}</div></div>
+                  <div className="ab"><div className="ab-n">10+</div><div className="ab-l">{t('badgeYears')}</div></div>
                   <div className="ab"><div className="ab-n">НААУ</div><div className="ab-l">{t('badgeCommittee')}</div></div>
                   <div className="ab"><div className="ab-n">2016</div><div className="ab-l">{t('badgeLicence')}</div></div>
                 </div>
