@@ -2,6 +2,8 @@ import { NextResponse } from 'next/server';
 import { appendLead, type LeadRow } from '@/lib/sheets';
 import { sendLeadEmail } from '@/lib/email';
 
+import { notifyCrm } from '@/lib/crm';
+
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
 
@@ -10,22 +12,6 @@ const REQUIRED: (keyof LeadRow)[] = ['name', 'position', 'company', 'challenge',
 function clean(v: unknown, max = 2000) {
   if (typeof v !== 'string') return '';
   return v.trim().slice(0, max);
-}
-
-async function notifyCrm(payload: Record<string, string>) {
-  const url = process.env.CRM_WEBHOOK_URL;
-  if (!url) return;
-  try {
-    await fetch(url, {
-      method: 'POST',
-      headers: { 'content-type': 'application/json' },
-      body: JSON.stringify(payload),
-      // Don't block the user response on slow CRMs; cap at 4s.
-      signal: AbortSignal.timeout(4000)
-    });
-  } catch (err) {
-    console.error('crm webhook failed', err);
-  }
 }
 
 export async function POST(req: Request) {
@@ -70,6 +56,7 @@ export async function POST(req: Request) {
   }
 
   await notifyCrm({
+    type: 'case',
     timestamp: new Date().toISOString(),
     name: row.name,
     position: row.position,

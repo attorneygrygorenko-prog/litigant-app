@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import { sendContactEmail, type Office } from '@/lib/smtp';
+import { notifyCrm } from '@/lib/crm';
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
@@ -32,6 +33,17 @@ export async function POST(req: Request) {
   if (!contact) return NextResponse.json({ error: 'missing-contact' }, { status: 400 });
   if (!office) return NextResponse.json({ error: 'missing-office' }, { status: 400 });
   if (!isOffice(office)) return NextResponse.json({ error: 'invalid-office' }, { status: 400 });
+
+  await notifyCrm({
+    type: 'contact',
+    timestamp: new Date().toISOString(),
+    name,
+    contact,
+    office,
+    message,
+    locale,
+    source_page: page
+  });
 
   const result = await sendContactEmail({
     name,

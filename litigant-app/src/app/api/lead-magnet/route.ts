@@ -2,27 +2,14 @@ import { NextResponse } from 'next/server';
 import { appendLead } from '@/lib/sheets';
 import { sendLeadMagnetEmail } from '@/lib/email';
 
+import { notifyCrm } from '@/lib/crm';
+
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
 
 function clean(v: unknown, max = 2000) {
   if (typeof v !== 'string') return '';
   return v.trim().slice(0, max);
-}
-
-async function notifyCrm(payload: Record<string, string>) {
-  const url = process.env.CRM_WEBHOOK_URL;
-  if (!url) return;
-  try {
-    await fetch(url, {
-      method: 'POST',
-      headers: { 'content-type': 'application/json' },
-      body: JSON.stringify(payload),
-      signal: AbortSignal.timeout(4000)
-    });
-  } catch (err) {
-    console.error('crm webhook failed', err);
-  }
 }
 
 export async function POST(req: Request) {
