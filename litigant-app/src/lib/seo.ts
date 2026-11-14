@@ -36,3 +36,7 @@ export function alternates(pathname: string = '/') {
   };
   return { languages };
 }
+
+/** Versioned OG image URL — bump `v` whenever the artwork changes so
+ *  Telegram/Facebook/LinkedIn (which cache by URL) fetch the new image. */
+export const OG_IMAGE = `${SITE_URL}/api/og-image?v=2026-11`;

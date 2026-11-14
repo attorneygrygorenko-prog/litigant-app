@@ -5,7 +5,7 @@ import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server
 import { notFound } from 'next/navigation';
 
 import { routing, type Locale } from '@/i18n/routing';
-import { OG_LOCALE, SITE_URL, alternates } from '@/lib/seo';
+import { OG_IMAGE, OG_LOCALE, SITE_URL, alternates } from '@/lib/seo';
 import { buildJsonLd } from '@/lib/jsonld';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -48,7 +48,7 @@ export async function generateMetadata({
       alternateLocale: Object.values(OG_LOCALE).filter((l) => l !== OG_LOCALE[locale]),
       images: [
         {
-          url: `${SITE_URL}/api/og-image`,
+          url: OG_IMAGE,
           width: 1200,
           height: 630,
           alt: 'Litigant Law Office — Адвокатське бюро · Київ · Одеса'
@@ -59,7 +59,7 @@ export async function generateMetadata({
       card: 'summary_large_image',
       title: t('ogTitle'),
       description: t('ogDescription'),
-      images: [`${SITE_URL}/api/og-image`]
+      images: [OG_IMAGE]
     },
     robots: { index: true, follow: true }
   };

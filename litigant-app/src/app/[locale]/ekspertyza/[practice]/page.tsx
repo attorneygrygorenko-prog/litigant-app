@@ -4,7 +4,7 @@ import { notFound, redirect } from 'next/navigation';
 
 import { Link } from '@/i18n/routing';
 import type { Locale } from '@/i18n/routing';
-import { SITE_URL } from '@/lib/seo';
+import { OG_IMAGE, SITE_URL } from '@/lib/seo';
 import {
   PRACTICE_BY_SLUG,
   PRACTICE_KEYS,
@@ -62,6 +62,7 @@ export async function generateMetadata({
       description: content.metaDescription,
       url: `${SITE_URL}/${locale}/ekspertyza/${slug[locale]}`,
       type: 'article',
+      images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: content.metaTitle }],
     },
   };
 }

@@ -163,6 +163,8 @@ export async function GET() {
     {
       width: 1200,
       height: 630,
+      // default is `immutable, max-age=1y` — messengers then never refetch
+      headers: { 'cache-control': 'public, max-age=3600, s-maxage=86400, stale-while-revalidate=604800' },
       ...(fonts.length > 0 ? { fonts } : {}),
     }
   );
