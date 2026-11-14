@@ -1,19 +1,21 @@
 import './globals.css';
+import './luxe.css';
 import type { ReactNode } from 'react';
-import { Josefin_Sans, Outfit } from 'next/font/google';
+import { Cormorant_Garamond, Manrope } from 'next/font/google';
 import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google';
 import { Analytics as VercelAnalytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 
-const serif = Josefin_Sans({
-  subsets: ['latin', 'latin-ext'],
-  weight: ['300', '400', '600'],
+const serif = Cormorant_Garamond({
+  subsets: ['latin', 'latin-ext', 'cyrillic', 'cyrillic-ext'],
+  weight: ['300', '400', '500', '600'],
+  style: ['normal', 'italic'],
   variable: '--font-serif',
   display: 'swap'
 });
 
-const sans = Outfit({
-  subsets: ['latin', 'latin-ext'],
+const sans = Manrope({
+  subsets: ['latin', 'latin-ext', 'cyrillic', 'cyrillic-ext'],
   weight: ['300', '400', '500', '600'],
   variable: '--font-sans',
   display: 'swap'

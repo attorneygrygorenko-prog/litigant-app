@@ -20,7 +20,7 @@
   },
   "home": {
     "heroTag": "Litigant Law Office · Kyiv · Odesa · Chișinău",
-    "heroTitle": "Litigant.",
+    "heroTitle": "Complex conflicts. Under control.",
     "heroSubtitle": "Boutique law office for owners, C-level and companies in complex corporate conflicts.",
     "heroText": "We do not provide legal services. We engineer the conditions under which your business becomes untouchable.",
     "heroEtymology": "from Lat. litigare — one who drives the case",
@@ -116,7 +116,21 @@
     "formOk": "Thank you. We will reach out within 24 hours.",
     "formErr": "Submission failed. Please retry or email office@litigant.legal",
     "heroTagLinkedIn": "For B2B companies and their owners",
-    "heroTagGoogle": "You were looking for a lawyer — you found one"
+    "heroTagGoogle": "You were looking for a lawyer — you found one",
+    "statSinceLabel": "Insolvency practitioner since 2016",
+    "statPubLabel": "Lectures and publications for the UNBA Higher School of Advocacy",
+    "statCitiesLabel": "Offices: Kyiv · Odesa · Chișinău",
+    "founderLabel": "Founder",
+    "founderName": "Yuriy Grygorenko",
+    "founderRole": "Advocate · Insolvency Practitioner · Forensic Expert",
+    "founderText": "Former investigator, trained in both finance and law. He reads a case through the eyes of an investigator, an economist and an expert at once, and builds the defence where numbers and procedure decide.",
+    "founderCred1": "Chair of the UNBA Committee on the Prevention of Administrative Offences against Advocates (since May 2026)",
+    "founderCred2": "Insolvency practitioner since 2016 · Secretary of the UNBA Bankruptcy Committee",
+    "founderCred3": "Background in the investigative units of the Ministry of Internal Affairs · LL.M. and M.Sc. in Finance",
+    "founderCred4": "Head of a forensic expert institution · Lecturer at the Higher School of Advocacy · UNBA representative in Moldova",
+    "founderMore": "More about the founder",
+    "marqueeLabel": "Publications and professional community",
+    "marqueeItems": "UNBA|Higher School of Advocacy|Lawyers for Lawyers|Advocatenblad|LIGA.Blogs|Yurydychna Gazeta|LegalHub|Advokat Post"
   },
   "about": {
     "metaTitle": "Iurii Grygorenko — Attorney, Arbitration Manager, GR | Litigant Law Office Kyiv",

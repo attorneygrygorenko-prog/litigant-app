@@ -16,10 +16,8 @@
     --b: #CCC8BE;
     --t: #0F0F0F;
     --m: #555250;
-    --serif: 'Josefin Sans', 'Century Gothic', system-ui, sans-serif;
-    --sans: 'Outfit', 'Century Gothic', system-ui, sans-serif;
-    --font-serif: 'Josefin Sans', 'Century Gothic', system-ui, sans-serif;
-    --font-sans: 'Outfit', 'Century Gothic', system-ui, sans-serif;
+    --serif: var(--font-serif), 'Times New Roman', Georgia, serif;
+    --sans: var(--font-sans), 'Helvetica Neue', Arial, sans-serif;
     --W: 1220px;
     --pad: 100px;
   }

@@ -11,6 +11,7 @@ import CounterNumber from '@/components/CounterNumber';
 import TextReveal from '@/components/TextReveal';
 import ScrollReveal from '@/components/ScrollReveal';
 import MagneticButton from '@/components/MagneticButton';
+import InView from '@/components/InView';
 
 export default function HomePage({ params: { locale } }: { params: { locale: Locale } }) {
   setRequestLocale(locale);
@@ -64,48 +65,46 @@ export default function HomePage({ params: { locale } }: { params: { locale: Loc
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(homeFaqLd) }}
       />
-      <section className="hero">
-        <div className="wrap hero-g">
-          <div>
+      <section className="hero lx-hero">
+        <div className="lx-hero-photo" aria-hidden="true">
+          <Image
+            src="/images/photo_1.jpg"
+            alt=""
+            fill
+            priority
+            sizes="(max-width: 1080px) 100vw, 46vw"
+            style={{ objectFit: 'cover', objectPosition: 'center 20%' }}
+          />
+        </div>
+        <div className="lx-hero-grid" aria-hidden="true"><i /><i /><i /></div>
+        <div className="wrap lx-hero-in">
+          <div className="lx-fade">
             <HeroTag
               defaultText={t('heroTag')}
               linkedinText={t('heroTagLinkedIn')}
               googleText={t('heroTagGoogle')}
             />
-            <h1>
-              <TextReveal text={t('heroTitle')} />
-              <span className="sub">
-                <TextReveal text={t('heroSubtitle')} baseDelay={300} />
-              </span>
-            </h1>
-            <div className="hero-line"><span /><span /></div>
-            <p className="hero-text">{t('heroText')}</p>
-            <p className="hero-etym">{t('heroEtymology')}</p>
-            <div className="hero-cta">
-              <MagneticButton>
-                <Link href="/kontakty" className="btn btn-g">{t('ctaSubmit')}</Link>
-              </MagneticButton>
-              <Link href="/ekspertyza" className="btn btn-w">{t('ctaVectors')}</Link>
-            </div>
-            <p className="hero-calm">{t('heroCalm')}</p>
-            <div className="hero-stats">
-              <div className="hs"><div className="hs-n"><CounterNumber end={9} suffix="+" /></div><div className="hs-l">{t('stat1Label')}</div></div>
-              <div className="hs"><div className="hs-n"><CounterNumber end={3} /></div><div className="hs-l">{t('stat2Label')}</div></div>
-              <div className="hs"><div className="hs-n"><CounterNumber end={2} suffix="+" /></div><div className="hs-l">{t('stat3Label')}</div></div>
-            </div>
           </div>
-          <div className="hero-photo" aria-hidden="true">
-            <Image
-              src="/images/photo_1.jpg"
-              alt=""
-              fill
-              priority
-              sizes="(max-width: 1080px) 0vw, 50vw"
-              style={{ objectFit: 'cover' }}
-            />
-            <div className="hero-photo-overlay" />
+          <h1 className="lx-h1">
+            <TextReveal text={t('heroTitle')} baseDelay={250} step={110} />
+          </h1>
+          <p className="lx-hero-sub lx-fade lx-d1">{t('heroSubtitle')}</p>
+          <p className="hero-text lx-fade lx-d2">{t('heroText')}</p>
+          <div className="hero-cta lx-fade lx-d3">
+            <MagneticButton>
+              <Link href="/kontakty" className="btn btn-g">{t('ctaSubmit')}</Link>
+            </MagneticButton>
+            <Link href="/ekspertyza" className="btn btn-w">{t('ctaVectors')}</Link>
           </div>
+          <p className="hero-calm lx-fade lx-d4">{t('heroCalm')}</p>
         </div>
+        <div className="wrap lx-stats lx-fade lx-d4">
+          <div className="lx-stat"><div className="lx-stat-n"><CounterNumber end={9} suffix="+" /></div><div className="lx-stat-l">{t('stat1Label')}</div></div>
+          <div className="lx-stat"><div className="lx-stat-n">2016</div><div className="lx-stat-l">{t('statSinceLabel')}</div></div>
+          <div className="lx-stat"><div className="lx-stat-n"><CounterNumber end={50} suffix="+" /></div><div className="lx-stat-l">{t('statPubLabel')}</div></div>
+          <div className="lx-stat"><div className="lx-stat-n"><CounterNumber end={3} /></div><div className="lx-stat-l">{t('statCitiesLabel')}</div></div>
+        </div>
+        <div className="lx-scroll" aria-hidden="true" />
       </section>
 
       <section className="manifesto">
@@ -143,6 +142,53 @@ export default function HomePage({ params: { locale } }: { params: { locale: Loc
                 </Link>
               </ScrollReveal>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="lx-founder">
+        <div className="wrap lx-founder-g">
+          <InView className="lx-founder-wrap">
+            <div className="lx-founder-photo">
+              <Image
+                src="/images/photo_about.jpg"
+                alt={t('founderName')}
+                fill
+                sizes="(max-width: 1080px) 460px, 40vw"
+                style={{ objectFit: 'cover', objectPosition: 'center 15%' }}
+              />
+            </div>
+            <div className="lx-founder-frame" aria-hidden="true" />
+          </InView>
+          <ScrollReveal>
+            <span className="sh-label">{t('founderLabel')}</span>
+            <h2>{t('founderName')}</h2>
+            <p className="lx-founder-role">{t('founderRole')}</p>
+            <p className="lx-founder-text">{t('founderText')}</p>
+            <ul className="lx-creds">
+              {[1, 2, 3, 4].map((n) => (
+                <li key={n}>
+                  <span>0{n}</span>
+                  {t(`founderCred${n}` as 'founderCred1')}
+                </li>
+              ))}
+            </ul>
+            <Link href="/pro-nas" className="lx-link">{t('founderMore')} <i /></Link>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      <section className="lx-marquee" aria-label={t('marqueeLabel')}>
+        <p className="lx-marquee-label">{t('marqueeLabel')}</p>
+        <div className="lx-marquee-mask">
+          <div className="lx-marquee-track">
+            {[0, 1].map((copy) =>
+              t('marqueeItems').split('|').map((item) => (
+                <span key={`${copy}-${item}`} className="lx-marquee-item" aria-hidden={copy === 1 || undefined}>
+                  {item}
+                </span>
+              ))
+            )}
           </div>
         </div>
       </section>

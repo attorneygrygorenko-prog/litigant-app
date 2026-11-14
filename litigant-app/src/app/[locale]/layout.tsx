@@ -17,7 +17,6 @@ import ExitIntent from '@/components/ExitIntent';
 import StickyBar from '@/components/StickyBar';
 import ScrollTrigger from '@/components/ScrollTrigger';
 import CallbackWidget from '@/components/CallbackWidget';
-import CursorGlow from '@/components/CursorGlow';
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -100,7 +99,6 @@ export default async function LocaleLayout({
       <ScrollTrigger />
       <StickyBar />
       <CallbackWidget />
-      <CursorGlow />
     </NextIntlClientProvider>
   );
 }

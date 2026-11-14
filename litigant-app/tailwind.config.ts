@@ -22,8 +22,8 @@ const config: Config = {
         muted: '#555250'
       },
       fontFamily: {
-        serif: ['var(--font-serif)', 'Josefin Sans', 'Century Gothic', 'system-ui', 'sans-serif'],
-        sans: ['var(--font-sans)', 'Outfit', 'Century Gothic', 'system-ui', 'sans-serif']
+        serif: ['var(--font-serif)', 'Georgia', 'serif'],
+        sans: ['var(--font-sans)', 'Arial', 'sans-serif']
       },
       maxWidth: {
         wrap: '1220px'

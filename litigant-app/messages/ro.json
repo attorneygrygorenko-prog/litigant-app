@@ -20,7 +20,7 @@
   },
   "home": {
     "heroTag": "Litigant Law Office · Chișinău · Kyiv · Odesa",
-    "heroTitle": "Litigant.",
+    "heroTitle": "Conflicte complexe. Sub control.",
     "heroSubtitle": "Birou de avocați boutique pentru proprietari, C-level și companii în conflicte corporative complexe.",
     "heroText": "Nu oferim servicii juridice. Proiectăm condițiile în care afacerea dvs. devine intangibilă.",
     "heroEtymology": "din lat. litigare — cel care mișcă cauza",
@@ -116,7 +116,21 @@
     "formOk": "Mulțumim. Vă vom contacta în 24 de ore.",
     "formErr": "Trimiterea a eșuat. Reîncercați sau scrieți la office@litigant.legal",
     "heroTagLinkedIn": "Pentru companii B2B și proprietarii lor",
-    "heroTagGoogle": "Ați căutat un avocat — l-ați găsit"
+    "heroTagGoogle": "Ați căutat un avocat — l-ați găsit",
+    "statSinceLabel": "Administrator judiciar din 2016",
+    "statPubLabel": "Prelegeri și publicații pentru Școala Superioară a Avocaturii UNBA",
+    "statCitiesLabel": "Birouri: Kiev · Odesa · Chișinău",
+    "founderLabel": "Fondator",
+    "founderName": "Iurii Grygorenko",
+    "founderRole": "Avocat · Administrator judiciar · Expert judiciar",
+    "founderText": "Fost anchetator, cu studii în finanțe și drept. Privește cazul simultan prin ochii anchetatorului, ai economistului și ai expertului și construiește apărarea acolo unde decid cifrele și procedura.",
+    "founderCred1": "Președinte al Comitetului UNBA pentru prevenirea contravențiilor săvârșite împotriva avocaților (din mai 2026)",
+    "founderCred2": "Administrator judiciar din 2016 · Secretar al Comitetului UNBA pentru insolvență",
+    "founderCred3": "Experiență în unitățile de urmărire penală ale MAI · master în drept și master în finanțe",
+    "founderCred4": "Conducător al unei instituții de expertiză criminalistică · lector la Școala Superioară a Avocaturii · reprezentant UNBA în Republica Moldova",
+    "founderMore": "Mai multe despre fondator",
+    "marqueeLabel": "Publicații și comunitate profesională",
+    "marqueeItems": "UNBA|Școala Superioară a Avocaturii|Lawyers for Lawyers|Advocatenblad|LIGA.Blogs|Yurydychna Gazeta|LegalHub|Advokat Post"
   },
   "about": {
     "metaTitle": "Iurii Grygorenko — Avocat, Administrator arbitral, GR | Litigant Law Office",
