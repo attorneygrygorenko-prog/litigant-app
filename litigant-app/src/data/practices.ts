@@ -1,10 +1,18 @@
 import type { Locale } from '@/i18n/routing';
+import { INTL_ARBITRATION, MARITIME } from './practices-intl';
 
 /**
  * Канонічні ключі 4 практик (мовно-нейтральні).
  * Slug-и локалізовані: див. SLUG_BY_LOCALE.
  */
-export type PracticeKey = 'wcc' | 'bankruptcy' | 'state-disputes' | 'lobbying-gr' | 'rd4u-damages';
+export type PracticeKey =
+  | 'wcc'
+  | 'bankruptcy'
+  | 'state-disputes'
+  | 'lobbying-gr'
+  | 'rd4u-damages'
+  | 'maritime'
+  | 'intl-arbitration';
 
 export const PRACTICE_KEYS: PracticeKey[] = [
   'wcc',
@@ -12,6 +20,8 @@ export const PRACTICE_KEYS: PracticeKey[] = [
   'state-disputes',
   'lobbying-gr',
   'rd4u-damages',
+  'maritime',
+  'intl-arbitration',
 ];
 
 /** URL slug per locale per practice. */
@@ -40,6 +50,16 @@ export const SLUG_BY_LOCALE: Record<PracticeKey, Record<Locale, string>> = {
     ua: 'rd4u-kompensatsiia-zbytkiv',
     en: 'rd4u-war-damage-compensation',
     ro: 'rd4u-compensare-daune-razboi',
+  },
+  maritime: {
+    ua: 'morske-pravo',
+    en: 'maritime-shipping-law',
+    ro: 'drept-maritim',
+  },
+  'intl-arbitration': {
+    ua: 'mizhnarodnyi-arbitrazh',
+    en: 'international-arbitration',
+    ro: 'arbitraj-international',
   },
 };
 
@@ -1351,4 +1371,6 @@ export const PRACTICES: Record<PracticeKey, Record<Locale, PracticeContent>> = {
       breadcrumbCurrent: 'Compensare prin RD4U',
     },
   },
+  maritime: MARITIME,
+  'intl-arbitration': INTL_ARBITRATION,
 };

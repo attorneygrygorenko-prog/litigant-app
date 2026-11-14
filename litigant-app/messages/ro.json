@@ -546,6 +546,23 @@
     "linkEkuName": "Instituția de expertiză criminalistică",
     "linkEkuSub": "expertize judiciare · eku-expert.od.ua",
     "linkGrygName": "Administrator judiciar",
-    "linkGrygSub": "insolvență · grygorenko.pro"
+    "linkGrygSub": "insolvență · grygorenko.pro",
+    "maritime": "Drept maritim",
+    "intlArbitration": "Arbitraj internațional"
+  },
+  "intl": {
+    "label": "Clienți internaționali",
+    "title": "Drept maritim și arbitraj internațional — avocatul dvs. în Ucraina",
+    "text": "Pentru armatori, navlositori, traderi, cluburi P&I, investitori și avocații lor din străinătate: sechestru de nave în porturile Mării Negre, litigii privind marfa și charter-party, recunoașterea și executarea sentințelor arbitrale străine, măsuri asigurătorii și identificarea activelor în Ucraina. Lucrăm în engleză.",
+    "maritimeTitle": "Drept maritim",
+    "maritimeText": "Sechestru și eliberare de nave, litigii privind marfa și charter-party, dispute cu portul și vama, daune de război.",
+    "arbTitle": "Arbitraj internațional",
+    "arbText": "Executarea sentințelor străine conform Convenției de la New York, măsuri asigurătorii, proceduri la ICAC și CAM.",
+    "more": "Detalii despre practică",
+    "fact1": "Birou la Odesa, cel mai mare cluster portuar al Ucrainei",
+    "fact2": "Fondatorul — absolvent al Academiei Naționale Maritime din Odesa",
+    "fact3": "Instituție proprie de expertiză pentru cuantificarea daunelor",
+    "fact4": "Limba de lucru — engleza",
+    "cta": "Discutați un caz"
   }
 }

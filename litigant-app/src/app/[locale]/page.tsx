@@ -12,6 +12,7 @@ import TextReveal from '@/components/TextReveal';
 import ScrollReveal from '@/components/ScrollReveal';
 import MagneticButton from '@/components/MagneticButton';
 import InView from '@/components/InView';
+import IntlDesk from '@/components/IntlDesk';
 
 export default function HomePage({ params: { locale } }: { params: { locale: Locale } }) {
   setRequestLocale(locale);
@@ -145,6 +146,8 @@ export default function HomePage({ params: { locale } }: { params: { locale: Loc
           </div>
         </div>
       </section>
+
+      <IntlDesk locale={locale} />
 
       <section className="lx-founder">
         <div className="wrap lx-founder-g">

@@ -290,3 +290,34 @@ footer { color: rgba(242, 237, 228, .62); border-top: 1px solid var(--line-d); }
 .foot-links a:hover span { color: var(--g); }
 @media (max-width: 1080px) { .foot-g { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 700px) { .foot-g { grid-template-columns: 1fr; } }
+
+/* ---------- International desk (maritime + international arbitration) ---------- */
+.lx-intl { background: var(--n); color: var(--w); padding: var(--pad) 0; position: relative; overflow: hidden; border-top: 1px solid var(--line-d); }
+.lx-intl::before { content: ''; position: absolute; left: 0; top: 0; width: 6px; height: 100%; background: var(--g); }
+.lx-intl-head { max-width: 820px; margin-bottom: 56px; }
+.lx-intl-head h2 { font-family: var(--serif); font-weight: 300; font-size: clamp(36px, 4.4vw, 60px); line-height: 1.04; margin: 6px 0 20px; color: var(--w); }
+.lx-intl-head p { color: rgba(242, 237, 228, .66); font-size: 17px; line-height: 1.75; max-width: 680px; }
+.lx-intl-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 48px; }
+.lx-intl-card { position: relative; display: flex; flex-direction: column; padding: 40px 36px; border: 1px solid var(--line-d); color: var(--w); overflow: hidden; isolation: isolate; transition: border-color .4s var(--ease); }
+.lx-intl-card::before { content: ''; position: absolute; inset: 0; z-index: -1; background: var(--n2); transform: scaleY(0); transform-origin: bottom; transition: transform .7s var(--ease); }
+.lx-intl-card:hover { border-color: rgba(201, 169, 110, .6); }
+.lx-intl-card:hover::before { transform: scaleY(1); transform-origin: top; }
+.lx-intl-n { font-family: var(--serif); font-size: 22px; color: var(--g); margin-bottom: 18px; }
+.lx-intl-card h3 { font-family: var(--serif); font-weight: 300; font-size: clamp(30px, 3vw, 42px); line-height: 1.05; margin-bottom: 14px; }
+.lx-intl-card p { color: rgba(242, 237, 228, .62); font-size: 15px; line-height: 1.7; margin-bottom: 28px; flex-grow: 1; }
+.lx-intl-card .lx-link { color: var(--w); align-self: flex-start; }
+.lx-intl-facts { list-style: none; display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--line-d); margin-bottom: 44px; }
+.lx-intl-facts li { padding: 22px 20px 0 0; font-size: 13px; line-height: 1.55; color: rgba(242, 237, 228, .7); position: relative; padding-left: 18px; }
+.lx-intl-facts li::before { content: ''; position: absolute; left: 0; top: 30px; width: 7px; height: 7px; background: var(--g); transform: rotate(45deg); }
+@media (max-width: 900px) { .lx-intl-cards { grid-template-columns: 1fr; } .lx-intl-facts { grid-template-columns: 1fr 1fr; gap: 0 16px; } }
+@media (max-width: 560px) { .lx-intl-facts { grid-template-columns: 1fr; } .lx-intl-card { padding: 30px 24px; } }
+
+/* ---------- practice landing hero (.ph had no styles: hero was invisible) ---------- */
+.ph { background: var(--n); color: var(--w); padding: 136px 0 88px; position: relative; overflow: hidden; }
+.ph::after { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 1px; background: var(--line-d); }
+.ph::before { content: ''; position: absolute; top: 0; bottom: 0; left: 75%; width: 1px; background: var(--line-d); }
+.ph .bc { color: rgba(242, 237, 228, .55); margin-bottom: 26px; flex-wrap: wrap; }
+.ph .bc a:hover { color: var(--w); }
+.ph .bc span:last-child { color: var(--g); }
+.ph h1 { font-family: var(--serif); font-weight: 300; font-size: clamp(38px, 5vw, 72px); line-height: 1.04; letter-spacing: -.005em; max-width: 980px; color: var(--w); }
+@media (max-width: 700px) { .ph { padding: 104px 0 56px; } }

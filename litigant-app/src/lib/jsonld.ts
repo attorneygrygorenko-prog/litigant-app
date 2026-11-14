@@ -76,11 +76,11 @@ export function buildJsonLd(locale: Locale) {
           locale === 'ro'
             ? 'Birou de avocați specializat în White-Collar Crime, conflicte corporative, faliment și GR-Litigation. Chișinău, Kyiv, Odesa.'
             : locale === 'en'
-            ? 'Law firm specialised in White-Collar Crime, corporate conflicts, bankruptcy and GR-Litigation. Kyiv, Odesa, Chișinău.'
+            ? 'Ukrainian law firm: maritime and shipping law, international arbitration and enforcement of foreign awards, White-Collar Crime, corporate conflicts, bankruptcy and GR-Litigation. Kyiv, Odesa, Chișinău.'
             : 'Адвокатське бюро зі спеціалізацією на White-Collar Crime, корпоративних конфліктах, банкрутстві та GR-Litigation. Київ, Одеса, Кишинів.',
         telephone: '+380445010207',
         email: 'kyiv@litigant.legal',
-        areaServed: ['UA', 'MD'],
+        areaServed: ['UA', 'MD', 'EU', 'GB', 'CH', 'TR', 'AE', 'SG'],
         knowsLanguage: ['uk', 'en', 'ro'],
         priceRange: '$$$$',
         address: [
@@ -142,7 +142,9 @@ export function buildJsonLd(locale: Locale) {
             { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Anti-Raiding Engineering' } },
             { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Bankruptcy & Restructuring' } },
             { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'GR & Lobbying' } },
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Disputes with the State' } }
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Disputes with the State' } },
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Maritime & Shipping Law' } },
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'International Arbitration & Enforcement of Awards' } }
           ]
         },
         knowsAbout: [
@@ -151,7 +153,11 @@ export function buildJsonLd(locale: Locale) {
           'Corporate Conflicts',
           'Government Relations Ukraine',
           'Anti-Raiding',
-          'Debt Restructuring'
+          'Debt Restructuring',
+          'Maritime Law',
+          'Ship Arrest',
+          'International Commercial Arbitration',
+          'Enforcement of Foreign Arbitral Awards'
         ],
         sameAs: PERSON_SAME_AS
       },
@@ -160,7 +166,8 @@ export function buildJsonLd(locale: Locale) {
         '@id': `${SITE_URL}/#founder`,
         name: 'Юрій Григоренко',
         alternateName: 'Iurii Grygorenko',
-        jobTitle: 'Managing Partner, Attorney, Arbitration Manager',
+        jobTitle: 'Managing Partner, Attorney, Insolvency Practitioner',
+        alumniOf: { '@type': 'CollegeOrUniversity', name: 'Odesa National Maritime Academy' },
         worksFor: { '@id': `${SITE_URL}/#firm` },
         url: SITE_URL,
         sameAs: PERSON_SAME_AS,
@@ -170,7 +177,11 @@ export function buildJsonLd(locale: Locale) {
           'Corporate Conflicts',
           'Government Relations Ukraine',
           'Anti-Raiding',
-          'Debt Restructuring'
+          'Debt Restructuring',
+          'Maritime Law',
+          'Ship Arrest',
+          'International Commercial Arbitration',
+          'Enforcement of Foreign Arbitral Awards'
         ],
         hasCredential: {
           '@type': 'EducationalOccupationalCredential',

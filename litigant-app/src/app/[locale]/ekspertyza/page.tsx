@@ -4,6 +4,7 @@ import type { Metadata } from 'next';
 
 import PageHero from '@/components/PageHero';
 import ServiceViewTracker from '@/components/ServiceViewTracker';
+import IntlDesk from '@/components/IntlDesk';
 import { Link } from '@/i18n/routing';
 import type { Locale } from '@/i18n/routing';
 import { SITE_URL, alternates } from '@/lib/seo';
@@ -80,6 +81,8 @@ export default function ServicesPage({ params: { locale } }: { params: { locale:
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
       <ServiceViewTracker service="all_practices" />
       <PageHero breadcrumb={t('breadcrumb')} title={t('title')} lead={t('lead')} />
+
+      <IntlDesk locale={locale} />
 
       <section id="wcc" className="sec">
         <div className="wrap">

@@ -16,7 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         uk: `${SITE_URL}/ua${path}`,
         en: `${SITE_URL}/en${path}`,
         ro: `${SITE_URL}/ro${path}`,
-        'x-default': `${SITE_URL}/ua${path}`
+        'x-default': `${SITE_URL}/en${path}`
       };
       return {
         url,
@@ -37,7 +37,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         uk: `${SITE_URL}/ua/ekspertyza/${slug.ua}`,
         en: `${SITE_URL}/en/ekspertyza/${slug.en}`,
         ro: `${SITE_URL}/ro/ekspertyza/${slug.ro}`,
-        'x-default': `${SITE_URL}/ua/ekspertyza/${slug.ua}`
+        'x-default': `${SITE_URL}/en/ekspertyza/${slug.en}`
       };
       return {
         url,

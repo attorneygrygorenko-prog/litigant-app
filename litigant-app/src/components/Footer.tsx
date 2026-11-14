@@ -75,6 +75,8 @@ export default function Footer() {
               <li><Link href="/ekspertyza">{tFooter('stateDisputes')}</Link></li>
               <li><Link href="/ekspertyza">{tFooter('arbitration')}</Link></li>
               <li><Link href="/ekspertyza">GR · Lobbying</Link></li>
+              <li><Link href="/ekspertyza#international">{tFooter('maritime')}</Link></li>
+              <li><Link href="/ekspertyza#international">{tFooter('intlArbitration')}</Link></li>
             </ul>
           </div>
 

@@ -54,7 +54,7 @@ export async function generateMetadata({
         uk: `${SITE_URL}/ua/ekspertyza/${slug.ua}`,
         en: `${SITE_URL}/en/ekspertyza/${slug.en}`,
         ro: `${SITE_URL}/ro/ekspertyza/${slug.ro}`,
-        'x-default': `${SITE_URL}/ua/ekspertyza/${slug.ua}`,
+        'x-default': `${SITE_URL}/en/ekspertyza/${slug.en}`,
       },
     },
     openGraph: {

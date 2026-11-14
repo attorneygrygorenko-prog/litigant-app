@@ -32,7 +32,7 @@ export function alternates(pathname: string = '/') {
     uk: pathFor('ua', pathname),
     en: pathFor('en', pathname),
     ro: pathFor('ro', pathname),
-    'x-default': pathFor('ua', pathname)
+    'x-default': pathFor('en', pathname)
   };
   return { languages };
 }

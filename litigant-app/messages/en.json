@@ -1,10 +1,10 @@
 {
   "meta": {
-    "title": "Litigant Law Office — B2B Attorney Kyiv | White-Collar Crime, Bankruptcy, GR | Iurii Grygorenko",
-    "description": "Litigant Law Office — Iurii Grygorenko's law firm. Business defence: White-Collar Crime, anti-raiding engineering, bankruptcy, GR-Litigation. Offices in Kyiv and Odesa. Engagement after case analysis.",
-    "keywords": "B2B attorney Kyiv, white collar crime lawyer, business defence criminal proceedings, anti-raiding engineering, bankruptcy restructuring, GR lobbying Ukraine, Odesa attorney",
-    "ogTitle": "Litigant Law Office — B2B Attorney | Iurii Grygorenko",
-    "ogDescription": "Business defence: White-Collar Crime, anti-raiding engineering, bankruptcy, GR-Litigation. Offices in Kyiv and Odesa."
+    "title": "Litigant Law Office — Ukrainian Law Firm | Maritime Law, International Arbitration, White-Collar Crime",
+    "description": "Ukrainian law firm for foreign and domestic businesses: maritime and shipping law (ship arrest, cargo claims, Odesa), international arbitration and enforcement of foreign awards, White-Collar Crime, bankruptcy, GR. Offices in Kyiv and Odesa. English-speaking team.",
+    "keywords": "Ukrainian law firm, maritime lawyer Ukraine, ship arrest Odesa, international arbitration Ukraine, enforcement of arbitral award Ukraine, white collar crime lawyer Kyiv, bankruptcy Ukraine, Odesa attorney, English-speaking lawyer Ukraine",
+    "ogTitle": "Litigant Law Office — Maritime Law & International Arbitration in Ukraine",
+    "ogDescription": "Your counsel on the ground in Ukraine: ship arrest and cargo claims in Black Sea ports, enforcement of foreign arbitral awards, business defence. Kyiv · Odesa."
   },
   "nav": {
     "home": "Home",
@@ -49,7 +49,7 @@
     "prac2Title": "Disputes with the state",
     "prac2Text": "GR-Litigation. Challenging state decisions, tax defence, customs disputes. Changing the regulatory environment through legal mechanisms.",
     "prac3Title": "Arbitration & restructuring",
-    "prac3Text": "Crisis management, bankruptcy and debt restructuring, arbitration management, asset protection in insolvency proceedings.",
+    "prac3Text": "Crisis management, bankruptcy and debt restructuring, insolvency practitioner services, asset protection in insolvency proceedings.",
     "prac4Title": "Lobbying & GR",
     "prac4Text": "Protecting business interests at the legislative formation level. Representation before state authorities. International legal coordination (Moldova).",
     "learnMore": "Learn more",
@@ -133,17 +133,17 @@
     "marqueeItems": "UNBA|Higher School of Advocacy|Lawyers for Lawyers|Advocatenblad|LIGA.Blogs|Yurydychna Gazeta|LegalHub|Advokat Post"
   },
   "about": {
-    "metaTitle": "Iurii Grygorenko — Attorney, Arbitration Manager, GR | Litigant Law Office Kyiv",
-    "metaDescription": "Iurii Grygorenko — attorney (Bar Certificate No. 002787), arbitration manager, Secretary of the UBA Bankruptcy Committee, UBA Representative in Moldova. Practising since 2016.",
-    "metaKeywords": "Iurii Grygorenko attorney, arbitration manager Odesa Kyiv, UBA bankruptcy committee secretary, Litigant Law Office",
+    "metaTitle": "Iurii Grygorenko — Attorney, Insolvency Practitioner, GR | Litigant Law Office Kyiv",
+    "metaDescription": "Iurii Grygorenko — attorney (Bar Certificate No. 002787), insolvency practitioner, Secretary of the UBA Bankruptcy Committee, UBA Representative in Moldova. Practising since 2016.",
+    "metaKeywords": "Iurii Grygorenko attorney, insolvency practitioner Odesa Kyiv, UBA bankruptcy committee secretary, Litigant Law Office",
     "breadcrumb": "About",
     "title": "Iurii Grygorenko",
-    "subtitle": "Attorney · Arbitration Manager · Secretary of the UBA Bankruptcy Committee · UBA Representative in the Republic of Moldova",
-    "lead": "Attorney, arbitration manager, lobbying subject. Among a handful of practitioners in Ukraine whose work spans all three dimensions of legal influence.",
+    "subtitle": "Attorney · Insolvency Practitioner · Secretary of the UBA Bankruptcy Committee · UBA Representative in the Republic of Moldova",
+    "lead": "Attorney, insolvency practitioner, lobbying subject. Among a handful of practitioners in Ukraine whose work spans all three dimensions of legal influence.",
     "badgeYears": "Years",
     "badgeCommittee": "Committee",
     "badgeLicence": "Licence",
-    "role": "Attorney · Arbitration manager · Lobbying subject",
+    "role": "Attorney · Insolvency practitioner · Lobbying subject",
     "para1": "Iurii Grygorenko began his career in criminal proceedings — where stakes are highest. He progressed from defence in complex criminal matters to shaping the legal framework at UBA committee level and international representation.",
     "etymQuote": "Litigant — Latin litigare, “to drive the case forward”. Our role is not to accompany the process, but to control its direction. Where there is strategy — there is outcome.",
     "para2": "His practice spans three distinct dimensions: advocacy (asset protection and White-Collar Crime), arbitration (crisis management and bankruptcy) and lobbying (changing the regulatory environment). Precision in every detail — like a Breitling.",
@@ -177,7 +177,7 @@
     "faq": [
       {
         "q": "Who is Iurii Grygorenko, attorney?",
-        "a": "Iurii Grygorenko is an attorney (Bar Certificate No. 002787, issued by the Bar Council of Odesa Region on 16.03.2016, Resolution No. 44), arbitration manager and lobbying subject. He serves as Secretary of the UBA Committee on Bankruptcy, Deputy Head of the UBA Committee on Expert Support for Legal Practice, and the official Representative of the Ukrainian National Bar Association in the Republic of Moldova. He began his practice in criminal proceedings — White-Collar Crime, where the stakes are highest. Focus: B2B clients only — business owners, C-level executives, corporate conflicts, assets at risk. Cases handled in Kyiv and Odesa, with international coordination from Chișinău. Combines three dimensions of legal influence — advocacy, arbitration, lobbying — without conflict of interest."
+        "a": "Iurii Grygorenko is an attorney (Bar Certificate No. 002787, issued by the Bar Council of Odesa Region on 16.03.2016, Resolution No. 44), insolvency practitioner and lobbying subject. He serves as Secretary of the UBA Committee on Bankruptcy, Deputy Head of the UBA Committee on Expert Support for Legal Practice, and the official Representative of the Ukrainian National Bar Association in the Republic of Moldova. He began his practice in criminal proceedings — White-Collar Crime, where the stakes are highest. Focus: B2B clients only — business owners, C-level executives, corporate conflicts, assets at risk. Cases handled in Kyiv and Odesa, with international coordination from Chișinău. Combines three dimensions of legal influence — advocacy, arbitration, lobbying — without conflict of interest."
       },
       {
         "q": "What is Litigant Law Office?",
@@ -191,7 +191,7 @@
   },
   "services": {
     "metaTitle": "Practices | Bankruptcy, WCC, GR-Litigation, Anti-raiding — Litigant Law Office",
-    "metaDescription": "Bankruptcy and debt restructuring, search defence, tax appeals, anti-raiding engineering, GR-Litigation. Attorney and arbitration manager Iurii Grygorenko.",
+    "metaDescription": "Bankruptcy and debt restructuring, search defence, tax appeals, anti-raiding engineering, GR-Litigation. Attorney and insolvency practitioner Iurii Grygorenko.",
     "metaKeywords": "bankruptcy of enterprises, subsidiary liability of directors, defence during searches, challenging tax decisions, debt restructuring, white-collar crime lawyer, anti-raiding engineering Kyiv",
     "breadcrumb": "Practices",
     "title": "Legal Practices: Bankruptcy, White-Collar Crime, GR-Litigation, Anti-raiding Defence",
@@ -241,12 +241,12 @@
         "Tenders, AMCU, protection from unlawful decisions"
       ]
     ],
-    "block3Title": "Bankruptcy and debt restructuring: arbitration manager, creditor protection, subsidiary liability",
-    "block3Text": "Crisis management and asset protection in insolvency proceedings. Iurii Grygorenko is an arbitration manager and Secretary of the UBA Bankruptcy Committee.",
+    "block3Title": "Bankruptcy and debt restructuring: insolvency practitioner, creditor protection, subsidiary liability",
+    "block3Text": "Crisis management and asset protection in insolvency proceedings. Iurii Grygorenko is an insolvency practitioner and Secretary of the UBA Bankruptcy Committee.",
     "block3Items": [
       [
-        "Arbitration management",
-        "Arbitration manager services in bankruptcy proceedings"
+        "Insolvency practitioner services",
+        "Insolvency practitioner services in bankruptcy proceedings"
       ],
       [
         "Creditor protection",
@@ -295,8 +295,8 @@
         "a": "Anti-raiding engineering means building systemic legal barriers that make a hostile takeover economically pointless. Preventive layer: corporate structure audit, identifying weaknesses (charter documents, registers, shareholder agreements, security over key assets), restructuring ownership through holdings and trusts, duplicating critical documentation in secure storage. Reactive layer once an attack begins: judicial injunctions blocking unlawful registration actions, criminal proceedings against participants under Article 206 of the Criminal Code (obstruction of lawful business activity), tracing beneficiaries via international requests. Litigant handles these cases end-to-end — from registry-level actions to the Supreme Court, with a focus on stopping the attack and recovering assets if already seized."
       },
       {
-        "q": "When is an arbitration manager needed?",
-        "a": "An arbitration manager is appointed by the court in bankruptcy proceedings and performs one of three functions: property administrator at the asset administration stage, rehabilitation manager when an insolvency restructuring plan is approved, or liquidator in the liquidation procedure. Creditors want an independent professional who will conduct asset inventory, challenge suspicious transactions of the debtor over the past three years (Article 42 of the Bankruptcy Code of Ukraine), recover receivables, and ensure equal satisfaction of claims. Iurii Grygorenko is both an arbitration manager and Secretary of the UBA Bankruptcy Committee — a dual role that ensures technical precision and current Supreme Court jurisprudence awareness."
+        "q": "When is an insolvency practitioner needed?",
+        "a": "An insolvency practitioner (arbitration manager under Ukrainian law) is appointed by the court in bankruptcy proceedings and performs one of three functions: property administrator at the asset administration stage, rehabilitation manager when an insolvency restructuring plan is approved, or liquidator in the liquidation procedure. Creditors want an independent professional who will conduct asset inventory, challenge suspicious transactions of the debtor over the past three years (Article 42 of the Bankruptcy Code of Ukraine), recover receivables, and ensure equal satisfaction of claims. Iurii Grygorenko is both an insolvency practitioner and Secretary of the UBA Bankruptcy Committee — a dual role that ensures technical precision and current Supreme Court jurisprudence awareness."
       },
       {
         "q": "What is GR-Litigation?",
@@ -546,6 +546,23 @@
     "linkEkuName": "Forensic Expert Institution",
     "linkEkuSub": "forensic expertise · eku-expert.od.ua",
     "linkGrygName": "Insolvency Practitioner",
-    "linkGrygSub": "bankruptcy · grygorenko.pro"
+    "linkGrygSub": "bankruptcy · grygorenko.pro",
+    "maritime": "Maritime & Shipping",
+    "intlArbitration": "International Arbitration"
+  },
+  "intl": {
+    "label": "International clients",
+    "title": "Maritime law and international arbitration — your counsel on the ground in Ukraine",
+    "text": "For shipowners, charterers, commodity traders, P&I clubs, investors and their lawyers abroad: vessel arrests in Black Sea ports, cargo and charter-party disputes, recognition and enforcement of foreign arbitral awards, interim measures and asset tracing in Ukraine. English is our working language.",
+    "maritimeTitle": "Maritime & Shipping",
+    "maritimeText": "Ship arrest and release, cargo and charter-party claims, port and customs disputes, war-risk losses, shipping insolvency.",
+    "arbTitle": "International Arbitration",
+    "arbText": "Enforcement of foreign awards under the New York Convention, interim relief, ICAC and MAC proceedings, Ukrainian counsel to LCIA, ICC, SCC and LMAA teams.",
+    "more": "Explore the practice",
+    "fact1": "Office in Odesa, Ukraine's largest port cluster",
+    "fact2": "Founder's law degree from Odesa National Maritime Academy",
+    "fact3": "In-house forensic expert institution for loss quantum",
+    "fact4": "Working language: English",
+    "cta": "Discuss a matter in English"
   }
 }
