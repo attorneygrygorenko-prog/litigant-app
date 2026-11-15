@@ -1,4 +1,5 @@
 import nodemailer from 'nodemailer';
+import { Resend } from 'resend';
 
 export type Office = 'kyiv' | 'odesa';
 
@@ -56,7 +57,6 @@ const EMAIL_RX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 export async function sendContactEmail(payload: ContactPayload): Promise<{ ok: true } | { ok: false; error: string }> {
   const t = getTransporter();
-  if (!t) return { ok: false, error: 'smtp-not-configured' };
 
   const { to, cc, label } = recipientFor(payload.office);
   const from = process.env.SMTP_FROM || process.env.SMTP_USER || '';
@@ -93,6 +93,34 @@ export async function sendContactEmail(payload: ContactPayload): Promise<{ ok: t
     `Повідомлення: ${payload.message || '—'}\n` +
     `Сторінка: ${payload.page || '—'}\n` +
     `Час: ${new Date().toLocaleString('uk-UA', { timeZone: 'Europe/Kyiv' })}\n`;
+
+  // No SMTP_* on Vercel → send through Resend (already used by /api/lead).
+  // LEAD_NOTIFY_EMAIL gets a copy so the lead lands in an inbox known to work.
+  if (!t) {
+    const key = process.env.RESEND_API_KEY;
+    if (!key) return { ok: false, error: 'email-not-configured' };
+    const notify = process.env.LEAD_NOTIFY_EMAIL;
+    try {
+      const { error } = await new Resend(key).emails.send({
+        from: process.env.RESEND_FROM || 'Litigant <noreply@litigant.legal>',
+        to: [to],
+        cc: [cc],
+        bcc: notify && notify !== to && notify !== cc ? [notify] : undefined,
+        replyTo: isEmail ? payload.contact : undefined,
+        subject,
+        text,
+        html
+      });
+      if (error) {
+        console.error('contact email (resend) failed', error);
+        return { ok: false, error: 'send-failed' };
+      }
+      return { ok: true };
+    } catch (err) {
+      console.error('contact email (resend) failed', err);
+      return { ok: false, error: 'send-failed' };
+    }
+  }
 
   try {
     await t.sendMail({

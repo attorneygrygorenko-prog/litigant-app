@@ -21,7 +21,9 @@ export default function ContactForm() {
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     if (status === 'sending') return;
-    const fd = new FormData(e.currentTarget);
+    // Grab the form now: React clears e.currentTarget once we await.
+    const form = e.currentTarget;
+    const fd = new FormData(form);
     const payload = {
       name: String(fd.get('name') || '').trim(),
       contact: String(fd.get('contact') || '').trim(),
@@ -45,7 +47,7 @@ export default function ContactForm() {
       if (!res.ok) throw new Error('bad-status');
       setStatus('ok');
       trackEvent('contact_quick_complete', { office: payload.office });
-      e.currentTarget.reset();
+      form.reset();
       startedRef.current = false;
     } catch {
       setStatus('err');

@@ -34,7 +34,7 @@ export async function POST(req: Request) {
   if (!office) return NextResponse.json({ error: 'missing-office' }, { status: 400 });
   if (!isOffice(office)) return NextResponse.json({ error: 'invalid-office' }, { status: 400 });
 
-  await notifyCrm({
+  const inCrm = await notifyCrm({
     type: 'contact',
     timestamp: new Date().toISOString(),
     name,
@@ -55,8 +55,12 @@ export async function POST(req: Request) {
   });
 
   if (!result.ok) {
-    const status = result.error === 'smtp-not-configured' ? 503 : 500;
-    return NextResponse.json({ error: result.error }, { status });
+    // Lead is already safe in the CRM → don't show the visitor an error.
+    if (inCrm) {
+      console.error('contact email failed, lead stored in CRM', result.error);
+      return NextResponse.json({ success: true, email: false });
+    }
+    return NextResponse.json({ error: result.error }, { status: 500 });
   }
 
   return NextResponse.json({ success: true });
