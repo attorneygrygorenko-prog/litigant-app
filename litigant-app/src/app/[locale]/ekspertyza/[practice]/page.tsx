@@ -4,7 +4,7 @@ import { notFound, redirect } from 'next/navigation';
 
 import { Link } from '@/i18n/routing';
 import type { Locale } from '@/i18n/routing';
-import { OG_IMAGE, SITE_URL } from '@/lib/seo';
+import { OG_IMAGE, SITE_URL, languagesFor } from '@/lib/seo';
 import {
   PRACTICE_BY_SLUG,
   PRACTICE_KEYS,
@@ -12,6 +12,7 @@ import {
   SLUG_BY_LOCALE,
 } from '@/data/practices';
 import { buildBreadcrumb, buildFaqJsonLd } from '@/lib/jsonld';
+import { CONSTANTA_SLUG } from '@/data/constanta-ro';
 
 export const revalidate = 86400;
 
@@ -50,12 +51,11 @@ export async function generateMetadata({
     keywords: content.keywords,
     alternates: {
       canonical: `${SITE_URL}/${locale}/ekspertyza/${slug[locale]}`,
-      languages: {
-        uk: `${SITE_URL}/ua/ekspertyza/${slug.ua}`,
+      languages: languagesFor({
+        ua: `${SITE_URL}/ua/ekspertyza/${slug.ua}`,
         en: `${SITE_URL}/en/ekspertyza/${slug.en}`,
         ro: `${SITE_URL}/ro/ekspertyza/${slug.ro}`,
-        'x-default': `${SITE_URL}/en/ekspertyza/${slug.en}`,
-      },
+      }),
     },
     openGraph: {
       title: content.metaTitle,
@@ -203,6 +203,13 @@ export default function PracticeLandingPage({
               </li>
             ))}
           </ul>
+          {/* RO: internal link to the Constanța / Danube regional landing */}
+          {locale === 'ro' && (key === 'maritime' || key === 'intl-arbitration') && (
+            <p style={{ fontSize: 15, lineHeight: 1.7, color: 'var(--m)', marginTop: 28 }}>
+              Lucrați din Constanța, Galați, Tulcea sau Giurgiulești?{' '}
+              <Link href={`/${CONSTANTA_SLUG}`}>Avocat ucrainean pentru Constanța și Dunăre →</Link>
+            </p>
+          )}
         </div>
       </section>
 

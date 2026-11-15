@@ -74,13 +74,13 @@ export function buildJsonLd(locale: Locale) {
         logo: `${SITE_URL}/api/logo`,
         description:
           locale === 'ro'
-            ? 'Birou de avocați specializat în White-Collar Crime, conflicte corporative, faliment și GR-Litigation. Chișinău, Kyiv, Odesa.'
+            ? 'Birou de avocați ucrainean: drept maritim, arbitraj internațional și executarea sentințelor străine, White-Collar Crime, conflicte corporative, faliment și GR-Litigation. Kiev, Odesa, Chișinău.'
             : locale === 'en'
             ? 'Ukrainian law firm: maritime and shipping law, international arbitration and enforcement of foreign awards, White-Collar Crime, corporate conflicts, bankruptcy and GR-Litigation. Kyiv, Odesa, Chișinău.'
             : 'Адвокатське бюро зі спеціалізацією на White-Collar Crime, корпоративних конфліктах, банкрутстві та GR-Litigation. Київ, Одеса, Кишинів.',
         telephone: '+380445010207',
         email: 'kyiv@litigant.legal',
-        areaServed: ['UA', 'MD', 'EU', 'GB', 'CH', 'TR', 'AE', 'SG'],
+        areaServed: ['UA', 'MD', 'RO', 'EU', 'GB', 'CH', 'TR', 'AE', 'SG'],
         knowsLanguage: ['uk', 'en', 'ro'],
         priceRange: '$$$$',
         address: [
@@ -302,5 +302,39 @@ export function buildFaqJsonLd(locale: Locale, scopeId: string, items: FaqEntry[
       name: it.q,
       acceptedAnswer: { '@type': 'Answer', text: it.a }
     }))
+  };
+}
+
+/**
+ * Service entity for the Romanian regional landing (Constanța / Danube).
+ * The provider is the firm itself (Kyiv/Odesa) — we do NOT claim a Romanian
+ * address; areaServed tells Google who the service is for.
+ */
+export function buildRegionalServiceJsonLd(opts: {
+  url: string;
+  name: string;
+  description: string;
+  serviceTypes: string[];
+}) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    '@id': `${opts.url}#service`,
+    url: opts.url,
+    name: opts.name,
+    description: opts.description,
+    inLanguage: 'ro',
+    serviceType: opts.serviceTypes,
+    provider: { '@id': `${SITE_URL}/#firm` },
+    availableLanguage: ['ro', 'en', 'uk'],
+    areaServed: [
+      { '@type': 'City', name: 'Constanța', containedInPlace: { '@type': 'Country', name: 'Romania' } },
+      { '@type': 'City', name: 'Galați', containedInPlace: { '@type': 'Country', name: 'Romania' } },
+      { '@type': 'City', name: 'Tulcea', containedInPlace: { '@type': 'Country', name: 'Romania' } },
+      { '@type': 'Place', name: 'Giurgiulești', containedInPlace: { '@type': 'Country', name: 'Moldova' } },
+      { '@type': 'Country', name: 'Romania' },
+      { '@type': 'Country', name: 'Moldova' },
+      { '@type': 'Country', name: 'Ukraine' }
+    ]
   };
 }
