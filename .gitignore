@@ -1,1 +1,5 @@
 .vercel
+# B2B outreach (litigant-app/scripts/b2b): персональні дані, кеші, ключ Resend — лише локально
+litigant-app/scripts/b2b/data/
+litigant-app/scripts/b2b/.env
+litigant-app/scripts/b2b/__pycache__/
