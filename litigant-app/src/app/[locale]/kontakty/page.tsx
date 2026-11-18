@@ -45,7 +45,7 @@ export default function ContactsPage({ params: { locale } }: { params: { locale:
                   {t('kyivAddress')}
                   {'\n\n'}
                   <TrackedLink href="tel:+380445010207" event="phone_click" params={{ location: 'kyiv' }}>+38 (044) 501-02-07</TrackedLink>{'\n'}
-                  <TrackedLink href="tel:+380949522996" event="phone_click" params={{ location: 'kyiv' }}>+38 (094) 952-29-96</TrackedLink>
+                  <TrackedLink href="tel:+380949529196" event="phone_click" params={{ location: 'kyiv' }}>+38 (094) 952-91-96</TrackedLink>
                   <a className="contact-email" href="mailto:kyiv@litigant.legal">kyiv@litigant.legal</a>
                 </div>
               </div>
