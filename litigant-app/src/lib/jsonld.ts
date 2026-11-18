@@ -113,7 +113,6 @@ export function buildJsonLd(locale: Locale) {
           },
           {
             '@type': 'ContactPoint',
-            telephone: '+380932232995',
             email: 'odesa@litigant.legal',
             contactType: 'legal',
             areaServed: 'Odesa',

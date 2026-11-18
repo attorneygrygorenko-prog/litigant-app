@@ -112,7 +112,6 @@ export default function Footer() {
             <h3>{tFooter('contactsTitle')}</h3>
             <ul>
               <li><TrackedLink href="tel:+380445010207" event="phone_click" params={{ location: 'kyiv' }}>+38 (044) 501-02-07</TrackedLink></li>
-              <li><TrackedLink href="tel:+380932232995" event="phone_click" params={{ location: 'odesa' }}>+38 (093) 223-29-95</TrackedLink></li>
               <li>
                 <a href="mailto:kyiv@litigant.legal">kyiv@litigant.legal</a>
                 <span aria-hidden="true" style={{ color: 'rgba(255,255,255,.25)', margin: '0 8px' }}>·</span>
